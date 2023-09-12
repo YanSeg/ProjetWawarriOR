@@ -4,15 +4,18 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 
-
         boolean jouer = true;
+        Menu menu = new Menu();
+
+
 
         while (jouer) {
-
             Personnage Test = new Personnage();
+            int position = 1;
+
             String userType = "";
             String userName = "";
-            Menu menu = new Menu();
+
             Scanner scanner = new Scanner(System.in);  // Create a Scanner object
             //boolean parametros;
             boolean parametros1 = true;
@@ -58,6 +61,8 @@ public class Main {
                                 Test.setOffensive("arme");
                             }
                             parametros1 = false;
+
+
                         } else {
                             System.out.println("_________________________________");
                             System.out.println("Paramètre incorrecte, recommencez");
@@ -138,6 +143,7 @@ public class Main {
 
                     case 4:
                         parametros2 = false;
+                        jouer = false;
                         break;
                     default:
                         System.out.println(" !!!!!!!!! Option invalide !!!!!!!!!!!!!!!");
@@ -145,20 +151,11 @@ public class Main {
                 }
 
             }
+
+            menu.game(jouer);
+
+            System.out.println("Fin du jeu.");
         }
-        //// Là les des
-
-        int position = 1;
-
-        while (position < 64) {
-            int de = (int) (1 + 6 * Math.random());
-            position = position + de;
-            System.out.println("Vous êtes à la position ;" + position);
-                    System.out.println("Votre lancé est de " + de);
-
-        }
-
-        System.out.println("Fin du jeu.");
     }
 
 }

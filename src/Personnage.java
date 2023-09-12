@@ -1,10 +1,10 @@
 public class Personnage {
 
-    String type;
-    String name;
-    int health;
-    Integer strength;
-    String offensive;
+    private String type;
+    private String name;
+    private int health;
+    private int strength;
+    private String offensive;
 
     public void setDefensive(String defensive) {
         this.defensive = defensive;

@@ -105,7 +105,7 @@ public class Personnage {
 
     public String toString(){
         return "Vous avez choisi un " + type + " qui s'appelle : " +  name.toUpperCase() +
-                " | force d'attaque : " + strength + " | EquipementOffensif : " + offensive +
+                " | force d'attaque : " + strength + " | Vie " + health + "EquipementOffensif : " + offensive +
                 " | EquipementDefensif : " + defensive;
     }
 

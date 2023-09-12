@@ -14,8 +14,10 @@ public class Main {
             String userName = "";
             Menu menu = new Menu();
             Scanner scanner = new Scanner(System.in);  // Create a Scanner object
-
+            //boolean parametros;
             boolean parametros1 = true;
+            boolean parametros2;
+
 
             // Ma condition 3 !!!!
             while (parametros1) {
@@ -65,10 +67,10 @@ public class Main {
                         }
 
                     case 2:
-
                         jouer = false;
-
+                        parametros1 = false;
                         break;
+
 
                     default:
                         System.out.println(" !!!!!!!!! Option invalide !!!!!!!!!!!!!!!");
@@ -76,7 +78,13 @@ public class Main {
 
                 }
             }
-            boolean parametros2 = true;
+
+            if (jouer) {
+                parametros2 = false;
+            } else {
+                parametros2 = true;
+            }
+
 
             // Ma condition 3 !!!!
             while (parametros2) {
@@ -107,6 +115,7 @@ public class Main {
                         userName = deus.nextLine();
                         // System.out.println("Vous avez choisis un : " + userType);
 
+
                         if (userType.equals("magicien")) {
                             Test.setType("magicien");
                             Test.setName(userName);
@@ -126,22 +135,33 @@ public class Main {
                             Test.setOffensive("arme");
                         }
                         break;
-                    case 4:
-                        jouer = false;
 
+                    case 4:
+                        parametros2 = false;
+                        break;
                     default:
                         System.out.println(" !!!!!!!!! Option invalide !!!!!!!!!!!!!!!");
                         break;
                 }
 
-
             }
+        }
+        //// Là les des
 
+        int position = 1;
+
+        while (position < 64) {
+            int de = (int) (1 + 6 * Math.random());
+            position = position + de;
+            System.out.println("Vous êtes à la position ;" + position);
+                    System.out.println("Votre lancé est de " + de);
 
         }
+
         System.out.println("Fin du jeu.");
     }
 
-
 }
+
+
 

@@ -5,12 +5,40 @@ public class Personnage {
     int health;
     Integer strength;
     String offensive;
+
+    public void setDefensive(String defensive) {
+        this.defensive = defensive;
+    }
+
     String defensive;
 
 
-    public Personnage (String type, String name, int health, Integer strength, String offensive, String defensive) {
+    public void setType(String type) {
+        this.type = type;
+    }
+
+    public void setHealth(int health) {
+        this.health = health;
+    }
+
+    public void setStrength(Integer strength) {
+        this.strength = strength;
+    }
+
+    public void setOffensive(String offensive) {
+        this.offensive = offensive;
+    }
+    public void setName(String name) {
+        this.name = name;
+    }
 
 
+
+
+
+    public Personnage (String name,String type,  int health, Integer strength, String offensive, String defensive) {
+
+        this.name = name;
         this.type = type;
         this.name = name;
         this.health = health;
@@ -32,7 +60,7 @@ public class Personnage {
         this.type = type;
     }
 
-    public Personnage(String type, String nom) {
+    public Personnage(String type, String name) {
         this.type = type;
         this.name = name;
     }
@@ -50,13 +78,22 @@ public class Personnage {
         this.name = newName;
     }
     */
+
+
+
+    public void setPersonnage (String newName,String newType,  int health, Integer strength, String offensive, String defensive) {
+        this.name = newName;
+        this.type= newType;
+
+    }
+
+
+
+
     public String getName() {
         return name;
     }
 
-    public void setName(String newName) {
-        this.name = newName;
-    }
 
     public String getType() {
         return type;

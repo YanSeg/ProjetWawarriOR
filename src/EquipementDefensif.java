@@ -1,10 +1,19 @@
 public class EquipementDefensif {
 
-        String DefensifType;
-        String DefensifName;
-        Integer DefensifStrenght;
 
+        String defensifType;
+        String defensifName;
+        Integer defensifStrenght;
+
+    public EquipementDefensif(String defensifType, String defensifName, Integer defensifStrenght) {
+        this.defensifType = defensifType;
+        this.defensifName = defensifName;
+        this.defensifStrenght = defensifStrenght;
     }
+
+
+
+}
 
 
 

@@ -1,16 +1,9 @@
-public class EquipementDefensif {
+public abstract class EquipementDefensif {
 
 
-        String defensifType;
-        String defensifName;
-        Integer defensifStrenght;
-
-    public EquipementDefensif(String defensifType, String defensifName, Integer defensifStrenght) {
-        this.defensifType = defensifType;
-        this.defensifName = defensifName;
-        this.defensifStrenght = defensifStrenght;
-    }
-
+    protected String defensifType;
+    protected String defensifName;
+    protected Integer defensifStrenght;
 
 
 }

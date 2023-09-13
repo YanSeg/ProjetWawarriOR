@@ -1,4 +1,4 @@
-public class EquipementOffensif {
+abstract class EquipementOffensif {
 
     String offensifType;
     String offensifName;

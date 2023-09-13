@@ -7,109 +7,169 @@ public class Menu {
         // System.out.println("Je suis le constructeur");
     }
 
-    public void tuvasvoir() {
+    public void space() {
 //
-            System.out.println("\033[H\033[2J");
+        System.out.println("\033[H\033[2J");
 //
     }
 
-        public void jeuDe() {
-            int position = 1;
-            while (position < 64) {
-                int de = (int) (1 + 6 * Math.random());
-                position = position + de;
-                System.out.println("Vous êtes à la position ;" + position);
-                System.out.println("Votre lancé est de " + de);
+    public void jeuDe() {
 
-            }
+        int position = 1;
+
+        while (position < 64) {
+            int de = (int) (1 + 6 * Math.random());
+            position = position + de;
+
+            System.out.println("Vous êtes à la position ;" + position);
+            System.out.println("Votre lancé est de " + de);
+
         }
-
-    /*
-    public Personnage NewPlayer() {
-        return new Personnage();
     }
-*/
 
-        public void game (Boolean jouer){
+    public void affichageErreurMenu() {
+        space();
+        System.out.println("Merci de commencer par créer votre personnage");
 
-            if (jouer = true) {
-                jeuDe();
-            } else {
+    }
 
-            }
+
+    public void jouerauJeu(Personnage player) {
+
+        if (player != null) {
+            jeuDe();
+        } else {
+            affichageErreurMenu();
         }
 
 
-        public void exitGame () {
-            System.out.println("Fin du jeu.");
+    }
+
+    public void affichageduPersonnage(Personnage player) {
+        if (player != null) {
+            System.out.println(player);
+        } else {
+            affichageErreurMenu();
         }
+    }
+
+    public void listemenu2() {
+        System.out.println("1. Créer votre personnage");
+        System.out.println("2. Modifier votre personnage");
+        System.out.println("3. Afficher les paramètres de votre personnage");
+        System.out.println("4. Jouer");
+        System.out.println("5. Quitter le jeu");
+    }
 
 
-        public void setMagicien (Personnage player, String userName){
-            player.setType("magicien");
-            player.setName(userName);
-            player.setDefensive("philtre");
-            player.setHealth(10);
-            player.setStrength(10);
-            player.setOffensive("sort");
-        }
+    public void findugameMessage() {
+        System.out.println("Fin du jeu.");
+    }
 
-        public void setGuerrier (Personnage player, String userName){
-            player.setType("Guerrier");
-            player.setName(userName);
-            player.setDefensive("bouclier");
-            player.setHealth(10);
-            player.setStrength(15);
-            player.setOffensive("arme");
-        }
 
-    /*
-        public Personnage updatePlayer(Personnage player) {
+    public void menu2() {
+
+        boolean lemenu = true;
+        Scanner scanner = new Scanner(System.in);
+        Personnage player = null;
+        while (lemenu) {
+
             System.out.println("1. Créer votre personnage");
-            Scanner scanner = new Scanner(System.in);
-            System.out.println("Magicien ou Guerrier ?");
-            String userType = scanner.nextLine();
-            userType = scanner.toLowerCase();
-            //System.out.println(scanner);
+            System.out.println("2. Modifier votre personnage");
+            System.out.println("3. Afficher les paramètres de votre personnage");
+            System.out.println("4. Jouer");
+            System.out.println("5. Quitter le jeu");
 
-            if (userType.equals("magicien")) {
-                setMagicien(player, userName);
-            } else {
-                setGuerrier(player, userName);
+            int choiceMenu = scanner.nextInt();
+
+            switch (choiceMenu) {
+
+                case 1:
+
+                    System.out.println("Tapez 1 : Magicien | Tapez 2 : Guerrier");
+                    int choixTypePerso = scanner.nextInt();
+                    String persoType;
+                    String persoName;
+                    switch (choixTypePerso) {
+                        case 1:
+                            Scanner question = new Scanner(System.in);
+                            persoType = "Magicien";
+                            System.out.println("Quel sera votre Nom ?");
+                            persoName = question.nextLine();
+                            player = new Personnage(persoName, persoType, 10, 10, "sort", "philtre");
+                            break;
+                        case 2:
+                            Scanner question2 = new Scanner(System.in);
+                            persoType = "Guerrier";
+                            System.out.println("Quel sera votre Nom ?");
+                            persoName = question2.nextLine();
+                            player = new Personnage(persoName, persoType, 10, 15, "arme", "bouclier");
+                            break;
+
+                        default:
+                            space();
+                            affichageErreurMenu();
+                            break;
+                    }
+                    break;
+
+
+                case 2:
+                    if (player != null) {
+                        Scanner question3 = new Scanner(System.in);
+                        String persoNewName;
+                        System.out.println("Choisissez un nouveau Nom");
+                        persoNewName = question3.nextLine();
+                        player.setName(persoNewName);
+
+                    } else {
+                        affichageErreurMenu();
+                    }
+                    break;
+                case 3:
+                    affichageduPersonnage(player);
+                    break;
+                case 4:
+                    jouerauJeu(player);
+                    break;
+
+                case 5:
+                    lemenu = false;
+                    space();
+                    break;
+
+                default:
+                    affichageErreurMenu();
             }
-            return player;
-        }
 
-        /*
-
-        public String typeChoice() {
-            int parametre;
-            Srting userType;
-            while (parametre) {
-                System.out.println("1. Guerrier");
-                System.out.println("2. Magicien");
-
-                int choix = scanner.nextInt();
-
-                switch (choix) {
-                    case 1:
-                        userType = "Guerrier"
-                    case 2:
-                    default:
-                        System.out.println(" !!!!!!!!! Option invalide !!!!!!!!!!!!!!!");
-                        break;
-
-                }
-
-            }
-        }
-    */
-        public void errorMessage () {
-            System.out.println("----------------------------------------");
-            System.out.println("Vous avez commis une erreur dans le type");
-            System.out.println("----------------------------------------");
         }
 
     }
 
 
+    public void strartRestart() {
+
+        boolean menuDisplay = true;
+        Scanner scanner = new Scanner(System.in);
+
+        while (menuDisplay) {
+            System.out.println("1. Jouer");
+            System.out.println("2. Quitter");
+            int displayMenu = scanner.nextInt();
+            switch (displayMenu) {
+                case 1:
+                    menuDisplay = false;
+                    break;
+                case 2:
+                    menuDisplay = false;
+                    break;
+                default:
+                    affichageErreurMenu();
+                    break;
+            }
+
+        }
+    }
+
+
+}

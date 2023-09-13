@@ -1,4 +1,6 @@
-public class Personnage {
+package Personnages;
+
+public abstract class Personnage {
 
     private String type;
     private String name;
@@ -105,8 +107,8 @@ public class Personnage {
 
     public String toString(){
         return "Vous avez choisi un " + type + " qui s'appelle : " +  name.toUpperCase() +
-                " | force d'attaque : " + strength + " | Vie " + health + "EquipementOffensif : " + offensive +
-                " | EquipementDefensif : " + defensive;
+                " | force d'attaque : " + strength + " | Vie " + health + "Equipement_Offensif : " + offensive +
+                " | Equipement-Defensif : " + defensive;
     }
 
 }

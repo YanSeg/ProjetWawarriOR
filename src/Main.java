@@ -1,164 +1,133 @@
 import java.util.Scanner;
 
-
 public class Main {
     public static void main(String[] args) {
 
-        boolean jouer = true;
+        Boolean menuDisplay = true;
+        Boolean lemenu = false;
         Menu menu = new Menu();
 
+        Scanner scanner = new Scanner(System.in); // Initialisation du scanner
+
+        while (menuDisplay) {
+
+            System.out.println("1. Start");
+            System.out.println("2. Quitter");
+            int displayMenu = scanner.nextInt();
+
+            switch (displayMenu) {
+                case 1:
+                    lemenu = true;
+                    menuDisplay = false;
+                    break;
+                case 2:
+                    menuDisplay = false;
+                    lemenu = false;
+                default:
+                    System.out.println(" Essaye encore");
+                    break;
+            }
 
 
-        while (jouer) {
-            Personnage Test = new Personnage();
-            int position = 1;
+            // Deuxieme méthode
 
-            String userType = "";
-            String userName = "";
+            menu.tuvasvoir();
+            Personnage player = null;
 
-            Scanner scanner = new Scanner(System.in);  // Create a Scanner object
-            //boolean parametros;
-            boolean parametros1 = true;
-            boolean parametros2;
+            while (lemenu) {
 
+                menu.tuvasvoir();
+                String persoType;
+                String persoName;
 
-            // Ma condition 3 !!!!
-            while (parametros1) {
                 System.out.println("1. Créer votre personnage");
-                System.out.println("2. Quitter le jeu");
+                System.out.println("2. Modifier votre personnage");
+                System.out.println("3. Afficher les paramètres de votre personnage");
+                System.out.println("4. Jouer");
+                System.out.println("5. Quitter le jeu");
 
-                int choix1 = scanner.nextInt();
+                int choiceMenu = scanner.nextInt();
 
-                switch (choix1) {
+                switch (choiceMenu) {
+
                     case 1:
-                        Scanner prems = new Scanner(System.in);
-                        System.out.println("Magicien ou Guerrier ?");
-                        userType = prems.nextLine();
-                        userType = userType.toLowerCase();
-                        System.out.println(userType);
 
-                        if (userType.equals("magicien") || userType.equals("guerrier")) {
-                            System.out.println("Quel sera votre Nom ?");
-                            userName = prems.nextLine();
-                            // System.out.println("Vous avez choisis un : " + userType);
+                        Scanner createPerso = new Scanner(System.in);
+                        // Scanner modifNamePerso = new Scanner(System.in);
+                        System.out.println("1. Magicien");
+                        System.out.println("2. Guerrier");
 
-                            if (userType.equals("magicien")) {
-                                Test.setType("magicien");
-                                Test.setName(userName);
-                                Test.setDefensive("philtre");
-                                Test.setHealth(10);
-                                Test.setStrength(10);
-                                Test.setOffensive("sort");
+                        int choixTypePerso = scanner.nextInt();
 
-                                // System.out.println( Test);
-                                // System.out.println( Test);
-                            } else {
-                                Test.setType("Guerrier");
-                                Test.setName(userName);
-                                Test.setDefensive("bouclier");
-                                Test.setHealth(10);
-                                Test.setStrength(15);
-                                Test.setOffensive("arme");
-                            }
-                            parametros1 = false;
 
+                        switch (choixTypePerso) {
+                            case 1:
+                                persoType = "Magicien";
+                                System.out.println("Quel sera votre Nom ?");
+                                persoName = createPerso.nextLine();
+                                player = new Personnage(persoName, persoType, 10, 10, "sort", "philtre");
+                                break;
+                            case 2:
+                                persoType = "Guerrier";
+                                System.out.println("Quel sera votre Nom ?");
+                                persoName = createPerso.nextLine();
+                                player = new Personnage(persoName, persoType, 10, 15, "arme", "bouclier");
+                                break;
+
+                            default:
+                                System.out.println(" Essaye encore");
+                                break;
+                        }
+                        break;
+
+
+                    case 2:
+                        if (player != null) {
+                            Scanner modiPerso = new Scanner(System.in);
+                            String persoNewName;
+                            System.out.println("Choisissez un nouveau Nom");
+                            persoNewName = modiPerso.nextLine();
+                            player.setName(persoNewName);
 
                         } else {
-                            System.out.println("_________________________________");
-                            System.out.println("Paramètre incorrecte, recommencez");
-                            System.out.println("_________________________________");
+                            System.out.println(" Veuillez créer votre personnage avant de le modifier ...");
 
-                            break;
                         }
-
-                    case 2:
-                        jouer = false;
-                        parametros1 = false;
-                        break;
-
-
-                    default:
-                        System.out.println(" !!!!!!!!! Option invalide !!!!!!!!!!!!!!!");
-                        break;
-
-                }
-            }
-
-            if (jouer) {
-                parametros2 = false;
-            } else {
-                parametros2 = true;
-            }
-
-
-            // Ma condition 3 !!!!
-            while (parametros2) {
-                System.out.println("1. Let's GO jeune " + userType + ": " + userName + "  ? ");
-                System.out.println("2. Afficher les paramètres du Personnage");
-                System.out.println("3. Changer les parametres");
-                System.out.println("4. Quitter le jeu");
-                System.out.print("Choisissez une option : ");
-
-                int choix2 = scanner.nextInt();
-
-                switch (choix2) {
-                    case 1:
-                        System.out.println("Bon ON JOUE   ? ");
-                        parametros2 = false;
-                        break;
-                    case 2:
-                        System.out.println(Test);
                         break;
                     case 3:
-                        Scanner deus = new Scanner(System.in);
-                        System.out.println("A vous de choisir : Magicien ou Guerrier ?");
-                        //Scanner deuxieme = new Scanner(System.in);
-                        userType = deus.nextLine();
-                        userType = userType.toLowerCase();
-                        System.out.println(userType);
-                        System.out.println("Quel sera votre Nom ?");
-                        userName = deus.nextLine();
-                        // System.out.println("Vous avez choisis un : " + userType);
-
-
-                        if (userType.equals("magicien")) {
-                            Test.setType("magicien");
-                            Test.setName(userName);
-                            Test.setDefensive("philtre");
-                            Test.setHealth(10);
-                            Test.setStrength(10);
-                            Test.setOffensive("sort");
-
-                            // System.out.println( Test);
-                            // System.out.println( Test);
+                        if (player != null) {
+                            menu.tuvasvoir();
+                            System.out.println(player);
                         } else {
-                            Test.setType("Guerrier");
-                            Test.setName(userName);
-                            Test.setDefensive("bouclier");
-                            Test.setHealth(10);
-                            Test.setStrength(15);
-                            Test.setOffensive("arme");
+                            menu.tuvasvoir();
+                            System.out.println(" Veuillez créer votre personnage en Premier");
+
                         }
                         break;
-
                     case 4:
-                        parametros2 = false;
-                        jouer = false;
+                        menu.jeuDe();
+                        ;
+                    case 5:
+                        menuDisplay = true;
+                        lemenu = false;
                         break;
+
                     default:
-                        System.out.println(" !!!!!!!!! Option invalide !!!!!!!!!!!!!!!");
+                        System.out.println(" Essaye encore");
                         break;
                 }
 
+
             }
 
-            menu.game(jouer);
 
-            System.out.println("Fin du jeu.");
         }
+
+
+        System.out.println("Fin du jeu.");
+        // Scanner letPlay = new scanner;
     }
 
 }
-
 
 

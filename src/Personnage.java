@@ -36,7 +36,7 @@ public class Personnage {
 
 
 
-    public Personnage (String name,String type,  int health, Integer strength, String offensive, String defensive) {
+    public Personnage (String name,String type, int health, Integer strength, String offensive, String defensive) {
 
         this.name = name;
         this.type = type;
@@ -79,14 +79,14 @@ public class Personnage {
     }
     */
 
-
+/*
 
     public void setPersonnage (String newName,String newType,  int health, Integer strength, String offensive, String defensive) {
         this.name = newName;
         this.type= newType;
 
     }
-
+*/
 
 
 

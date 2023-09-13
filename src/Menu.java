@@ -1,6 +1,7 @@
 import Personnages.Personnage;
 import Personnages.Magiciens.Magicien;
 import Personnages.Guerriers.Guerrier;
+
 import java.util.Scanner;
 
 public class Menu {
@@ -78,6 +79,7 @@ public class Menu {
         while (lemenu) {
 
             System.out.println("1. Créer votre personnage");
+
             System.out.println("2. Modifier votre personnage");
             System.out.println("3. Afficher les paramètres de votre personnage");
             System.out.println("4. Jouer");
@@ -99,14 +101,14 @@ public class Menu {
                             persoType = "Magicien";
                             System.out.println("Quel sera votre Nom ?");
                             persoName = question.nextLine();
-                            player = new Magicien (persoName, persoType, 10, 15, "sort", "philtre");
+                            player = new Magicien(persoName, persoType, 10, 15, "sort", "philtre");
                             break;
                         case 2:
                             Scanner question2 = new Scanner(System.in);
                             persoType = "Guerrier";
                             System.out.println("Quel sera votre Nom ?");
                             persoName = question2.nextLine();
-                            player = new Guerrier (persoName, persoType, 10, 6, "arme", "bouclier");
+                            player = new Guerrier(persoName, persoType, 10, 6, "arme", "bouclier");
                             break;
 
                         default:

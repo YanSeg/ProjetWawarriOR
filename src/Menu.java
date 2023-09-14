@@ -2,7 +2,10 @@ import Personnages.Personnage;
 import Personnages.Magiciens.Magicien;
 import Personnages.Guerriers.Guerrier;
 
+import java.util.InputMismatchException;
+
 import java.util.Scanner;
+
 
 public class Menu {
 
@@ -17,19 +20,6 @@ public class Menu {
 //
     }
 
-    public void jeuDe() {
-
-        int position = 1;
-
-        while (position < 64) {
-            int de = (int) (1 + 6 * Math.random());
-            position = position + de;
-
-            System.out.println("Vous êtes à la position ;" + position);
-            System.out.println("Votre lancé est de " + de);
-
-        }
-    }
 
     public void affichageErreurMenu() {
         space();
@@ -38,16 +28,16 @@ public class Menu {
     }
 
 
-    public void jouerauJeu(Personnage player) {
-
-        if (player != null) {
-            jeuDe();
-        } else {
-            affichageErreurMenu();
-        }
-
-
-    }
+//    public void jouerauJeu(Personnage player) {
+//
+//        if (player != null) {
+//            jeuDe();
+//        } else {
+//            affichageErreurMenu();
+//        }
+//
+//
+//    }
 
     public void affichageduPersonnage(Personnage player) {
         if (player != null) {
@@ -74,8 +64,11 @@ public class Menu {
     public void menu2() {
 
         boolean lemenu = true;
+
         Scanner scanner = new Scanner(System.in);
+
         Personnage player = null;
+
         while (lemenu) {
 
             System.out.println("1. Créer votre personnage");
@@ -85,72 +78,93 @@ public class Menu {
             System.out.println("4. Jouer");
             System.out.println("5. Quitter le jeu");
 
-            int choiceMenu = scanner.nextInt();
+            boolean entierValide = false;
+            while (!entierValide) {
 
-            switch (choiceMenu) {
+                try {
+                    int choiceMenu = scanner.nextInt();
+                    switch (choiceMenu) {
 
-                case 1:
-
-                    System.out.println("Tapez 1 : Magicien | Tapez 2 : Guerrier");
-                    int choixTypePerso = scanner.nextInt();
-                    String persoType;
-                    String persoName;
-                    switch (choixTypePerso) {
                         case 1:
-                            Scanner question = new Scanner(System.in);
-                            persoType = "Magicien";
-                            System.out.println("Quel sera votre Nom ?");
-                            persoName = question.nextLine();
-                            player = new Magicien(persoName, persoType, 10, 15, "sort", "philtre");
+
+                            System.out.println("Tapez 1 : Magicien | Tapez 2 : Guerrier");
+                            int choixTypePerso = scanner.nextInt();
+                            String persoType;
+                            String persoName;
+                            switch (choixTypePerso) {
+                                case 1:
+                                    Scanner question = new Scanner(System.in);
+                                    persoType = "Magicien";
+                                    System.out.println("Quel sera votre Nom ?");
+                                    persoName = question.nextLine();
+                                    player = new Magicien(persoName, persoType, 10, 15, "sort", "philtre");
+                                    break;
+                                case 2:
+                                    Scanner question2 = new Scanner(System.in);
+                                    persoType = "Guerrier";
+                                    System.out.println("Quel sera votre Nom ?");
+                                    persoName = question2.nextLine();
+                                    player = new Guerrier(persoName, persoType, 10, 6, "arme", "bouclier");
+                                    break;
+
+                                default:
+                                    space();
+                                    affichageErreurMenu();
+                                    space();
+                                    break;
+                            }
                             break;
+
+
                         case 2:
-                            Scanner question2 = new Scanner(System.in);
-                            persoType = "Guerrier";
-                            System.out.println("Quel sera votre Nom ?");
-                            persoName = question2.nextLine();
-                            player = new Guerrier(persoName, persoType, 10, 6, "arme", "bouclier");
+                            if (player != null) {
+                                space();
+                                changeNameBastard(player);
+                                space();
+                            } else {
+                                space();
+                                affichageErreurMenu();
+                                space();
+                            }
+                            break;
+                        case 3:
+                            space();
+                            affichageduPersonnage(player);
+                            space();
+                            break;
+                        case 4:
+
+                            space();
+                            // Là il y a la logique du jeu ce qui est à revoir, je pense que je vais le sortir de là (mettre un retrun par exemple pour que le programme continue)
+
+                            Game game = new Game();
+                            game.jouerauJeu(player);
+                            space();
+
+                            break;
+
+                        case 5:
+                            lemenu = false;
+                            space();
                             break;
 
                         default:
                             space();
                             affichageErreurMenu();
+                            space();
                             break;
+
                     }
-                    break;
+                } catch (InputMismatchException e) {
+                    System.out.println("Vous devez entrer un entier.");
+                    scanner.next(); // Permet d'ignorer la saisie incorrecte
 
-
-                case 2:
-                    if (player != null) {
-                        Scanner question3 = new Scanner(System.in);
-                        String persoNewName;
-                        System.out.println("Choisissez un nouveau Nom");
-                        persoNewName = question3.nextLine();
-                        player.setName(persoNewName);
-
-                    } else {
-                        affichageErreurMenu();
-                    }
-                    break;
-                case 3:
-                    affichageduPersonnage(player);
-                    break;
-                case 4:
-                    jouerauJeu(player);
-                    break;
-
-                case 5:
-                    lemenu = false;
-                    space();
-                    break;
-
-                default:
-                    affichageErreurMenu();
+                }
+            entierValide = true;
             }
 
         }
-
     }
-
 
     public void strartRestart() {
 
@@ -160,9 +174,15 @@ public class Menu {
         while (menuDisplay) {
             System.out.println("1. Jouer");
             System.out.println("2. Quitter");
-            int displayMenu = scanner.nextInt();
+
+            boolean entierValide = false;
+            while (!entierValide) {
+
+                try {
+                    int displayMenu = scanner.nextInt();
             switch (displayMenu) {
                 case 1:
+                    menu2();
                     menuDisplay = false;
                     break;
                 case 2:
@@ -171,8 +191,27 @@ public class Menu {
                 default:
                     affichageErreurMenu();
                     break;
-            }
 
+            }
+        } catch (InputMismatchException e) {
+            System.out.println("Vous devez entrer un entier.");
+            scanner.next(); // Permet d'ignorer la saisie incorrecte
+
+        }
+        entierValide = true;
+    }
+
+}
+    }
+
+    public void changeNameBastard(Personnage player) {
+
+        if (player != null) {
+            Scanner question3 = new Scanner(System.in);
+            String persoNewName;
+            System.out.println("Choisissez un nouveau Nom");
+            persoNewName = question3.nextLine();
+            player.setName(persoNewName);
         }
     }
 

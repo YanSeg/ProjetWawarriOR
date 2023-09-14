@@ -1,12 +1,19 @@
 package Personnages;
+import java.util.*;
+//import org.apache.commons.lang3.StringUtils;
+import java.util.regex.Pattern;
+import java.util.regex.Matcher;
+
 
 public abstract class Personnage {
 
-    private String type;
-    private String name;
-    private int health;
-    private int strength;
-    private String offensive;
+    protected String type;
+    protected String name;
+    protected int health;
+    protected int strength;
+    protected String offensive;
+
+
 
     public void setDefensive(String defensive) {
         this.defensive = defensive;
@@ -106,7 +113,8 @@ public abstract class Personnage {
     }
 
     public String toString(){
-        return "Vous avez choisi un " + type + " qui s'appelle : " +  name.toUpperCase() +
+
+        return "Vous avez choisi un " + type + " qui s'appelle : " + name.toLowerCase() +
                 " | force d'attaque : " + strength + " | Vie " + health + "Equipement_Offensif : " + offensive +
                 " | Equipement-Defensif : " + defensive;
     }

@@ -112,6 +112,9 @@ public abstract class Personnage {
         return health;
     }
 
+
+
+
     public String toString(){
 
         return "Vous avez choisi un " + type + " qui s'appelle : " + name.toLowerCase() +

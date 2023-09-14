@@ -1,42 +1,58 @@
 import Personnages.Personnage;
 
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
+
 public class Game {
+
+
+     private String positionJoueur;
+
+     private ArrayList quelquechose;
+
+     private Map descases = new HashMap <String, String>();
 
     public Game() {
     }
 
-    public void jouerauJeu(Personnage player) {
+
+    public int lancementDuDE() {
+        int de = (int) (1 + 6 * Math.random());
+        return de;
+    }
+
+    // public void  jouer_un_tour()  qui sera en charge de lancer le dé, faire avancer le joueur, le
+    //faire interagir avec le plateau de jeu (s’équiper d’un bonus, lancer un combat, etc.), mettre à
+    //jour le statut d’avancement du jeu (en cours, quitter la partie, personnage mort, etc.). Et
+    //plus tard, de gérer plusieurs joueurs.
+
+
+    public void jouerauJeu (Personnage player) {
         if (player != null) {
             try {
                 jeuDe();
-
             } catch (PersonnageHorsPlateauException e) {
                 System.out.println("Personnage hors plateau : " + e.getMessage());
+                // et là ben .... on verra plus tard !!!!
             } finally {
-
-// et là ben .... on verra plus tard !!!!
+                System.out.println(" FINALLY ");
             }
         }
     }
 
 
+    // ICI JE VAIS RANGER MES EXCEPTIONS DE Jeu
 
 
+    // Là le consctucteur de mon exception
+//    public class PersonnageHorsPlateauException extends Exception {
+//        public PersonnageHorsPlateauException(String message) {
+//
+//            super(message);
+//        }
+//    }
 
-
-    // ICI JE VAIS RANGER MES EXCEPTIONS DE GAME
-
-
-    public class PersonnageHorsPlateauException extends Exception {
-        public PersonnageHorsPlateauException(String message) {
-            super(message);
-        }
-    }
-
-    public int lancementDuDE(){
-        int de = (int) (1 + 6 * Math.random());
-        return de;
-    }
 
     public void jeuDe() throws PersonnageHorsPlateauException {
         int position = 1;
@@ -49,10 +65,12 @@ public class Game {
             System.out.println("Votre lancé est de " + de);
 
             if (position > 64) {
-                throw new PersonnageHorsPlateauException("Le personnage est sorti du plateau.");
+                throw new PersonnageHorsPlateauException();
             }
         }
     }
+
+
 }
 
 

@@ -117,8 +117,8 @@ public abstract class Personnage {
 
     public String toString(){
 
-        return "Vous avez choisi un " + type + " qui s'appelle : " + name.toLowerCase() +
-                " | force d'attaque : " + strength + " | Vie " + health + "Equipement_Offensif : " + offensive +
+        return "Vous avez choisi un " + type + " qui s'appelle : " + name.toLowerCase() +  "\n" +
+                "| Force d'attaque : " + strength + " | Vie : " + health +  "\n" + "| Equipement-Offensif : " + offensive +
                 " | Equipement-Defensif : " + defensive;
     }
 

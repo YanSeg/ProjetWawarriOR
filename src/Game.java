@@ -1,8 +1,6 @@
 import Personnages.Personnage;
 
 import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Map;
 
 public class Game {
 
@@ -11,13 +9,17 @@ public class Game {
 
      private ArrayList quelquechose;
 
-     private Map descases = new HashMap <String, String>();
+     //private Map descases = new HashMap <String, String>();
 
     public Game() {
     }
 
 
-    public int lancementDuDE() {
+    public void jouerUnTour(){
+        ;
+    }
+
+    public int lancementDuddE() {
         int de = (int) (1 + 6 * Math.random());
         return de;
     }
@@ -58,7 +60,7 @@ public class Game {
         int position = 1;
 
         while (position < 64) {
-            int de = lancementDuDE();
+            int de = lancementDuddE();
             position = position + de;
 
             System.out.println("Vous êtes à la position : " + position);

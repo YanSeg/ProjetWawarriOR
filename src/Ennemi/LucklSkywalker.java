@@ -10,13 +10,7 @@ public class LucklSkywalker extends Ennemi {
         super("LucKSky", "Jedi", 50, 50, "Sabre", "LaForce");
     }
 
-    public LucklSkywalker(String type) {
-        super(type);
-    }
 
-    public LucklSkywalker(String type, String name) {
-        super(type, name);
-    }
 
 
 }

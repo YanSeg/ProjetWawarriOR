@@ -1,13 +1,18 @@
 package Ennemi;
 
+
+import Images.Choupi;
+
 public class Sylvitrouille extends Ennemi {
-    public Sylvitrouille(String name, String type, int health, Integer strength, String offensive, String defensive) {
-        super(name, type, health, strength, offensive, defensive);
+    public Sylvitrouille() {
+
+
+        super("Ennemi", "Sylvitrouille", 5, 5, "Citrouille", "Marshmello");
+        Choupi cc = new Choupi();
+        setImage(cc.citrouille());
     }
 
-    public Sylvitrouille() {
-        super("Sylvitrouille", "Ennemi", 5, 5, "Citrouille", "Marshmello");
-    }
+
 
 
 }

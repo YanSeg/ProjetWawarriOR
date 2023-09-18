@@ -1,13 +1,13 @@
-package Equipements.equipementOff;
+package Equipements.EquipementOff;
 
-abstract class EquipementOffensif {
+public abstract class EquipementOffensif {
 
     protected String offensifType;
     protected String offensifName;
-    protected Integer offensifStrenght;
+    protected int offensifStrenght;
 
 
-    protected EquipementOffensif(String offensifType, String offensifName, Integer offensifStrenght) {
+    protected EquipementOffensif(String offensifType, String offensifName, int offensifStrenght) {
         this.offensifType = offensifType;
         this.offensifName = offensifName;
         this.offensifStrenght = offensifStrenght;

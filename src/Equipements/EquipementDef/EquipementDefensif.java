@@ -1,4 +1,4 @@
-package Equipements.equipementDef;
+package Equipements.EquipementDef;
 
 public abstract class EquipementDefensif {
 
@@ -6,7 +6,7 @@ public abstract class EquipementDefensif {
     protected String defensifName;
     protected Integer defensifStrenght;
 
-    protected EquipementDefensif(String defensifType, String defensifName, Integer defensifStrenght) {
+    public EquipementDefensif(String defensifType, String defensifName, Integer defensifStrenght) {
         this.defensifType = defensifType;
         this.defensifName = defensifName;
         this.defensifStrenght = defensifStrenght;

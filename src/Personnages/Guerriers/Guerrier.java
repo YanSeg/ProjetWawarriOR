@@ -12,4 +12,6 @@ public class Guerrier extends Personnage {
     public Guerrier(String type, String name) {
         super(type, name);
     }
+
+
 }

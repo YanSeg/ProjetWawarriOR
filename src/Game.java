@@ -1,21 +1,24 @@
 import Personnages.Personnage;
+import PlateuDeJeu.Cases.*;
 
 import java.util.ArrayList;
 
 public class Game {
 
 
-     private String positionJoueur;
+    private int position;
+    private Personnage player;
+    private ArrayList<Cases> plateau;
 
-     private ArrayList quelquechose;
+    //ArrayList<Cases> plateau = new ArrayList<Cases>();
 
-     //private Map descases = new HashMap <String, String>();
+    //private Map descases = new HashMap <String, String>();
 
     public Game() {
     }
 
 
-    public void jouerUnTour(){
+    public void jouerUnTour() {
         ;
     }
 
@@ -24,6 +27,11 @@ public class Game {
         return de;
     }
 
+//    public void plateauDuJeuDef(){
+//
+//        ArrayList <Cases> = new ArrayList<Cases>();
+//
+//    }
     // public void  jouer_un_tour()  qui sera en charge de lancer le dé, faire avancer le joueur, le
     //faire interagir avec le plateau de jeu (s’équiper d’un bonus, lancer un combat, etc.), mettre à
     //jour le statut d’avancement du jeu (en cours, quitter la partie, personnage mort, etc.). Et
@@ -33,7 +41,7 @@ public class Game {
     public void jouerauJeu (Personnage player) {
         if (player != null) {
             try {
-                jeuDe();
+                jeuDe(player);
             } catch (PersonnageHorsPlateauException e) {
                 System.out.println("Personnage hors plateau : " + e.getMessage());
                 // et là ben .... on verra plus tard !!!!
@@ -56,24 +64,48 @@ public class Game {
 //    }
 
 
-    public void jeuDe() throws PersonnageHorsPlateauException {
-        int position = 1;
+    public void jeuDe (Personnage player) throws PersonnageHorsPlateauException {
 
-        while (position < 64) {
-            int de = lancementDuddE();
-            position = position + de;
+
+        Cases[] plateau = new Cases[4];
+        plateau[0]  = new CaseVide();
+        plateau[1] = new CaseEnnemi();
+        plateau[2] = new CaseArme();
+        plateau[3] = new CasePotion();
+
+        System.out.println(plateau);
+
+        for (position = 0; position < plateau.length; position++) {
 
             System.out.println("Vous êtes à la position : " + position);
-            System.out.println("Votre lancé est de " + de);
+            Cases Test;
+             Test = plateau[position];
+             Test.interact(player);
 
-            if (position > 64) {
-                throw new PersonnageHorsPlateauException();
-            }
+            System.out.println(player);
+           System.out.println(player.gethealth());
         }
+
+
     }
-
-
 }
 
 
+//
+//        while (position < 64) {
+//            int de = lancementDuddE();
+//            position = position + de;
+//
+//            System.out.println("Vous êtes à la position : " + position);
+//            System.out.println("Votre lancé est de " + de);
+//
+//            if (position > 64) {
+//                throw new PersonnageHorsPlateauException();
+//            }
 
+
+//    Cases[] plateau = new Cases[3];
+//        System.out.println("Vous êtes à la position : " + position);
+//
+//                plateau[0] = new CaseVide();
+//                plateau[1] = new CaseEnnemi();

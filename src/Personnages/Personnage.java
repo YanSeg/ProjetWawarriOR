@@ -1,26 +1,32 @@
 package Personnages;
+import PlateuDeJeu.Cases.Cases;
+
 import java.util.*;
 //import org.apache.commons.lang3.StringUtils;
 import java.util.regex.Pattern;
 import java.util.regex.Matcher;
 
 
+
 public abstract class Personnage {
 
-    protected String type;
-    protected String name;
-    protected int health;
-    protected int strength;
-    protected String offensive;
+    private String type;
+
+    public void setStrength(int strength) {
+        this.strength = strength;
+    }
+
+    private String name;
+    private int health;
+    private int strength;
+    private String offensive;
+    private String defensive;
 
 
 
     public void setDefensive(String defensive) {
         this.defensive = defensive;
     }
-
-    String defensive;
-
 
     public void setType(String type) {
         this.type = type;
@@ -57,9 +63,6 @@ public abstract class Personnage {
     }
 
 
-
-
-
     public Personnage() {
 
     }
@@ -74,35 +77,10 @@ public abstract class Personnage {
         this.name = name;
     }
 
-    /* Setter et Getter d'u attribut privé
-    private String name;
-
-    // Getter
-    public String getName() {
-        return name;
-    }
-
-    // Setter
-    public void setName(String newName) {
-        this.name = newName;
-    }
-    */
-
-/*
-
-    public void setPersonnage (String newName,String newType,  int health, Integer strength, String offensive, String defensive) {
-        this.name = newName;
-        this.type= newType;
-
-    }
-*/
-
-
 
     public String getName() {
         return name;
     }
-
 
     public String getType() {
         return type;
@@ -112,59 +90,36 @@ public abstract class Personnage {
         return health;
     }
 
-
-
-
     public String toString(){
 
-        return "Vous avez choisi un " + type + " qui s'appelle : " + name.toLowerCase() +  "\n" +
+        return "Vous avez choisi un " + type + " qui s'appelle : " + capitalizeFirstLetter(name.toLowerCase()) +  "\n" +
                 "| Force d'attaque : " + strength + " | Vie : " + health +  "\n" + "| Equipement-Offensif : " + offensive +
                 " | Equipement-Defensif : " + defensive;
     }
 
-}
 
-    /*
-    public EquipementOffensif (){
-        ;
+
+
+
+
+    public  String capitalizeFirstLetter(String input) {
+        if (input == null || input.isEmpty()) {
+            return input; // Retourne la chaîne telle quelle si elle est nulle ou vide
+        }
+        char firstChar = Character.toUpperCase(input.charAt(0));
+        return firstChar + input.substring(1);
     }
-*/
 
 
 
+//
+//
+//    String input = "bonjour";
+//    String capitalized = capitalizeFirstLetter(input);
+//System.out.println(capitalized); // Cela affichera "Bonjour"
 
-    /*
-    class Student{
-	String name;
-	String rollNo;
 
-	//constructor
-	Student(String name, String rollNo){
-		this.name = name;
-		this.rollNo = rollNo;
-	}
-
-	//Override toString method to get customize results.
-	public String toString(){
-		return "Name:" + name + ", RollNo: " + rollNo;
-	}
 }
-
-public class ToStringExample2 {
-	public static void main(String args[]){
-		//creating Student class object
-		Student stu1 = new Student("Sunil", "MCA/07/15");
-		Student stu2 = new Student("Sandy", "MCA/07/19");
-		Student stu3 = new Student("Roxy", "MCA/07/32");
-
-		//println internally call toString method
-		System.out.println(stu1);
-		System.out.println(stu2);
-		System.out.println(stu3);
-	}
-}
-*/
-
 
 
 

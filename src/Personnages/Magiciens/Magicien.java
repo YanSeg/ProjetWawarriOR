@@ -6,6 +6,7 @@ import Personnages.Personnage;
 
 
 public class Magicien extends Personnage {
+
 //    public Magicien(String name, String type, int health, Integer strength, String offensive, String defensive) {
 //        super(name, type, health, strength, offensive, defensive);
 //    }

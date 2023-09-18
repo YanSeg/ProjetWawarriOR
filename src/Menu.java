@@ -1,3 +1,4 @@
+import Game.Game;
 import Personnages.Personnage;
 import Personnages.Magiciens.Magicien;
 import Personnages.Guerriers.Guerrier;
@@ -72,7 +73,7 @@ public class Menu {
     }
 
     private Personnage createPersonnage() {
-        System.out.println("Tapez 1 : Magicien | Tapez 2 : Guerrier");
+        System.out.println("Tapez 1 : Guerrier | Tapez 2 : Magicien");
         String persoType;
         String persoName;
          //Personnage player;

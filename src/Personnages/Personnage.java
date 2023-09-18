@@ -22,7 +22,21 @@ public abstract class Personnage {
     private String offensive;
     private String defensive;
 
+    public int getHealth() {
+        return health;
+    }
 
+    public int getStrength() {
+        return strength;
+    }
+
+    public String getOffensive() {
+        return offensive;
+    }
+
+    public String getDefensive() {
+        return defensive;
+    }
 
     public void setDefensive(String defensive) {
         this.defensive = defensive;

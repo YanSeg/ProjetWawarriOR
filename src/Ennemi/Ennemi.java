@@ -4,6 +4,27 @@ public abstract class Ennemi {
 
 
     private String type;
+
+    public int getHealth() {
+        return health;
+    }
+
+    public int getStrength() {
+        return strength;
+    }
+
+    public void setStrength(int strength) {
+        this.strength = strength;
+    }
+
+    public String getOffensive() {
+        return offensive;
+    }
+
+    public String getDefensive() {
+        return defensive;
+    }
+
     private String name;
     private int health;
     private int strength;
@@ -16,7 +37,7 @@ public abstract class Ennemi {
 
         this.name = name;
         this.type = type;
-        this.name = name;
+        this.name = "Ennemi";
         this.health = health;
         this.strength = strength;
         this.offensive = offensive;

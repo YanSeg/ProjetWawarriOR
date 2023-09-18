@@ -1,3 +1,5 @@
+package Game;
+
 public class PersonnageHorsPlateauException extends Exception{
     public PersonnageHorsPlateauException() {
         super(" \n" +

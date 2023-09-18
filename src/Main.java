@@ -1,3 +1,4 @@
+import Game.Game;
 import Images.Choupi;
 import PlateuDeJeu.Cases.Cases;
 import Ennemi.LucklSkywalker;

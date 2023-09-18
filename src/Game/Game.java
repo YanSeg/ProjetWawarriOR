@@ -1,5 +1,8 @@
+package Game;
+
 import Personnages.Personnage;
 import PlateuDeJeu.Cases.*;
+import java.util.*;
 
 import java.util.ArrayList;
 
@@ -73,11 +76,10 @@ public class Game {
         plateau[2] = new CaseArme();
         plateau[3] = new CasePotion();
 
-        System.out.println(plateau);
 
         for (position = 0; position < plateau.length; position++) {
 
-            System.out.println("Vous êtes à la position : " + position);
+            System.out.println("Vous êtes à la position : " + position +  "\r\n");
             Cases Test;
              Test = plateau[position];
              Test.interact(player);

@@ -1,11 +1,8 @@
 package PlateuDeJeu.Cases;
 
-import Ennemi.LucklSkywalker;
 import Personnages.Personnage;
 import Ennemi.Sylvitrouille;
 import Images.Choupi;
-
-import java.awt.*;
 
 
 public class CaseEnnemi implements Cases {

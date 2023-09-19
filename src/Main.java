@@ -1,7 +1,7 @@
 import Game.Game;
 import Images.Choupi;
 import PlateuDeJeu.Cases.Cases;
-import Ennemi.LucklSkywalker;
+import Ennemi.LuckSkywalker;
 
 import java.util.ArrayList;
 
@@ -23,8 +23,8 @@ public class Main {
         Menu menu = new Menu();
         Choupi choupi = new Choupi();
 
-        LucklSkywalker luck = new LucklSkywalker();
-        System.out.println(luck);
+//        LuckSkywalker luck = new LuckSkywalker();
+//        System.out.println(luck);
 
 
             menu.space();

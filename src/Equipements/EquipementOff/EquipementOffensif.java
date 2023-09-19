@@ -3,7 +3,22 @@ package Equipements.EquipementOff;
 public abstract class EquipementOffensif {
 
     protected String offensifType;
+    protected int offensifStrenght;
     protected String offensifName;
+    protected String image;
+
+
+    public EquipementOffensif(String offensifType, int offensifStrenght, String offensifName) {
+        this.offensifType = offensifType;
+        this.offensifStrenght = offensifStrenght;
+        this.offensifName = offensifName;
+    }
+
+
+
+
+    public EquipementOffensif() {
+    }
 
     public EquipementOffensif(String offensifType, String offensifName, int offensifStrenght, String image) {
         this.offensifType = offensifType;
@@ -20,8 +35,8 @@ public abstract class EquipementOffensif {
         this.image = image;
     }
 
-    protected int offensifStrenght;
-    protected String image;
+
+
 
     public String getOffensifType() {
         return offensifType;

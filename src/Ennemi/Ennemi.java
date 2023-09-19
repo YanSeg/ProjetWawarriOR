@@ -10,6 +10,18 @@ public abstract class Ennemi {
     private String offensive;
     private String defensive;
 
+    private String description;
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+
+
     public Ennemi() {
 
     }

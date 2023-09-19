@@ -8,11 +8,8 @@ public class Sylvitrouille extends Ennemi {
 
 
         super("Ennemi", "Sylvitrouille", 5, 5, "Citrouille", "Marshmello");
-        Choupi cc = new Choupi();
-        setImage(cc.citrouille());
+        Choupi image = new Choupi();
+        setImage(image.citrouille());
     }
-
-
-
 
 }

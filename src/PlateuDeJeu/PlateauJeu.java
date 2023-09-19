@@ -1,88 +1,97 @@
 package PlateuDeJeu;
+
+import Ennemi.Ennemi;
+import Equipements.EquipementDef.Boucliers.Boucliers;
+import Equipements.EquipementDef.Philtres.Philtres;
+import Equipements.EquipementOff.Armes.Armes;
+import Equipements.EquipementOff.Sorts.Sorts;
+import PlateuDeJeu.Cases.Cases;
+import Ennemi.*;
+
 import javax.swing.*;
 import java.awt.*;
 import java.net.InterfaceAddress;
+import java.util.ArrayList;
 
 
 public class PlateauJeu {
 
+    private ArrayList<Cases> plateau;
 
-//
-//    // Création de l'ArrayList de Case
- //  ArrayList <Class> plateau = new ArrayList<>();
-//
-//    // Ajout d'instances de CaseVide et CaseOccupee à l'ArrayList
-//        plateau.add(new CaseVide());
-//        plateau.add(new CaseOccupee());
-//
-//    // Vous pouvez ajouter d'autres éléments au plateau si nécessaire
-//}
+    private ArrayList<Ennemi> listEnnemis;
+
+    private ArrayList<Boucliers> listBoucliers;
+    private ArrayList<Philtres> listPhiltres;
+
+    private ArrayList<Armes> listArmes;
+
+
+    // Un constructeur vide qui initie le plateau de jeu
+    public PlateauJeu() {
+    }
+
+    private ArrayList<Sorts> listSorts;
+
+
+    //  _______________________________________________________________ Get/SET à voir
+    public ArrayList<Cases> getPlateau() {
+        return plateau;
+    }
+
+    public void setPlateau(ArrayList<Cases> plateau) {
+        this.plateau = plateau;
+    }
+
+    public ArrayList<Ennemi.Ennemi> getListEnnemis() {
+        return listEnnemis;
+    }
+
+    public void setListEnnemis(ArrayList<Ennemi.Ennemi> listEnnemis) {
+        this.listEnnemis = listEnnemis;
+    }
+
+    public ArrayList<Boucliers> getListBoucliers() {
+        return listBoucliers;
+    }
+
+    public void setListBoucliers(ArrayList<Boucliers> listBoucliers) {
+        this.listBoucliers = listBoucliers;
+    }
+
+    public ArrayList<Philtres> getListPhiltres() {
+        return listPhiltres;
+    }
+
+    public void setListPhiltres(ArrayList<Philtres> listPhiltres) {
+        this.listPhiltres = listPhiltres;
+    }
+
+    public ArrayList<Armes> getListArmes() {
+        return listArmes;
+    }
+
+    public void setListArmes(ArrayList<Armes> listArmes) {
+        this.listArmes = listArmes;
+    }
+
+    public ArrayList<Sorts> getListSorts() {
+        return listSorts;
+    }
+
+    public void setListSorts(ArrayList<Sorts> listSorts) {
+        this.listSorts = listSorts;
+    }
+
+
+//  _______________________________________________________________ Get/SET à voir
+
+
+    public void arrayDesEnnemis() {
+
+        IronMan ironman = new IronMan();
+        GouleGlouton goule = new GouleGlouton();
+;
+    }
+
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//public class PlateauJeu extends JPanel{
-//    public PlateauJeu(LayoutManager layout, boolean isDoubleBuffered) {
-//        super(layout, isDoubleBuffered);
-//    }
-//
-//    public PlateauJeu(LayoutManager layout) {
-//        super(layout);
-//    }
-//
-//    public PlateauJeu(boolean isDoubleBuffered) {
-//        super(isDoubleBuffered);
-//    }
-//
-//    public PlateauJeu() {
-//    }
-//
-//
-//    @Override
-//    protected void paintComponent(Graphics g) {
-//        super.paintComponent(g);
-//
-//
-//        for (int ligne = 0; ligne < 7; ligne++) {
-//            for (int colonne = 0; colonne < 10; colonne++) {
-//                if ((ligne + colonne) % 2 == 0) {
-//                    g.setColor(Color.WHITE);
-//                } else {
-//                    g.setColor(Color.BLACK);
-//                }
-//                int x = colonne * 50; //tailleCase;
-//                int y = ligne * 50; // tailleCase;
-//                g.fillRect(x, y, 50,50);//tailleCase, tailleCase);
-//            }
-//        }
-//    }
-//}

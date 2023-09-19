@@ -1,6 +1,19 @@
 package Ennemi;
 
 public abstract class Ennemi {
+    @Override
+    public String toString() {
+        return "Ennemi{" +
+                "image='" + image + '\'' +
+                ", type='" + type + '\'' +
+                ", name='" + name + '\'' +
+                ", health=" + health +
+                ", strength=" + strength +
+                ", offensive='" + offensive + '\'' +
+                ", defensive='" + defensive + '\'' +
+                ", description='" + description + '\'' +
+                '}';
+    }
 
     private String image;
     private String type;

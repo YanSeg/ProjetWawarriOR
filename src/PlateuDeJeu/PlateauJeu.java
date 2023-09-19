@@ -18,12 +18,13 @@ public class PlateauJeu {
 
     private ArrayList<Cases> plateau;
 
-    private ArrayList<Ennemi> listEnnemis;
+
 
     private ArrayList<Boucliers> listBoucliers;
     private ArrayList<Philtres> listPhiltres;
 
     private ArrayList<Armes> listArmes;
+
 
 
     // Un constructeur vide qui initie le plateau de jeu
@@ -42,13 +43,9 @@ public class PlateauJeu {
         this.plateau = plateau;
     }
 
-    public ArrayList<Ennemi.Ennemi> getListEnnemis() {
-        return listEnnemis;
-    }
 
-    public void setListEnnemis(ArrayList<Ennemi.Ennemi> listEnnemis) {
-        this.listEnnemis = listEnnemis;
-    }
+
+
 
     public ArrayList<Boucliers> getListBoucliers() {
         return listBoucliers;
@@ -86,11 +83,46 @@ public class PlateauJeu {
 //  _______________________________________________________________ Get/SET à voir
 
 
-    public void arrayDesEnnemis() {
+    public ArrayList<Ennemi> arrayDesEnnemis() {
+
+
+        ArrayList<Ennemi> listEnnemis = new ArrayList<Ennemi>();
 
         IronMan ironman = new IronMan();
         GouleGlouton goule = new GouleGlouton();
-;
+        GodFather parrain = new GodFather();
+        Kurbi kurbi = new Kurbi();
+        LeCheveuduDiable chauv = new LeCheveuduDiable();
+        LeSexyMan sexyMan = new LeSexyMan();
+        LicheMaudite licheMaudite = new LicheMaudite();
+        LinkLeMagnifique link = new LinkLeMagnifique();
+        LuckSkywalker luckSkywalker = new LuckSkywalker();
+        NecromancienSombre necromancienSombre = new NecromancienSombre();
+        SorciereChatouille sorciereChatouille = new SorciereChatouille();
+        SpectreDeNuit spectreDeNuit = new SpectreDeNuit();
+        Sylvitrouille sylvitrouille = new Sylvitrouille();
+        TrollTruculent trollTruculent = new TrollTruculent();
+        WendigoSanguinaire wendigoSanguinaire = new WendigoSanguinaire();
+        XenaLaGuerriere xenaLaGuerriere = new XenaLaGuerriere();
+
+        listEnnemis.add(ironman);
+        listEnnemis.add( goule);
+        listEnnemis.add( parrain);
+        listEnnemis.add(kurbi);
+        listEnnemis.add(chauv);
+        listEnnemis.add(sexyMan);
+        listEnnemis.add(licheMaudite);
+        listEnnemis.add(link);
+        listEnnemis.add(luckSkywalker);
+        listEnnemis.add(necromancienSombre);
+        listEnnemis.add(sorciereChatouille);
+        listEnnemis.add(spectreDeNuit);
+        listEnnemis.add( sylvitrouille);
+        listEnnemis.add(trollTruculent);
+        listEnnemis.add(wendigoSanguinaire);
+        listEnnemis.add(xenaLaGuerriere);
+
+        return listEnnemis;
     }
 
 

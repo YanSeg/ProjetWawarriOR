@@ -1,4 +1,4 @@
-package Ennemi;
+package Ennemis;
 
 public abstract class Ennemi {
     @Override

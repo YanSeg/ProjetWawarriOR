@@ -1,9 +1,6 @@
-import Ennemi.Ennemi;
 import Game.Game;
 import Images.Choupi;
 import PlateuDeJeu.Cases.Cases;
-import Ennemi.LuckSkywalker;
-import  PlateuDeJeu.*;
 
 import java.util.ArrayList;
 
@@ -20,26 +17,27 @@ public class Main {
 
 
        // System.out.println(testEnum.SOIR);
-
-        PlateauJeu plty = new PlateauJeu();
-
-        ArrayList<Ennemi> arrayListEnnemi = plty.arrayDesEnnemis();
-//        Ennemi ennemi = new Ennemi();
-
-
-   //
+//
+//        PlateauJeu plty = new PlateauJeu();
+//
+//        ArrayList<Ennemi> arrayListEnnemi = plty.arrayDesEnnemis();
+////        Ennemi ennemi = new Ennemi();
+//
+//
+//        //
 //        System.out.println(arrayListEnnemi.size());
 //
 //        for(Ennemi object : arrayListEnnemi){
 //            System.out.println(object.getDefensive());
 //            System.out.println(object.getImage());
+//
 //        }
 
 //
 
        // arrayListEnnemi.forEach(System.out::println);
 
-        System.out.println(arrayListEnnemi.toString());
+//        System.out.println(arrayListEnnemi.toString());
 
 //        for (int i =0; i <arrayListEnnemi.size(); i++){
 //            System.out.println(arrayListEnnemi.toString());

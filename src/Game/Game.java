@@ -31,7 +31,7 @@ public class Game {
         return de;
     }
 
-    public void jouerauJeu (Personnage player) {
+    public void jouerauJeu(Personnage player) {
         if (player != null) {
             try {
                 jeuDe(player);
@@ -61,11 +61,8 @@ public class Game {
             Cases Test;
             Test = plateau[position];
             Test.interact(player);
-
             System.out.println(player);
             System.out.println(player.gethealth());
         }
-
-
     }
 }

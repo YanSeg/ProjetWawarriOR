@@ -179,6 +179,7 @@ public class Menu {
                         space();
                     }
                     space();
+                 //   player = null;
                     break;
                 case 5:
                     lemenu = false;

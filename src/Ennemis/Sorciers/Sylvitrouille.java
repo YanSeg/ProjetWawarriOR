@@ -1,13 +1,14 @@
-package Ennemi;
+package Ennemis.Sorciers;
 
 
+import Ennemis.Ennemi;
 import Images.Choupi;
 
 public class Sylvitrouille extends Ennemi {
     public Sylvitrouille() {
 
 
-        super("Ennemi", "Sylvitrouille", 5, 5, "Citrouille", "Marshmello");
+        super("Ennemis", "Sylvitrouille", 5, 5, "Citrouille", "Marshmello");
         Choupi image = new Choupi();
         setImage(image.citrouille());
     }

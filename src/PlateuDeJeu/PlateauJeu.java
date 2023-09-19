@@ -1,16 +1,20 @@
 package PlateuDeJeu;
 
-import Ennemi.Ennemi;
+import Ennemis.JeuFilm.Kurbi;
+import Ennemis.Ennemi;
+import Ennemis.Gobelin.TrollTruculent;
+import Ennemis.HommePoli.GodFather;
+import Ennemis.HommePoli.NecromancienSombre;
+import Ennemis.Jedi.LuckSkywalker;
+import Ennemis.JeuFilm.IronMan;
+import Ennemis.JeuFilm.LinkLeMagnifique;
+import Ennemis.Sorciers.*;
 import Equipements.EquipementDef.Boucliers.Boucliers;
 import Equipements.EquipementDef.Philtres.Philtres;
 import Equipements.EquipementOff.Armes.Armes;
 import Equipements.EquipementOff.Sorts.Sorts;
 import PlateuDeJeu.Cases.Cases;
-import Ennemi.*;
 
-import javax.swing.*;
-import java.awt.*;
-import java.net.InterfaceAddress;
 import java.util.ArrayList;
 
 
@@ -103,7 +107,7 @@ public class PlateauJeu {
         Sylvitrouille sylvitrouille = new Sylvitrouille();
         TrollTruculent trollTruculent = new TrollTruculent();
         WendigoSanguinaire wendigoSanguinaire = new WendigoSanguinaire();
-        XenaLaGuerriere xenaLaGuerriere = new XenaLaGuerriere();
+        SorciereXena sorciereXena = new SorciereXena();
 
         listEnnemis.add(ironman);
         listEnnemis.add( goule);
@@ -120,7 +124,7 @@ public class PlateauJeu {
         listEnnemis.add( sylvitrouille);
         listEnnemis.add(trollTruculent);
         listEnnemis.add(wendigoSanguinaire);
-        listEnnemis.add(xenaLaGuerriere);
+        listEnnemis.add(sorciereXena);
 
         return listEnnemis;
     }

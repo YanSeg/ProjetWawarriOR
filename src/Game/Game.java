@@ -32,6 +32,7 @@ public class Game {
     }
 
     public void jouerauJeu(Personnage player) {
+
         if (player != null) {
             try {
                 jeuDe(player);

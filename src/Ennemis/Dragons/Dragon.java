@@ -1,6 +1,8 @@
 package Ennemis.Dragons;
 
-public abstract class Dragon {
+import Ennemis.Ennemi;
+
+public abstract class Dragon extends Ennemi {
     private String image;
     private String type;
     private String name;

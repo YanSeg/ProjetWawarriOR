@@ -3,7 +3,7 @@ package Ennemis.JeuFilm;
 import Ennemis.Ennemi;
 import Images.Choupi;
 
-public class Kurbi extends Ennemi {
+public class Kurbi extends SuperHero {
     public Kurbi() {
         super("Ennemis", "kurbi", 8, 7, "L'épée de Morpho Knight", "Eject Punch");
         Choupi image = new Choupi();

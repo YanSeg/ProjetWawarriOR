@@ -3,7 +3,7 @@ package Ennemis.Gobelin;
 import Ennemis.Ennemi;
 import Images.Choupi;
 
-public class Roublard extends Ennemi {
+public class Roublard extends Gobelin {
     public Roublard() {
         super("Gobelin", "Roublard le Sournois", 3, 5, "Arc furtif", " Cape d'ombres");
         Choupi image = new Choupi();

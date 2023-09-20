@@ -3,7 +3,7 @@ package Ennemis.Gobelin;
 import Ennemis.Ennemi;
 import Images.Choupi;
 
-public class Grimmog extends Ennemi {
+public class Grimmog extends Gobelin {
 
     public Grimmog() {
         super("Gobelin", "Le Troll Truculent", 3, 5, "Massue à pointes", "Plastron en os");

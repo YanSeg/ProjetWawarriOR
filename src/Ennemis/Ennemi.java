@@ -1,6 +1,6 @@
 package Ennemis;
 
-public abstract class Ennemi {
+public class Ennemi {
     @Override
     public String toString() {
         return "Ennemi{" +

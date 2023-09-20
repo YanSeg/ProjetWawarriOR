@@ -171,7 +171,7 @@ public class Menu {
                     break;
                 case 4:
                     space();
-                    Game game = new Game();
+                    Game game = new Game(); // Pas là
                     if (player != null) {
                         game.jouerauJeu(player);
                     } else {

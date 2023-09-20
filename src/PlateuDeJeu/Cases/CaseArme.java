@@ -1,6 +1,7 @@
 package PlateuDeJeu.Cases;
 
 import Equipements.EquipementOff.Armes.Armes;
+import Equipements.EquipementOff.Armes.Epees.EpeeCryogenique;
 import Personnages.Personnage;
 
 public class CaseArme implements Cases {
@@ -8,7 +9,7 @@ public class CaseArme implements Cases {
     @Override
     public void interact(Personnage player) {
 
-        Armes arme = new Armes("épée", 20);
+        Armes arme = new EpeeCryogenique();
 
         if (player.getType().equals("Guerrier")) {
             int result = (player.getStrength() + arme.getOffensifStrenght());

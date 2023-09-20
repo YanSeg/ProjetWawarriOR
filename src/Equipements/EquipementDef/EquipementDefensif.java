@@ -2,9 +2,32 @@ package Equipements.EquipementDef;
 
 public abstract class EquipementDefensif {
 
-    protected String defensifType;
-    protected String defensifName;
-    protected int defensifStrenght;
+    private String defensifType;
+    private int defensifStrenght;
+    private String description;
+    private String image;
+    private String defensifName;
+
+
+
+
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public EquipementDefensif() {
+    }
+
+    public EquipementDefensif(String defensifType) {
+        this.defensifType = defensifType;
+    }
+
+
 
     public String getDefensifType() {
         return defensifType;
@@ -38,7 +61,7 @@ public abstract class EquipementDefensif {
         this.image = image;
     }
 
-    protected String image;
+
 
     public EquipementDefensif(String defensifType, String defensifName, int defensifStrenght) {
         this.defensifType = defensifType;

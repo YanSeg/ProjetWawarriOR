@@ -4,7 +4,7 @@ package Ennemis.Sorciers;
 import Ennemis.Ennemi;
 import Images.Choupi;
 
-public class Sylvitrouille extends Ennemi {
+public class Sylvitrouille extends Sorcier {
     public Sylvitrouille() {
 
 

@@ -3,7 +3,7 @@ package Ennemis.Gobelin;
 import Ennemis.Ennemi;
 import Images.Choupi;
 
-public class Sombra extends Ennemi {
+public class Sombra extends Gobelin {
     public Sombra() {
         super("Gobelin", "Sombra l'Ombre", 3, 5, "Dagues empoisonnées", "Manteau d'invisibilité");
         Choupi image = new Choupi();

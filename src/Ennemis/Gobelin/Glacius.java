@@ -3,7 +3,7 @@ package Ennemis.Gobelin;
 import Ennemis.Ennemi;
 import Images.Choupi;
 
-public class Glacius extends Ennemi {
+public class Glacius extends Gobelin {
     public Glacius() {
         super("Gobelin", "Le Troll Truculent", 3, 5, "Sceptre de glace", "Armure de givre");
         Choupi image = new Choupi();

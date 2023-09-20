@@ -3,7 +3,7 @@ package Ennemis.Sorciers;
 import Ennemis.Ennemi;
 import Images.Choupi;
 
-public class LicheMaudite extends Ennemi {
+public class LicheMaudite extends Sorcier {
 
 
     public LicheMaudite() {

@@ -4,7 +4,7 @@ import Ennemis.JeuFilm.Kurbi;
 import Ennemis.Ennemi;
 import Ennemis.Gobelin.TrollTruculent;
 import Ennemis.HommePoli.GodFather;
-import Ennemis.HommePoli.NecromancienSombre;
+import Ennemis.HommePoli.leV;
 import Ennemis.Jedi.LuckSkywalker;
 import Ennemis.JeuFilm.IronMan;
 import Ennemis.JeuFilm.LinkLeMagnifique;
@@ -101,7 +101,7 @@ public class PlateauJeu {
         LicheMaudite licheMaudite = new LicheMaudite();
         LinkLeMagnifique link = new LinkLeMagnifique();
         LuckSkywalker luckSkywalker = new LuckSkywalker();
-        NecromancienSombre necromancienSombre = new NecromancienSombre();
+        leV leV = new leV();
         SorciereChatouille sorciereChatouille = new SorciereChatouille();
         SpectreDeNuit spectreDeNuit = new SpectreDeNuit();
         Sylvitrouille sylvitrouille = new Sylvitrouille();
@@ -118,7 +118,7 @@ public class PlateauJeu {
         listEnnemis.add(licheMaudite);
         listEnnemis.add(link);
         listEnnemis.add(luckSkywalker);
-        listEnnemis.add(necromancienSombre);
+        listEnnemis.add(leV);
         listEnnemis.add(sorciereChatouille);
         listEnnemis.add(spectreDeNuit);
         listEnnemis.add( sylvitrouille);

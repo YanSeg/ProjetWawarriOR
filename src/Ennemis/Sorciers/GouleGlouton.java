@@ -3,7 +3,7 @@ package Ennemis.Sorciers;
 import Ennemis.Ennemi;
 import Images.Choupi;
 
-public class GouleGlouton extends Ennemi {
+public class GouleGlouton extends Sorcier {
 
 
     public GouleGlouton() {

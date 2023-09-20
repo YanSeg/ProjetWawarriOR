@@ -3,7 +3,7 @@ package Ennemis.Gobelin;
 import Ennemis.Ennemi;
 import Images.Choupi;
 
-public class Furie extends Ennemi {
+public class Furie extends Gobelin {
 
     public Furie() {
         super("Gobelin", "Furie l'Écumante", 3, 5, "Trident empoisonné", "Écailles toxiques");

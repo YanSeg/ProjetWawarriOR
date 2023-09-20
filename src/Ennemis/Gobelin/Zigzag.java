@@ -3,7 +3,7 @@ package Ennemis.Gobelin;
 import Ennemis.Ennemi;
 import Images.Choupi;
 
-public class Zigzag extends Ennemi {
+public class Zigzag extends Gobelin {
 
     public Zigzag() {
         super("Gobelin", "Zigzag l'Éclair", 3, 8, "Baguette magique électrique", "Cape d'énergie électrique");

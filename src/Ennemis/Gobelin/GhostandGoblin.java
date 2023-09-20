@@ -3,7 +3,7 @@ package Ennemis.Gobelin;
 import Ennemis.Ennemi;
 import Images.Choupi;
 
-public class GhostandGoblin extends Ennemi {
+public class GhostandGoblin extends Gobelin {
 
     public GhostandGoblin() {
         super("Gobelin", "Arthur ", 1, 15, "Epée ", "Une armure qu'il perd souvent");

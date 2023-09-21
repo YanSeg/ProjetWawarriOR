@@ -12,9 +12,9 @@ public class CaseArme implements Cases {
         Armes arme = new EpeeCryogenique();
 
         if (player.getType().equals("Guerrier")) {
-            int result = (player.getStrength() + arme.getOffensifStrenght());
+            int result = (player.getStrength() + arme.getStrenght());
             player.setStrength(result);
-            System.out.println("Votre joueur est tombé sur une case " + arme.getOffensifType() + " qui a " + arme.getOffensifStrenght() + " de force." +
+            System.out.println("Votre joueur est tombé sur une case " + arme.getType() + " qui a " + arme.getStrenght() + " de force." +
                     "\r\n" +
                     "Votre" + player.getType() + "est maintenant à : " + player.getStrength() + " de force.");
         }else{

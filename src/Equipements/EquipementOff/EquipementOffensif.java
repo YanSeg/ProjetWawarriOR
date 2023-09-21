@@ -1,10 +1,12 @@
 package Equipements.EquipementOff;
 
-public abstract class EquipementOffensif {
+import Equipements.Equipements;
 
-    private String offensifType;
-    private int offensifStrenght;
-    private String offensifName;
+public abstract class EquipementOffensif extends Equipements {
+
+    private String type;
+    private int strenght;
+    private String name;
     private String image;
     private String description;
 
@@ -19,9 +21,9 @@ public abstract class EquipementOffensif {
 
 
     public EquipementOffensif(String offensifType, int offensifStrenght, String offensifName) {
-        this.offensifType = offensifType;
-        this.offensifStrenght = offensifStrenght;
-        this.offensifName = offensifName;
+        this.type = offensifType;
+        this.strenght = offensifStrenght;
+        this.name = offensifName;
     }
 
 
@@ -29,9 +31,9 @@ public abstract class EquipementOffensif {
     }
 
     public EquipementOffensif(String offensifType, String offensifName, int offensifStrenght, String image) {
-        this.offensifType = offensifType;
-        this.offensifName = offensifName;
-        this.offensifStrenght = offensifStrenght;
+        this.type = offensifType;
+        this.name = offensifName;
+        this.strenght = offensifStrenght;
         this.image = image;
     }
 
@@ -44,35 +46,35 @@ public abstract class EquipementOffensif {
     }
 
 
-    public String getOffensifType() {
-        return offensifType;
+    public String getType() {
+        return type;
     }
 
-    public void setOffensifType(String offensifType) {
-        this.offensifType = offensifType;
+    public void setType(String type) {
+        this.type = type;
     }
 
-    public String getOffensifName() {
-        return offensifName;
+    public String getName() {
+        return name;
     }
 
-    public void setOffensifName(String offensifName) {
-        this.offensifName = offensifName;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public int getOffensifStrenght() {
-        return offensifStrenght;
+    public int getStrenght() {
+        return strenght;
     }
 
-    public void setOffensifStrenght(int offensifStrenght) {
-        this.offensifStrenght = offensifStrenght;
+    public void setStrenght(int strenght) {
+        this.strenght = strenght;
     }
 
 
     protected EquipementOffensif(String offensifType, String offensifName, int offensifStrenght) {
-        this.offensifType = offensifType;
-        this.offensifName = offensifName;
-        this.offensifStrenght = offensifStrenght;
+        this.type = offensifType;
+        this.name = offensifName;
+        this.strenght = offensifStrenght;
     }
 
 

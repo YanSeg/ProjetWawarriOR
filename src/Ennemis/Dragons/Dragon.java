@@ -11,6 +11,17 @@ public abstract class Dragon extends Ennemi {
     private String offensive;
     private String description;
 
+    private String defensive;
+
+
+    @Override
+    public String toString() {
+        return " " + image + "\n"
+                + name + "\n" + description + "\n" +
+                " | Vie: " + health + " | Force : " + strength + " | Attaque : " + offensive + " | Défense : " + defensive + "";
+    }
+
+
 
 
     public Dragon(String type, String name, int health, int strength, String offensive, String defensive) {
@@ -92,7 +103,7 @@ public abstract class Dragon extends Ennemi {
         this.description = description;
     }
 
-    private String defensive;
+
 
     public Dragon(String type, String name, int health, int strength, String offensive, String defensive, String description) {
         this.type = type;

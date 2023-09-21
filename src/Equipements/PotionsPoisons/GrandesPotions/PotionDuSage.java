@@ -1,14 +1,14 @@
-package PotionsPoisons.GrandesPotions;
+package Equipements.PotionsPoisons.GrandesPotions;
 
 import Images.Choupi;
-import PotionsPoisons.Potions;
+import Equipements.PotionsPoisons.Potions;
 
 public class PotionDuSage extends Potions {
 
     public PotionDuSage() {
-        super(15, 8, 5, 15);
+        super(8, "Potion d'attaque", 20, 12, 8);
         Choupi image = new Choupi();
-        setimage(image.potion12());
+        setImage(image.potion12());
         String description = "Une grande potion qui restaure principalement le vie, mais aussi un peu de points de défence.";
         setDescription(description);
     }

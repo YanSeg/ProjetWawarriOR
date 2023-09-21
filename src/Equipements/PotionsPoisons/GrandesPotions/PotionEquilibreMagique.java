@@ -1,14 +1,14 @@
-package PotionsPoisons.GrandesPotions;
+package Equipements.PotionsPoisons.GrandesPotions;
 
 import Images.Choupi;
-import PotionsPoisons.Potions;
+import Equipements.PotionsPoisons.Potions;
 
 public class PotionEquilibreMagique extends Potions {
 
     public PotionEquilibreMagique() {
-        super("Potion d'Équilibre Magique",15, 15, 15, 15);
+        super(15,"Potion d'Équilibre Magique", 15, 15, 15);
         Choupi image = new Choupi();
-        setimage(image.potion8());
+        setImage(image.potion8());
         String description = "Une grande potion équilibrée.";
         setDescription(description);
     }

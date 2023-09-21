@@ -1,4 +1,5 @@
 package Personnages;
+import MiseEnPage.MiseEnPage;
 import PlateuDeJeu.Cases.Cases;
 
 import java.util.*;
@@ -109,6 +110,13 @@ public abstract class Personnage {
         return "Vous avez choisi un " + type + " qui s'appelle : " + capitalizeFirstLetter(name.toLowerCase()) +  "\n" +
                 "| Force d'attaque : " + strength + " | Vie : " + health +  "\n" + "| Equipement-Offensif : " + offensive +
                 " | Equipement-Defensif : " + defensive;
+    }
+
+    public String evolutionPartie(){
+        MiseEnPage.space();
+        return " Vous en êtes  à : " + "\n"+ "| Force d'attaque : " + strength + " | Vie : " + health + "| Equipement-Offensif : " + offensive +
+                " | Equipement-Defensif : " + defensive;
+
     }
 
 

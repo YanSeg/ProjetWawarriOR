@@ -3,16 +3,9 @@ package Ennemis;
 public class Ennemi {
     @Override
     public String toString() {
-        return "Ennemi{" +
-                "image='" + image + '\'' +
-                ", type='" + type + '\'' +
-                ", name='" + name + '\'' +
-                ", health=" + health +
-                ", strength=" + strength +
-                ", offensive='" + offensive + '\'' +
-                ", defensive='" + defensive + '\'' +
-                ", description='" + description + '\'' +
-                '}';
+        return " " + image + "\n"
+                + name + "\n" + description + "\n" +
+                " | Vie: " + health + " | Force : " + strength + " | Attaque : " + offensive + " | Défense : " + defensive + "";
     }
 
     private String image;

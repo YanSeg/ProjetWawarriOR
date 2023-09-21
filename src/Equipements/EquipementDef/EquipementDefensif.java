@@ -1,73 +1,66 @@
 package Equipements.EquipementDef;
 
-public abstract class EquipementDefensif {
+import Equipements.Equipements;
 
-    private String defensifType;
-    private int defensifStrenght;
+public abstract class EquipementDefensif extends Equipements {
+
+    private String type;
+    private int defensive;
     private String description;
     private String image;
-    private String defensifName;
+    private int health;
 
 
+    @Override
+    public String getType() {
+        return type;
+    }
+
+    @Override
+    public void setType(String type) {
+        this.type = type;
+    }
 
 
+    public void setDefensive(int defensive) {
+        this.defensive = defensive;
+    }
 
+    @Override
     public String getDescription() {
         return description;
     }
 
+    @Override
     public void setDescription(String description) {
         this.description = description;
     }
 
-    public EquipementDefensif() {
-    }
-
-    public EquipementDefensif(String defensifType) {
-        this.defensifType = defensifType;
-    }
-
-
-
-    public String getDefensifType() {
-        return defensifType;
-    }
-
-    public void setDefensifType(String defensifType) {
-        this.defensifType = defensifType;
-    }
-
-    public String getDefensifName() {
-        return defensifName;
-    }
-
-    public void setDefensifName(String defensifName) {
-        this.defensifName = defensifName;
-    }
-
-    public int getDefensifStrenght() {
-        return defensifStrenght;
-    }
-
-    public void setDefensifStrenght(int defensifStrenght) {
-        this.defensifStrenght = defensifStrenght;
-    }
-
+    @Override
     public String getImage() {
         return image;
     }
 
+    @Override
     public void setImage(String image) {
         this.image = image;
     }
 
-
-
-    public EquipementDefensif(String defensifType, String defensifName, int defensifStrenght) {
-        this.defensifType = defensifType;
-        this.defensifName = defensifName;
-        this.defensifStrenght = defensifStrenght;
+    @Override
+    public int getHealth() {
+        return health;
     }
+
+    @Override
+    public void setHealth(int health) {
+        this.health = health;
+    }
+
+    @Override
+    public int getDefensive() {
+        return defensive;
+    }
+
 }
 
 

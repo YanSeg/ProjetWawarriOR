@@ -1,10 +1,9 @@
 package Ennemis.Gobelin;
 
-import Ennemis.Ennemi;
 import Images.Choupi;
 
-public class Brûlok extends Gobelin {
-    public Brûlok() {
+public class Brulok extends Gobelin {
+    public Brulok() {
         super("Gobelin", "Le Troll Truculent", 3, 5, "Lance enflammée", "Bouclier ignifugé");
         Choupi image = new Choupi();
         setImage(image.magenoir());

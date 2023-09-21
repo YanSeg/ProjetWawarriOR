@@ -1,14 +1,14 @@
-package PotionsPoisons.PotionsStandard;
+package Equipements.PotionsPoisons.PotionsStandard;
 
 import Images.Choupi;
-import PotionsPoisons.Potions;
+import Equipements.PotionsPoisons.Potions;
 
 public class PotionAttaqueDefense extends Potions {
 
     public PotionAttaqueDefense() {
-        super("Potion de Attaque/Defense", 0, 0, 15, 15);
+        super(15, "Potion de Attaque/Defense", 0, 0, 15);
         Choupi image = new Choupi();
-        setimage(image.potion1());
+        setImage(image.potion1());
         String description = "15 pts d'attaque et de Force";
         setDescription(description);
 

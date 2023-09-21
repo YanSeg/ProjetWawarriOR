@@ -1,28 +1,22 @@
-import Ennemis.Dragons.Aurorath;
 //import Enum.EnnemisEnnum.EnnemiEnum;
-import Game.Game;
-import Images.Choupi;
-import PlateuDeJeu.Cases.CaseArme;
-import PlateuDeJeu.Cases.Cases;
-
-import java.util.ArrayList;
+import Ennemis.Ennemi;
+import Enum.EnnemisEnum.enumEnnemi;
 
 
 public class Main {
     public static void main(String[] args) {
 
 
-//
-//        EnnemiEnum ennemiEnum = EnnemiEnum.GOBELIN;
-//        Object dragonAleatoire = ennemiEnum.getRandomDragon();
-//        if (dragonAleatoire != null) {
-//            System.out.println("Dragon aléatoire : " + dragonAleatoire);
-//        } else {
-//            System.out.println("Aucun dragon disponible.");
-//        }
-//
-//
 
+        enumEnnemi ennemiEnum = enumEnnemi.DRAGON;
+
+        Ennemi randomSorcier = ennemiEnum.getRandomEnnemi();
+
+        ennemiEnum.displayrandomEnum(randomSorcier);
+
+
+
+      //  EnnemiEnum.DRAGON.getRandomEnnemi();
 
         Menu menu = new Menu();
 

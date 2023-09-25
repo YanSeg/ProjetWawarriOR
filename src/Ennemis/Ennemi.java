@@ -16,35 +16,29 @@ import static Game.Game.lancementDuddE;
 import static MiseEnPage.MiseEnPage.space;
 
 
-
 public abstract class Ennemi implements Cases, InterfacePlateau {
 
     private int choice;
+
+    private int derecul;
 
     private int forceAttaquePlayer;
 
     @Override
     public void interact(Personnage player) {
-
-//        System.out.println();
         String SHAME = ASCII_Representations.puit2();
-
         Scanner scanner = new Scanner(System.in);
-//        boolean fightMenu;
-//
-
         System.out.println(this.toString());
-
-
         System.out.println("1. Se battre");
         System.out.println("2. Reculer d'un nombre de cases aléatoires ");
 
-        int choice = scanner.nextInt();
-        this.choice= choice;
+        int choice = getIntInput(scanner);
+
+        this.choice = choice;
+
         switch (choice) {
             case 1:
                 while (player.getHealth() > 0 && this.getHealth() > 0) {
-
                     int a = player.getStrength();
                     Equipements arme = player.getEquipemenOf();
                     int b = arme.getStrength();
@@ -52,32 +46,54 @@ public abstract class Ennemi implements Cases, InterfacePlateau {
                     this.forceAttaquePlayer = forceAttaquePlayer;
                     int ennemiLife = this.getHealth() - forceAttaquePlayer;
                     this.setHealth(ennemiLife);
-                    System.out.println("La vie du " + this.getClass() +" est à : " + this.getHealth());
+                    System.out.println("La vie du " + this.getClass() + " est à : " + this.getHealth());
                     space();
                     System.out.println("A votre tour d'être attaqué");
                     space();
                     Equipements shield = player.getEquipementDef();
-                    player.setHealth(((player.getHealth()) + shield.getDefensive()) - this.getStrength());
+                    player.setHealth(player.getHealth() + shield.getDefensive() - this.getStrength());
                     System.out.println(player);
                 }
                 break;
             case 2:
                 System.out.println(SHAME);
-                int newposition = (player.getPosition() - lancementDuddE());
-                player.setPosition(newposition);
-
+                int derecul = lancementDuddE();
+                System.out.println(" vous reculé de " + derecul + "case");
+                this.derecul = derecul;
+                break;
             default:
+                // Gérez d'autres choix ici si nécessaire.
+        }
+    }
 
+
+    // La méthode getIntInput qui gère les entrées entières du scanner.
+    private int getIntInput(Scanner scanner) {
+        try {
+            int r = scanner.nextInt();
+            scanner.nextLine(); // Permet d'écraser le scanner pour ne pas avoir une boucle infinie.
+            return r;
+        } catch (Exception e) {
+            space();
+            ASCII_Representations integer = new ASCII_Representations();
+            System.out.println(integer.integer());
+            System.out.println(integer.please());
+            space();
+            scanner.nextLine();
+            return getIntInput(scanner); // Utilisez récursivement getIntInput() en cas d'erreur de saisie.
         }
     }
 
     @Override
     public void miseAjourPlateau(PlateauDuJeu plateau) {
         Cases caseActuelle = plateau.getPlateau()[plateau.getPositionPlayer()];
-        if (caseActuelle instanceof Ennemi && this.choice ==  1){
+        if (caseActuelle instanceof Ennemi && this.choice == 1) {
             Ennemi ennemi = (Ennemi) caseActuelle;
-            ennemi.setHealth(ennemi.getHealth()-forceAttaquePlayer);
+            ennemi.setHealth(ennemi.getHealth() - forceAttaquePlayer);
+        } else if (this.choice == 2) {
+            plateau.setPositionPlayer(plateau.getPositionPlayer() - this.derecul);
         }
+        this.derecul = 0;
     }
 
     @Override
@@ -86,8 +102,6 @@ public abstract class Ennemi implements Cases, InterfacePlateau {
                 + name + "\n" + description + "\n" +
                 " | Vie: " + health + " | Force : " + strength + " | Attaque : " + offensive + " | Défense : " + defensive + "";
     }
-
-
 
 
 //    private final Scanner scanner = new Scanner(System.in);

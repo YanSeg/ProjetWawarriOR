@@ -1,8 +1,14 @@
 package Equipements.EquipementOff.Armes.Arc;
 
 import Equipements.EquipementOff.Armes.Armes;
+import Personnages.Personnage;
 
 public class Arc extends Armes {
+    @Override
+    public void interact(Personnage player) {
+
+    }
+
     public Arc(String offensifType, String offensifName, int offensifStrenght) {
         super(offensifType, offensifName, offensifStrenght);
     }

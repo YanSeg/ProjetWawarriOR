@@ -9,13 +9,27 @@ import PlateuDeJeu.ArrayListCases;
 import java.util.ArrayList;
 import java.util.Collections;
 
-public class CaseGobelin extends CaseEnnemi {
-    private final String REPRESENTATION = ASCII_Representations.messageGobelin();
+import static PlateuDeJeu.ArrayListCases.arrayDesGobelins;
+import static PlateuDeJeu.ArrayListCases.arrayDesSorciers;
 
-    @Override
-    public void interact(Personnage player) {
-        super.interact(player);
-    }
+public class CaseGobelin extends Ennemi {
+    private final String REPRESENTATION = ASCII_Representations.messageGobelin();
+    Gobelin gobelin = arrayDesGobelins();
+
+
+//    @Override
+//    public void interact(Personnage player) {
+//
+//        Gobelin gobelin = arrayDesGobelins();
+//
+//        System.out.println(REPRESENTATION);
+//        System.out.println("VOUS FAITES FACE A UN GOBELIN");
+//
+//        System.out.println(gobelin);
+//
+//    }
+
+
 }
 //    @Override
 //    public void interact(Personnage player) {

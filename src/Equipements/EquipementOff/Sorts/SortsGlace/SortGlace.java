@@ -2,8 +2,14 @@ package Equipements.EquipementOff.Sorts.SortsGlace;
 
 import Equipements.EquipementOff.Sorts.Sorts;
 import Images.ASCII_Representations;
+import Personnages.Personnage;
 
 public class SortGlace extends Sorts {
+
+    @Override
+    public void interact(Personnage player) {
+
+    }
 
     public SortGlace() {
         super("Glace", "Prison de Cristal", 22);

@@ -1,8 +1,11 @@
 package Ennemis.Gobelin;
 
 import Images.ASCII_Representations;
+import Personnages.Personnage;
 
 public class Roublard extends Gobelin {
+
+
     public Roublard() {
         super("Gobelin", "Roublard le Sournois", 3, 5, "Arc furtif", " Cape d'ombres");
         ASCII_Representations image = new ASCII_Representations();

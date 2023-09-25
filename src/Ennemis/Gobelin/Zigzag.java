@@ -1,8 +1,11 @@
 package Ennemis.Gobelin;
 
 import Images.ASCII_Representations;
+import Personnages.Personnage;
 
 public class Zigzag extends Gobelin {
+
+
 
     public Zigzag() {
         super("Gobelin", "Zigzag l'Éclair", 3, 8, "Baguette magique électrique", "Cape d'énergie électrique");

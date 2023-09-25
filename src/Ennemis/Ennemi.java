@@ -1,14 +1,78 @@
 package Ennemis;
 
+
+import Equipements.Equipements;
+import Images.ASCII_Representations;
+import Personnages.Personnage;
 import PlateuDeJeu.Cases.Cases;
 
+
+import java.awt.*;
+import java.util.Scanner;
+
+import static Game.Game.lancementDuddE;
+import static MiseEnPage.MiseEnPage.space;
+
 public abstract class Ennemi implements Cases {
+
+
     @Override
     public String toString() {
         return " " + image + "\n"
                 + name + "\n" + description + "\n" +
                 " | Vie: " + health + " | Force : " + strength + " | Attaque : " + offensive + " | Défense : " + defensive + "";
     }
+
+    @Override
+    public void interact(Personnage player) {
+
+//        System.out.println();
+        String SHAME = ASCII_Representations.puit2();
+
+        Scanner scanner = new Scanner(System.in);
+//        boolean fightMenu;
+//
+
+        System.out.println(this.toString());
+
+
+        System.out.println("1. Se battre");
+        System.out.println("2. Reculer d'un nombre de cases aléatoires ");
+
+        int choice = scanner.nextInt();
+
+        switch (choice) {
+            case 1:
+                while (player.getHealth() > 0 && this.getHealth() > 0) {
+
+                    int a = player.getStrength();
+                    Equipements arme = player.getEquipemenOf();
+                    int b = arme.getStrength();
+                    int forceAttaque = a + b;
+                    int ennemiLife = this.getHealth() - forceAttaque;
+                    this.setHealth(ennemiLife);
+                    System.out.println("La vie du dragon est à : " + this.getHealth());
+                    space();
+                    System.out.println("A votre tour d'être attaqué");
+                    space();
+                    Equipements shield = player.getEquipementDef();
+                    player.setHealth(((player.getHealth()) + shield.getDefensive()) - this.getStrength());
+                    System.out.println(player);
+                }
+                break;
+            case 2:
+                System.out.println(SHAME);
+                int newposition = (player.getPosition() - lancementDuddE());
+                player.setPosition(newposition);
+
+            default:
+
+        }
+    }
+
+
+//    private final Scanner scanner = new Scanner(System.in);
+
 
     private String image;
     private String type;
@@ -27,7 +91,6 @@ public abstract class Ennemi implements Cases {
     public void setDescription(String description) {
         this.description = description;
     }
-
 
 
     public Ennemi() {

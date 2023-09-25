@@ -1,8 +1,11 @@
 package Ennemis.Gobelin;
 
 import Images.ASCII_Representations;
+import Personnages.Personnage;
 
 public class Sombra extends Gobelin {
+
+
     public Sombra() {
         super("Gobelin", "Sombra l'Ombre", 3, 5, "Dagues empoisonnées", "Manteau d'invisibilité");
         ASCII_Representations image = new ASCII_Representations();

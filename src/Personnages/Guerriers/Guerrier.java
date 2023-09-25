@@ -3,25 +3,10 @@ import Equipements.Equipements;
 import Personnages.Personnage;
 
 public class Guerrier extends Personnage {
-    public Guerrier(String name) {
-        super(name, "Guerrier", 1000, 10000, "arme", "bouclier");
+    public Guerrier(int health, int strength, String type, String name) {
+        super(health, strength, type, name);
     }
 
-
-    public Guerrier(String name, int health, int strength, String offensive, String defensive) {
-        super(name, health, strength, offensive, defensive);
-    }
-
-
-    @Override
-    public String getName() {
-        return super.getName();
-    }
-
-    @Override
-    public void setName(String name) {
-        super.setName(name);
-    }
 
     @Override
     public int getHealth() {
@@ -39,6 +24,11 @@ public class Guerrier extends Personnage {
     }
 
     @Override
+    public void setStrength(int strength) {
+        super.setStrength(strength);
+    }
+
+    @Override
     public String getType() {
         return super.getType();
     }
@@ -46,31 +36,6 @@ public class Guerrier extends Personnage {
     @Override
     public void setType(String type) {
         super.setType(type);
-    }
-
-    @Override
-    public String getOffensive() {
-        return super.getOffensive();
-    }
-
-    @Override
-    public void setOffensive(String offensive) {
-        super.setOffensive(offensive);
-    }
-
-    @Override
-    public String getDefensive() {
-        return super.getDefensive();
-    }
-
-    @Override
-    public void setDefensive(String defensive) {
-        super.setDefensive(defensive);
-    }
-
-    @Override
-    public String toString() {
-        return super.toString();
     }
 
     @Override
@@ -84,17 +49,37 @@ public class Guerrier extends Personnage {
     }
 
     @Override
-    public void setStrength(int strength) {
-        super.setStrength(strength);
+    public Equipements getEquipementDef() {
+        return super.getEquipementDef();
     }
 
-    public Guerrier(String type, String name, int health, int strength, String offensive, String defensive) {
-        super(type, name, health, strength, offensive, defensive);
+    @Override
+    public void setEquipementDef(Equipements equipementDef) {
+        super.setEquipementDef(equipementDef);
     }
 
+    @Override
+    public Equipements getEquipemenOf() {
+        return super.getEquipemenOf();
+    }
 
-    public Guerrier(String name, String type, int health, Integer strength, String offensive, String defensive) {
-        super(name, type, health, strength, offensive, defensive);
+    @Override
+    public void setEquipemenOf(Equipements equipemenOf) {
+        super.setEquipemenOf(equipemenOf);
+    }
+
+//    public Guerrier(String name) {
+//        super(name);
+//    }
+
+    @Override
+    public String getName() {
+        return super.getName();
+    }
+
+    @Override
+    public void setName(String name) {
+        super.setName(name);
     }
 
     @Override
@@ -107,13 +92,7 @@ public class Guerrier extends Personnage {
         return super.capitalizeFirstLetter(input);
     }
 
-    public Guerrier() {
-    }
 
-
-    public Guerrier(String type, String name) {
-        super(type, name);
-    }
 
 
 }

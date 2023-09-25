@@ -1,6 +1,7 @@
 package Ennemis.JeuFilm;
 
 import Images.ASCII_Representations;
+import Personnages.Personnage;
 
 public class IronMan extends SuperHero {
     public IronMan() {
@@ -9,5 +10,8 @@ public class IronMan extends SuperHero {
         setImage(image.ironMan());
     }
 
+    @Override
+    public void interact(Personnage player) {
 
+    }
 }

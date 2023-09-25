@@ -2,9 +2,15 @@ package Equipements.PotionsPoisons.PotionsStandard;
 
 import Images.ASCII_Representations;
 import Equipements.PotionsPoisons.Potions;
+import Personnages.Personnage;
 
 
 public class PotionDefensive extends Potions {
+
+    @Override
+    public void interact(Personnage player) {
+
+    }
 
     public PotionDefensive() {
         super( 0,"Potion de défense",0,15,0);

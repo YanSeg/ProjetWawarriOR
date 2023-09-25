@@ -1,13 +1,32 @@
 package Equipements.EquipementDef.Phyltres;
 
 import Equipements.EquipementDef.EquipementDefensif;
+import Personnages.Magiciens.Magicien;
+import Personnages.Personnage;
 
 public class Phyltre extends EquipementDefensif {
 
+    @Override
+    public void interact(Personnage player) {
+
+    }
+
+    @Override
+    public boolean isUsable(Personnage player) {
+        return player instanceof Magicien;
+    }
 
     @Override
     public String toString() {
-        return "Philtre{}";
+        return super.toString();
+    }
+
+    public Phyltre(int strength, String name, int health, int defensive, int offensive, String type, int defensive1, String name1) {
+        super(strength, name, health, defensive, offensive, type, defensive1, name1);
+    }
+
+    public Phyltre(String name, String type, int defensive, String name1) {
+        super(name, type, defensive, name1);
     }
 
     @Override

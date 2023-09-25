@@ -4,23 +4,16 @@ import Equipements.EquipementOff.Sorts.Sorts;
 import Equipements.Equipements;
 import Personnages.Personnage;
 
-
+/**
+ * ai-Je du Ascii ??
+ */
 
 public class Magicien extends Personnage {
-    @Override
-    public int getPosition() {
-        return super.getPosition();
+
+    public Magicien(int health, int strength, String type, String name) {
+        super(health, strength, type, name);
     }
 
-    @Override
-    public String getName() {
-        return super.getName();
-    }
-
-    @Override
-    public void setName(String name) {
-        super.setName(name);
-    }
 
     @Override
     public int getHealth() {
@@ -38,9 +31,15 @@ public class Magicien extends Personnage {
     }
 
     @Override
+    public void setStrength(int strength) {
+        super.setStrength(strength);
+    }
+
+    @Override
     public String getType() {
         return super.getType();
     }
+
 
     @Override
     public void setType(String type) {
@@ -48,45 +47,44 @@ public class Magicien extends Personnage {
     }
 
     @Override
-    public String getOffensive() {
-        return super.getOffensive();
+    public int getPosition() {
+        return super.getPosition();
     }
-
-    @Override
-    public void setOffensive(String offensive) {
-        super.setOffensive(offensive);
-    }
-
-    @Override
-    public String getDefensive() {
-        return super.getDefensive();
-    }
-
-    @Override
-    public void setDefensive(String defensive) {
-        super.setDefensive(defensive);
-    }
-
-    @Override
-    public void setStrength(int strength) {
-        super.setStrength(strength);
-    }
-
 
     @Override
     public void setPosition(int position) {
         super.setPosition(position);
     }
 
+    @Override
+    public Equipements getEquipementDef() {
+        return super.getEquipementDef();
+    }
 
-//    public Magicien(String name, String type, int health, Integer strength, String offensive, String defensive) {
-//        super(name, type, health, strength, offensive, defensive);
-//    }
+    @Override
+    public void setEquipementDef(Equipements equipementDef) {
+        super.setEquipementDef(equipementDef);
+    }
 
-//    public Magicien() {
-//    }
+    @Override
+    public Equipements getEquipemenOf() {
+        return super.getEquipemenOf();
+    }
 
+    @Override
+    public void setEquipemenOf(Equipements equipemenOf) {
+        super.setEquipemenOf(equipemenOf);
+    }
 
+    @Override
+    public String getName() {
+        return super.getName();
+    }
+
+    @Override
+    public void setName(String name) {
+        super.setName(name);
+    }
 
     @Override
     public String evolutionPartie() {
@@ -97,38 +95,9 @@ public class Magicien extends Personnage {
     public String capitalizeFirstLetter(String input) {
         return super.capitalizeFirstLetter(input);
     }
-
-    public Magicien(String name, int health, int strength, String offensive, String defensive) {
-        super(name, health, strength, offensive, defensive);
-    }
-
-    public Magicien(String type, String name, int health, int strength, String offensive, String defensive) {
-        super(type, name, health, strength, offensive, defensive);
-    }
-
-    public Magicien(String name, String type, int health, Integer strength, String offensive, String defensive) {
-        super(name, type, health, strength, offensive, defensive);
-    }
-
-    public Magicien() {
-    }
-
-    public Magicien(String name) {
-        super(name, "Magicien", 1000, 1500, "spell", "philtre");
-    }
-
-    public Magicien(String type, String name) {
-        super(type, name);
-    }
-
-    /**
-     * Méthode qui ne retourne rien, elle qui affiche une phrase
-     */
-    public void abou(){
-        System.out.println("Coucou abou");
-    }
-
 }
+
+
 
 
 

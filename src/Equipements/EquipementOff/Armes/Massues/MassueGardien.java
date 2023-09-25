@@ -1,6 +1,7 @@
 package Equipements.EquipementOff.Armes.Massues;
 
 import Images.ASCII_Representations;
+import Personnages.Personnage;
 
 public class MassueGardien extends Massue{
 
@@ -12,6 +13,10 @@ public class MassueGardien extends Massue{
             setDescription(description);
         }
 
+    @Override
+    public void interact(Personnage player) {
+
     }
+}
 
 

@@ -1,5 +1,6 @@
 package PlateuDeJeu.Cases;
 
+import Ennemis.Ennemi;
 import Ennemis.Sorciers.Sorcier;
 import Images.ASCII_Representations;
 import Personnages.Personnage;
@@ -8,15 +9,15 @@ import PlateuDeJeu.ArrayListCases;
 import java.util.ArrayList;
 import java.util.Collections;
 
-public class CaseSorcier extends CaseEnnemi{
+import static PlateuDeJeu.ArrayListCases.arrayDesSorciers;
 
+public class CaseSorcier extends Ennemi {
 
+    Sorcier sorcier = arrayDesSorciers();
     private final String REPRESENTATION = ASCII_Representations.messageSorcier();
 
 
-    @Override
-    public void interact(Personnage player) {
-
+}
 //        Sorcier sorcier = new Sorcier();
 
 
@@ -49,7 +50,6 @@ public class CaseSorcier extends CaseEnnemi{
 //            System.out.println("Vous êtes mort");
 //            player = null;
 
-        }
-    }
+
 
 

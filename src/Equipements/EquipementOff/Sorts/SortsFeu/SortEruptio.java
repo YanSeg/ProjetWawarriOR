@@ -2,8 +2,14 @@ package Equipements.EquipementOff.Sorts.SortsFeu;
 
 import Equipements.EquipementOff.Sorts.Sorts;
 import Images.ASCII_Representations;
+import Personnages.Personnage;
 
 public class SortEruptio extends Sorts {
+
+    @Override
+    public void interact(Personnage player) {
+
+    }
 
     public SortEruptio() {
         super("Feu", "Éruption Infernale", 22);

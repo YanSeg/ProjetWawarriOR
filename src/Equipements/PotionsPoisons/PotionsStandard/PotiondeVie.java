@@ -2,8 +2,14 @@ package Equipements.PotionsPoisons.PotionsStandard;
 
 import Images.ASCII_Representations;
 import Equipements.PotionsPoisons.Potions;
+import Personnages.Personnage;
 
 public class PotiondeVie extends Potions {
+
+    @Override
+    public void interact(Personnage player) {
+
+    }
 
     public PotiondeVie() {
         super( 0,"Potion de vie",0,0,0);

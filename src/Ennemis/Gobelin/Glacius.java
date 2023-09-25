@@ -1,8 +1,11 @@
 package Ennemis.Gobelin;
 
 import Images.ASCII_Representations;
+import Personnages.Personnage;
 
 public class Glacius extends Gobelin {
+
+
     public Glacius() {
         super("Gobelin", "Le Troll Truculent", 3, 5, "Sceptre de glace", "Armure de givre");
         ASCII_Representations image = new ASCII_Representations();

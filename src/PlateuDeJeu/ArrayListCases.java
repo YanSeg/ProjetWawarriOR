@@ -23,6 +23,8 @@ import Equipements.PotionsPoisons.Potions;
 import Equipements.PotionsPoisons.PotionsStandard.*;
 
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Random;
 
 
 public class ArrayListCases {
@@ -68,10 +70,15 @@ public class ArrayListCases {
         listEnnemis.add(wendigoSanguinaire);
         listEnnemis.add(sorciereXena);
 
+
+        Collections.shuffle(listEnnemis);
+        Random random = new Random();
+        int indexAleatoire = random.nextInt(listEnnemis.size());
+        listEnnemis.get(indexAleatoire);
         return listEnnemis;
     }
 
-    public ArrayList<Dragon> arrayDesDragons() {
+    public static Dragon arrayDesDragons() {
         ArrayList<Dragon> listDragon = new ArrayList<Dragon>();
         Aurorath aurorath = new Aurorath();
         Drakarion drakarion = new Drakarion();
@@ -83,10 +90,16 @@ public class ArrayListCases {
         listDragon.add(terramor);
         listDragon.add(umbragon);
 
-        return listDragon;
+        Collections.shuffle(listDragon);
+        Random random = new Random();
+        int indexAleatoire = random.nextInt(listDragon.size());
+        Dragon dragon = listDragon.get(indexAleatoire);
+
+        return dragon;
+
     }
 
-    public ArrayList<Gobelin> arrayDesGobelins() {
+    public static Gobelin arrayDesGobelins() {
         ArrayList<Gobelin> listGobelin = new ArrayList<Gobelin>();
 
         Brulok brulok = new Brulok();
@@ -111,13 +124,17 @@ public class ArrayListCases {
         listGobelin.add(vorax);
         listGobelin.add(zigzag);
 
-        return listGobelin;
+        Collections.shuffle(listGobelin);
+        Random random = new Random();
+        int indexAleatoire = random.nextInt(listGobelin.size());
+        Gobelin gobelin = listGobelin.get(indexAleatoire);
+        return gobelin;
 
 
     }
 
 
-    public ArrayList<Sorcier> arrayDesSorciers() {
+    public static Sorcier arrayDesSorciers() {
         ArrayList<Sorcier> listSorcier = new ArrayList<Sorcier>();
 
         GandRalf gandRalf = new GandRalf();
@@ -142,7 +159,11 @@ public class ArrayListCases {
         listSorcier.add(sylvitrouille);
         listSorcier.add(wendigoSanguinaire);
 
-        return listSorcier;
+        Collections.shuffle(listSorcier);
+        Random random = new Random();
+        int indexAleatoire = random.nextInt(listSorcier.size());
+        Sorcier sorcier = listSorcier.get(indexAleatoire);
+        return sorcier;
     }
 
 
@@ -170,6 +191,10 @@ public class ArrayListCases {
         listPetitePotion.add(potionForceVie);
         listPetitePotion.add(potionVieDefense);
 
+        Collections.shuffle(listPetitePotion);
+        Random random = new Random();
+        int indexAleatoire = random.nextInt(listPetitePotion.size());
+        listPetitePotion.get(indexAleatoire);
         return listPetitePotion;
     }
 
@@ -191,11 +216,15 @@ public class ArrayListCases {
         listGrandePotion.add(potionRegain);
         listGrandePotion.add(potionvitalite);
 
+        Collections.shuffle(listGrandePotion);
+        Random random = new Random();
+        int indexAleatoire = random.nextInt(listGrandePotion.size());
+        listGrandePotion.get(indexAleatoire);
         return listGrandePotion;
     }
 
 
-    public ArrayList<Equipements> arrayDesEquipements() {
+    public static Equipements arrayDesEquipements() {
         ArrayList<Equipements> listEquipement = new ArrayList<Equipements>();
 
         MassueChaos massueChaos = new MassueChaos();
@@ -232,10 +261,12 @@ public class ArrayListCases {
         listEquipement.add(potionHarricotMagique);
         listEquipement.add(potionDuSage);
 
-        return listEquipement;
+        Collections.shuffle(listEquipement);
+        Random random = new Random();
+        int indexAleatoire = random.nextInt(listEquipement.size());
+        Equipements equipements = listEquipement.get(indexAleatoire);
+        return equipements;
     }
-
-
 
 
 }

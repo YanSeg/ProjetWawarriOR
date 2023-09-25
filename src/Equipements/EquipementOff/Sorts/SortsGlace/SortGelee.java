@@ -2,6 +2,7 @@ package Equipements.EquipementOff.Sorts.SortsGlace;
 
 import Equipements.EquipementOff.Sorts.Sorts;
 import Images.ASCII_Representations;
+import Personnages.Personnage;
 
 public class SortGelee extends Sorts {
     public SortGelee() {
@@ -12,4 +13,8 @@ public class SortGelee extends Sorts {
         setDescription(description);
     }
 
+    @Override
+    public void interact(Personnage player) {
+
+    }
 }

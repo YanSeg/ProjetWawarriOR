@@ -1,8 +1,14 @@
 package Ennemis.JeuFilm;
 
 import Images.ASCII_Representations;
+import Personnages.Personnage;
 
 public class Kurbi extends SuperHero {
+    @Override
+    public void interact(Personnage player) {
+
+    }
+
     public Kurbi() {
         super("Ennemis", "kurbi", 8, 7, "L'épée de Morpho Knight", "Eject Punch");
         ASCII_Representations image = new ASCII_Representations();

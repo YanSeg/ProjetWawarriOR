@@ -1,8 +1,10 @@
 package Equipements.PotionsPoisons;
 
 import Equipements.Equipements;
+import Personnages.Personnage;
 
 public abstract class Potions extends Equipements {
+
 
 
     public Potions(String name) {
@@ -13,6 +15,30 @@ public abstract class Potions extends Equipements {
         super(strength, name, health, defensive, offensive);
     }
 
+    @Override
+    public String toString() {
+        return "Potions{" +
+                "type='" + type + '\'' +
+                ", strength=" + strength +
+                ", name='" + name + '\'' +
+                ", image='" + image + '\'' +
+                ", health=" + health +
+                ", defensive=" + defensive +
+                ", offensive=" + offensive +
+                ", description='" + description + '\'' +
+                '}';
+    }
+
     public Potions() {
+    }
+
+    @Override
+    public boolean isUsable(Personnage player) {
+        return true;
+    }
+
+    @Override
+    public void interact(Personnage player) {
+
     }
 }

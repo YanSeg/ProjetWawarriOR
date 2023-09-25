@@ -4,18 +4,22 @@ import Equipements.Equipements;
 
 public abstract class EquipementDefensif extends Equipements {
 
-    private String type;
-    private int defensive;
-    private String description;
+    protected String type;
+
+    protected int defensive;
+
+   protected String description;
+    private String image;
+    private int health;
+    private String name;
+
+
 
     @Override
     public String toString() {
         return super.toString();
     }
 
-    private String image;
-    private int health;
-    private String name;
 
     @Override
     public String getType() {

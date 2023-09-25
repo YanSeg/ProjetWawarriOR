@@ -2,8 +2,14 @@ package Equipements.EquipementOff.Sorts.SortsFeu;
 
 import Equipements.EquipementOff.Sorts.Sorts;
 import Images.ASCII_Representations;
+import Personnages.Personnage;
 
 public class SortDrakoFeu extends Sorts {
+
+    @Override
+    public void interact(Personnage player) {
+
+    }
 
     public SortDrakoFeu() {
         super("Feu", "Déflagration Infernale", 12);

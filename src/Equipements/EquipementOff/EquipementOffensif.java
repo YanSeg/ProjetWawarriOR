@@ -1,13 +1,36 @@
 package Equipements.EquipementOff;
 
 import Equipements.Equipements;
+import Personnages.Personnage;
 
 public abstract class EquipementOffensif extends Equipements {
 
-    private String type;
-    private int strenght;
-    private String name;
-    private String image;
+    protected String type;
+    protected int strenght;
+    protected String name;
+    protected String image;
+
+    @Override
+    public String toString() {
+        return "EquipementOffensif{" +
+                "type='" + type + '\'' +
+                ", strenght=" + strenght +
+                ", name='" + name + '\'' +
+                ", image='" + image + '\'' +
+                ", description='" + description + '\'' +
+                '}';
+    }
+
+    @Override
+    public boolean isUsable(Personnage player) {
+        return false;
+    }
+
+    @Override
+    public void interact(Personnage player) {
+
+    }
+
     private String description;
 
 

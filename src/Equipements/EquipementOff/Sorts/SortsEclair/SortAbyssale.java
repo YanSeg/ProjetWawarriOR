@@ -2,8 +2,14 @@ package Equipements.EquipementOff.Sorts.SortsEclair;
 
 import Equipements.EquipementOff.Sorts.Sorts;
 import Images.ASCII_Representations;
+import Personnages.Personnage;
 
 public class SortAbyssale extends Sorts {
+
+    @Override
+    public void interact(Personnage player) {
+
+    }
 
     public SortAbyssale() {
         super("Ombre","Fulgurance Abyssale", 0);

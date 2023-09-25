@@ -2,6 +2,9 @@
 // Dictionnaire ici : https://www.baeldung.com/java-iterate-map
 
 
+/**
+ *  Ceci est ma page memo
+ */
 
 // Tableau case fixe, à instancier
 

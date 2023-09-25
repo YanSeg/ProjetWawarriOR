@@ -1,8 +1,11 @@
 package Ennemis.Gobelin;
 
 import Images.ASCII_Representations;
+import Personnages.Personnage;
 
 public class Furie extends Gobelin {
+
+
 
     public Furie() {
         super("Gobelin", "Furie l'Écumante", 3, 5, "Trident empoisonné", "Écailles toxiques");

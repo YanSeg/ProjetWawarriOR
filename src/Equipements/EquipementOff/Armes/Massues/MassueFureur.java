@@ -1,8 +1,14 @@
 package Equipements.EquipementOff.Armes.Massues;
 
 import Images.ASCII_Representations;
+import Personnages.Personnage;
 
 public class MassueFureur extends Massue {
+
+    @Override
+    public void interact(Personnage player) {
+
+    }
 
     public MassueFureur() {
 

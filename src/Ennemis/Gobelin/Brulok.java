@@ -1,6 +1,7 @@
 package Ennemis.Gobelin;
 
 import Images.ASCII_Representations;
+import Personnages.Personnage;
 
 public class Brulok extends Gobelin {
     public Brulok() {
@@ -12,4 +13,6 @@ public class Brulok extends Gobelin {
                 " Brûlok est un gobelin pyromane qui manie une lance enflammée. Son bouclier ignifugé le protège des flammes";
         setDescription(description);
     }
+
+
 }

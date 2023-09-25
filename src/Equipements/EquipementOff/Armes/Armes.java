@@ -1,6 +1,9 @@
 package Equipements.EquipementOff.Armes;
 
 import Equipements.EquipementOff.EquipementOffensif;
+import Personnages.Guerriers.Guerrier;
+import Personnages.Magiciens.Magicien;
+import Personnages.Personnage;
 
 public abstract class Armes extends EquipementOffensif {
     public Armes(String offensifType, String offensifName, int offensifStrenght, String image) {
@@ -16,6 +19,17 @@ public abstract class Armes extends EquipementOffensif {
 
     @Override
     public String toString() {
-        return "Armes{}";
+        return "Armes{" +
+                "type='" + type + '\'' +
+                ", strenght=" + strenght +
+                ", name='" + name + '\'' +
+                ", image='" + image + '\'' +
+                '}';
     }
+    @Override
+    public boolean isUsable(Personnage player) {
+        return player instanceof Guerrier;
+    }
+
+
 }

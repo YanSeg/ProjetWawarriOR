@@ -1,8 +1,19 @@
 package Ennemis.Dragons;
 
 import Images.ASCII_Representations;
+import Personnages.Personnage;
 
 public class Drakarion extends Dragon {
+    @Override
+    public String toString() {
+        return super.toString();
+    }
+
+    @Override
+    public void interact(Personnage player) {
+
+    }
+
     public Drakarion() {
         super("Feu", "Drakarion le Feu-Éternel", 20, 20, "Manipulation des flammes",  "Capacité de vol rapide pour échapper aux attaques");
         ASCII_Representations image = new ASCII_Representations();

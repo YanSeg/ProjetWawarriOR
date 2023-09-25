@@ -2,8 +2,14 @@ package Equipements.EquipementOff.Sorts.SortsEclair;
 
 import Equipements.EquipementOff.Sorts.Sorts;
 import Images.ASCII_Representations;
+import Personnages.Personnage;
 
 public class SortRage extends Sorts {
+
+    @Override
+    public void interact(Personnage player) {
+
+    }
 
     public SortRage() {
         super("Ombre","Rage de l 'Ombre", 13);

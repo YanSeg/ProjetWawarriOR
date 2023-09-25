@@ -1,11 +1,13 @@
 package Game;
 
 import Ennemis.Ennemi;
+import Images.ASCII_Representations;
 import Personnages.Personnage;
 import PlateuDeJeu.Cases.*;
 import PlateuDeJeu.GenerateurPlateau;
 
 import java.util.ArrayList;
+
 
 public class Game {
 
@@ -30,7 +32,7 @@ public class Game {
      * @return un entier compris entre 1 et 6
      */
 
-    public int lancementDuddE() {
+    public static int lancementDuddE() {
         int de = (int) (1 + 6 * Math.random());
         return de;
     }
@@ -39,13 +41,16 @@ public class Game {
      * @param player
      * @param plateau C'est ma méthode pour jouer au jeu
      */
-    public void jouerauJeu(Personnage player, Cases[] plateau)  {
+    public void jouerauJeu(Personnage player, Cases[] plateau) {
 
         if (player != null)
+
             try {
                 jouer1tour(player, plateau);
             } catch (PersonnageHorsPlateauException e) {
                 System.out.println("Personnage hors plateau : " + e.getMessage());
+                player.setPosition(player.getPosition() - 40);
+
             }
     }
 
@@ -55,25 +60,29 @@ public class Game {
 
         System.out.println(plateau.getClass().getSimpleName());
 
+        int de = lancementDuddE();
+        player.setPosition(player.getPosition() + de);
 
+        if ((player.getPosition()) < 63) {
 
-
-        if ((player.getPosition()) <= 63) {
-            int de = lancementDuddE();
-            int newpoiton = Math.min(63, player.getPosition() + de);
-            player.setPosition(newpoiton);
+            plateau[(player.getPosition())].interact(player);
+            System.out.println(plateau.getClass());
+//            int newpoiton = Math.min(63, player.getPosition() + de);
+            player.setPosition((player.getPosition()));
             System.out.println("_______________________________________________________________________");
             System.out.println("LANCE DE DE " + de);
 
-
-            System.out.println(" Vous êtes à la position " + newpoiton);
+            System.out.println(" Vous êtes à la position " + (player.getPosition()));
             System.out.println("_______________________________________________________________________");
-            plateau[newpoiton].interact(player);
+        } else if ((player.getPosition()) == 63) {
+            String REPRESENTATION = ASCII_Representations.messageBouclier();
+            System.out.println(REPRESENTATION);
 
         } else {
             throw new PersonnageHorsPlateauException();
-        }
 
+
+        }
 
     }
 }

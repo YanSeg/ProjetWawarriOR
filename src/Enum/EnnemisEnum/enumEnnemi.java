@@ -13,7 +13,9 @@ public enum enumEnnemi {
             new Roublard(), new Sombra(), new TrollTruculent(), new Vorax(), new Zigzag()),
     SORCIERS(new GandRalf(), new GouleGlouton(), new LeCheveuduDiable(), new LeSexyMan(), new LicheMaudite(), new SorciereChatouille(), new SorciereXena(), new SpectreDeNuit(), new Sylvitrouille(), new WendigoSanguinaire());
 
-
+    /**
+     * Test JAVADOC
+     */
     private final Ennemi[] allEnnemis;
 
     enumEnnemi(Ennemi... allEnnemis) {      // ... car on peut construire plusieurs Ennemi

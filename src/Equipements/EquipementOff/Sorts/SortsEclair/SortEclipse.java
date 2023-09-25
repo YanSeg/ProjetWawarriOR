@@ -2,6 +2,7 @@ package Equipements.EquipementOff.Sorts.SortsEclair;
 
 import Equipements.EquipementOff.Sorts.Sorts;
 import Images.ASCII_Representations;
+import Personnages.Personnage;
 
 public class SortEclipse extends Sorts {
 
@@ -11,5 +12,10 @@ public class SortEclipse extends Sorts {
         setImage(image.eclair4());
         String description = "Une manifestation du courroux de l'obscurité, libérant un éclair noir qui engloutit tout sur son passage.";
         setDescription(description);
+    }
+
+    @Override
+    public void interact(Personnage player) {
+
     }
 }

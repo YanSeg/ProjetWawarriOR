@@ -2,8 +2,14 @@ package Equipements.EquipementOff.Sorts.SortsGlace;
 
 import Equipements.EquipementOff.Sorts.Sorts;
 import Images.ASCII_Representations;
+import Personnages.Personnage;
 
 public class SortGivre extends Sorts {
+    @Override
+    public void interact(Personnage player) {
+
+    }
+
     public SortGivre() {
         super("Glace", "Lance de Givre", 22);
         ASCII_Representations image = new ASCII_Representations();

@@ -1,5 +1,7 @@
 package Personnages;
 
+import Equipements.EquipementDef.EquipementDefensif;
+import Equipements.EquipementOff.EquipementOffensif;
 import Equipements.Equipements;
 import MiseEnPage.MiseEnPage;
 import PlateuDeJeu.Cases.Cases;
@@ -12,16 +14,40 @@ import java.util.regex.Matcher;
 
 public abstract class Personnage {
 
+    private int health;
+    private int strength;
+
+    @Override
+    public String toString() {
+        return
+                "health=" + health +
+                ", strength=" + strength +
+                ", type='" + type + '\'' +
+                ", position=" + position +
+                ", equipementDef=" + equipementDef.getName() +
+                ", equipemenOf=" + equipemenOf.getName() +
+                ", name='" + name ;
+    }
+
+
+    private String type;
+
+    public Personnage(int health, int strength, String type, String name) {
+        this.health = health;
+        this.strength = strength;
+        this.type = type;
+        this.name = name;
+    }
+
+    private int position = 0;
+
+    private Equipements equipementDef;
+
+    private Equipements equipemenOf;
 
     private String name;
 
-    public String getName() {
-        return name;
-    }
 
-    public void setName(String name) {
-        this.name = name;
-    }
 
     public int getHealth() {
         return health;
@@ -35,6 +61,10 @@ public abstract class Personnage {
         return strength;
     }
 
+    public void setStrength(int strength) {
+        this.strength = strength;
+    }
+
     public String getType() {
         return type;
     }
@@ -42,52 +72,6 @@ public abstract class Personnage {
     public void setType(String type) {
         this.type = type;
     }
-
-    public String getOffensive() {
-        return offensive;
-    }
-
-    public void setOffensive(String offensive) {
-        this.offensive = offensive;
-    }
-
-    public String getDefensive() {
-        return defensive;
-    }
-
-    public void setDefensive(String defensive) {
-        this.defensive = defensive;
-    }
-
-    private int health;
-    private int strength;
-
-    private String type;
-    private int position = 0;
-
-    private String offensive;
-    private String defensive;
-
-
-    @Override
-    public String toString() {
-
-        return "Vous êtes un " + getClass().getSimpleName() + " nommé : " + name + "\n" +
-                "| Force d'attaque : " + strength + " | Vie : " + health + "| Equipement-Offensif : " + offensive +
-                " | Equipement-Defensif : " + defensive;
-
-    }
-
-    public Personnage(String name, int health, int strength, String offensive, String defensive) {
-        this.name = name;
-        this.health = health;
-        this.strength = strength;
-        this.offensive = offensive;
-        this.defensive = defensive;
-    }
-
-    // Attributs
-
 
     public int getPosition() {
         return position;
@@ -97,58 +81,35 @@ public abstract class Personnage {
         this.position = position;
     }
 
-    public void setStrength(int strength) {
-        this.strength = strength;
+    public Equipements getEquipementDef() {
+        return equipementDef;
     }
 
-
-    public Personnage(String type, String name, int health, int strength, String offensive, String defensive) {
-        this.type = type;
-        this.name = name;
-        this.health = health;
-        this.strength = strength;
-        this.offensive = offensive;
-        this.defensive = defensive;
+    public void setEquipementDef(Equipements equipementDef) {
+        this.equipementDef = equipementDef;
     }
 
-
-    // Constructeurs
-
-
-    // Methodes
-//    public abstract void useObject(Equipements equipements);
-
-
-
-
-    public Personnage(String name, String type, int health, Integer strength, String offensive, String defensive) {
-        this.name = name;
-        this.type = type;
-        this.name = name;
-        this.health = health;
-        this.strength = strength;
-        this.offensive = offensive;
-        this.defensive = defensive;
+    public Equipements getEquipemenOf() {
+        return equipemenOf;
     }
 
-    public Personnage() {
-
+    public void setEquipemenOf(Equipements equipemenOf) {
+        this.equipemenOf = equipemenOf;
     }
 
-    public Personnage(String type) {
-        this.type = type;
+    public String getName() {
+        return name;
     }
 
-    public Personnage(String type, String name) {
-        this.type = type;
+    public void setName(String name) {
         this.name = name;
     }
 
 
     public String evolutionPartie() {
         MiseEnPage.space();
-        return " Vous en êtes  à la positon " + position  +  "/n" + "| Force d'attaque : " + strength + " | Vie : " + health + "| Equipement-Offensif : " + offensive +
-                " | Equipement-Defensif : " + defensive;
+        return " Vous en êtes  à la positon " + position + "/n" + "| Force d'attaque : " + strength + " | Vie : " + health + "| Equipement-Offensif : " + equipemenOf.getName()+
+                " | Equipement-Defensif : " + equipementDef.getName();
 
     }
 

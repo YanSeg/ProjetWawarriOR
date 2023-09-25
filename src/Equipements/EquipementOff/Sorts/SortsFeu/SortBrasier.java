@@ -2,8 +2,14 @@ package Equipements.EquipementOff.Sorts.SortsFeu;
 
 import Equipements.EquipementOff.Sorts.Sorts;
 import Images.ASCII_Representations;
+import Personnages.Personnage;
 
 public class SortBrasier extends Sorts {
+
+    @Override
+    public void interact(Personnage player) {
+
+    }
 
     public SortBrasier() {
         super("Feu", "Brasier Infernal", 12);

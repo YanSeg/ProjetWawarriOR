@@ -15,13 +15,60 @@ import PlateuDeJeu.ArrayListCases;
 import java.util.ArrayList;
 import java.util.Collections;
 
-public class CaseEquipement implements Cases{
+import static MiseEnPage.MiseEnPage.space;
+import static PlateuDeJeu.ArrayListCases.arrayDesEquipements;
+
+public class CaseEquipement implements Cases {
+
+
+    private final String REPRESENTATION = ASCII_Representations.messageEquipement();
+
+
     @Override
-    public void interact(Personnage player ) {
+    public void interact(Personnage player) {
+
+        Equipements equipements = arrayDesEquipements();
+
+        System.out.println(REPRESENTATION);
+        System.out.println(equipements);
+        System.out.println("HEY");
+
+        if (equipements instanceof Potions) {
+            System.out.println("WELL DONE DUDE");
+            space();
+            int a = equipements.getHealth();
+            int b = player.getHealth();
+            int h = a + b;
+            player.setHealth(h);
+            int c = equipements.getStrength();
+            int d = player.getStrength();
+            int j = c + d;
+            player.setStrength(j);
+            System.out.println(player);
+            space();
+        } else if (equipements.isUsable(player)) {
+            if (equipements instanceof EquipementOffensif) {
+                player.setEquipemenOf(equipements);
+                System.out.println("VOUS AVEZ RECUP :");
+                space();
+                System.out.println(equipements);
+            }
+            if (equipements instanceof EquipementDefensif) {
+                player.setEquipementDef(equipements);
+                System.out.println("VOUS AVEZ RECUP :");
+                space();
+                System.out.println(equipements);
+            }
+
+        } else {
+            System.out.println("Rien à récupérer pour vous");
+        }
+
 
     }
+}
 
-    //    @Override
+//    @Override
 //    public void interact(Personnage player) {
 //
 //        ArrayListCases plty = new ArrayListCases();
@@ -72,5 +119,5 @@ public class CaseEquipement implements Cases{
 //
 //    }
 
-}
+
 

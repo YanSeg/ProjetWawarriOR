@@ -2,8 +2,14 @@ package Equipements.EquipementOff.Sorts.SortsGlace;
 
 import Equipements.EquipementOff.Sorts.Sorts;
 import Images.ASCII_Representations;
+import Personnages.Personnage;
 
 public class SortTempete extends Sorts {
+    @Override
+    public void interact(Personnage player) {
+
+    }
+
     public SortTempete() {
         super("Glace", "Tempête de Glace", 22);
         ASCII_Representations image = new ASCII_Representations();

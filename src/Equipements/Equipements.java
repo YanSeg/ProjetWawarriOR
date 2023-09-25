@@ -1,25 +1,24 @@
 package Equipements;
 
-public abstract class Equipements {
-    private String type;
-    private int strength;
-    private String name;
-    private String image;
-    private int health;
-    private int defensive;
-    private int offensive;
-    private String description;
+import Personnages.Personnage;
+import PlateuDeJeu.Cases.Cases;
 
-    @Override
-    public String toString() {
-        return " " + image + "\n"
-                + name + "\n" + description + "\n" +
-                " | Vie: " + health + " | Force : " + strength + " | Attaque : " + offensive + " | Défense : " + defensive + "";
-    }
+public abstract class Equipements  implements Cases {
+    protected String type;
+    protected int strength;
+    protected String name;
+    protected String image;
+    protected int health;
+    protected int defensive;
+    protected int offensive;
+    protected String description;
 
     public String getType() {
         return type;
     }
+
+    public abstract boolean isUsable(Personnage player);
+
 
     public Equipements(int strength, String name, int health, int defensive, int offensive) {
         this.strength = strength;
@@ -64,6 +63,20 @@ public abstract class Equipements {
 
     public int getHealth() {
         return health;
+    }
+
+    @Override
+    public String toString() {
+        return "Equipements{" +
+                "type='" + type + '\'' +
+                ", strength=" + strength +
+                ", name='" + name + '\'' +
+                ", image='" + image + '\'' +
+                ", health=" + health +
+                ", defensive=" + defensive +
+                ", offensive=" + offensive +
+                ", description='" + description + '\'' +
+                '}';
     }
 
     public void setHealth(int health) {

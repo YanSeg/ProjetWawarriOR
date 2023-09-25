@@ -2,8 +2,14 @@ package Equipements.EquipementOff.Sorts.SortsEclair;
 
 import Equipements.EquipementOff.Sorts.Sorts;
 import Images.ASCII_Representations;
+import Personnages.Personnage;
 
 public class SortEclair extends Sorts {
+
+    @Override
+    public void interact(Personnage player) {
+
+    }
 
     public SortEclair() {
         super("Ombre","Éclair d'Ombre", 15);

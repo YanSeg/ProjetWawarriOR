@@ -2,8 +2,14 @@ package Equipements.EquipementOff.Sorts.SortsGlace;
 
 import Equipements.EquipementOff.Sorts.Sorts;
 import Images.ASCII_Representations;
+import Personnages.Personnage;
 
 public class SortAvalanche extends Sorts {
+
+    @Override
+    public void interact(Personnage player) {
+
+    }
 
     public SortAvalanche() {
         super("Glace", "Avalanche Dévastatrice", 22);

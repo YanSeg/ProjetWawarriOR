@@ -1,14 +1,15 @@
 package Game;
 
+import Ennemis.Ennemi;
 import Personnages.Personnage;
 import PlateuDeJeu.Cases.*;
+import PlateuDeJeu.GenerateurPlateau;
 
 import java.util.ArrayList;
 
 public class Game {
 
 
-    private int position;
     private Personnage player;
     private ArrayList<Cases> plateau;
 
@@ -24,71 +25,58 @@ public class Game {
         ;
     }
 
+
+    /**
+     * @return un entier compris entre 1 et 6
+     */
+
     public int lancementDuddE() {
         int de = (int) (1 + 6 * Math.random());
         return de;
     }
 
-    public void jouerauJeu(Personnage player) {
+    /**
+     * @param player
+     * @param plateau C'est ma méthode pour jouer au jeu
+     */
+    public void jouerauJeu(Personnage player, Cases[] plateau)  {
 
-        if (player != null) {
+        if (player != null)
             try {
-                jeuDe(player);
+                jouer1tour(player, plateau);
             } catch (PersonnageHorsPlateauException e) {
                 System.out.println("Personnage hors plateau : " + e.getMessage());
-                // et là ben .... on verra plus tard !!!!
-            } finally {
-                System.out.println(" FINALLY ");
             }
-        }
     }
 
 
-    public void jeuDe(Personnage player) throws PersonnageHorsPlateauException {
+    public void jouer1tour(Personnage player, Cases[] plateau) throws PersonnageHorsPlateauException {
 
 
-        // Création du plateau ici pour l'instant
-        Cases[] plateau = new Cases[64];
-        for (int i = 0; i < 64; i++) {
-            plateau[i] = new CaseVide();
+        System.out.println(plateau.getClass().getSimpleName());
+
+
+
+
+        if ((player.getPosition()) <= 63) {
+            int de = lancementDuddE();
+            int newpoiton = Math.min(63, player.getPosition() + de);
+            player.setPosition(newpoiton);
+            System.out.println("_______________________________________________________________________");
+            System.out.println("LANCE DE DE " + de);
+
+
+            System.out.println(" Vous êtes à la position " + newpoiton);
+            System.out.println("_______________________________________________________________________");
+            plateau[newpoiton].interact(player);
+
+        } else {
+            throw new PersonnageHorsPlateauException();
         }
-        int[] casesDragonsS = {45, 52, 56, 62};
-        for (int caseDragon : casesDragonsS) {
-            plateau[caseDragon] = new CaseDragon();
-        }
-        int[] caseSorciersS = {10, 20, 25, 32, 35, 36, 37, 40, 44, 47};
-        for (int caseSorcier : caseSorciersS) {
-            plateau[caseSorcier] = new CaseSorcier();
-        }
-        int[] caseGobelinsS = {3, 6, 9, 12, 15, 18, 21, 24, 27, 30};
-        for (int caseGobelin : caseGobelinsS) {
-            plateau[caseGobelin] = new CaseGobelin();
-        }
-        int[] casesCaissesSurprises = {2, 11, 5, 22, 38, 19, 26, 42, 53, 1, 4, 8, 17, 23, 48, 49, 7, 13, 31, 33, 39, 43, 28, 41};
-        for (int caseCaisseSurprise : casesCaissesSurprises) {
-            plateau[caseCaisseSurprise] = new CaseEquipement();
-        }
-///////////////////////////////////////////////////////////////////////////////
 
-        int position = 0;
-
-
-        while (position < 65) {
-
-            while (player.gethealth() > 0) {
-                int de = lancementDuddE();
-                position = position + de;
-                Cases Test;
-                Test = plateau[position];
-                Test.interact(player);
-
-            }
-
-        }
 
     }
 }
-
 
 //        Cases[] plateau = new Cases[4];
 //
@@ -107,3 +95,8 @@ public class Game {
 //            System.out.println(player.gethealth());
 //        }
 //    }
+
+
+
+
+

@@ -1,12 +1,12 @@
 package Ennemis.Dragons;
 
-import Images.Choupi;
+import Images.ASCII_Representations;
 
 public class Aurorath extends Dragon {
 
     public Aurorath() {
         super("Glace", "Aurorath la Glace-Éternelle", 20, 20, " Manipulation des tempêtes de neige", "Capacité de se camoufler dans la neige");
-        Choupi image = new Choupi();
+        ASCII_Representations image = new ASCII_Representations();
         setImage(image.dragon2());
 
         String description =

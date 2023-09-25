@@ -1,12 +1,11 @@
 package Ennemis.JeuFilm;
 
-import Ennemis.Ennemi;
-import Images.Choupi;
+import Images.ASCII_Representations;
 
 public class LinkLeMagnifique extends SuperHero {
     public LinkLeMagnifique() {
         super("Ennemis", "Link Le Magnifique", 11, 15, "L'épée de la triphorce", "Le bouclier d'Hylia");
-        Choupi image = new Choupi();
+        ASCII_Representations image = new ASCII_Representations();
         setImage(image.link());
 
         String description =

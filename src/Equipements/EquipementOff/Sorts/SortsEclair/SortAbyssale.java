@@ -1,13 +1,13 @@
 package Equipements.EquipementOff.Sorts.SortsEclair;
 
 import Equipements.EquipementOff.Sorts.Sorts;
-import Images.Choupi;
+import Images.ASCII_Representations;
 
 public class SortAbyssale extends Sorts {
 
     public SortAbyssale() {
         super("Ombre","Fulgurance Abyssale", 0);
-        Choupi image = new Choupi();
+        ASCII_Representations image = new ASCII_Representations();
         setImage(image.eclair6());
         String description = "Une fulgurance venue des abysses, créant un éclair d'ombre terrifiant qui déchire l'espace et le temps.";
         setDescription(description);

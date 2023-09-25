@@ -1,14 +1,13 @@
 package Ennemis.Sorciers;
 
-import Ennemis.Ennemi;
-import Images.Choupi;
+import Images.ASCII_Representations;
 
 public class LicheMaudite extends Sorcier {
 
 
     public LicheMaudite() {
         super("Ennemis", "La Liche Maudite", 7, 10, "L'Ombre des ténèbres", "Le ShadowSpell");
-        Choupi image = new Choupi();
+        ASCII_Representations image = new ASCII_Representations();
         setImage(image.creepymaneyes());
     }
 }

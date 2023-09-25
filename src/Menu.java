@@ -2,7 +2,9 @@ import Game.Game;
 import Personnages.Personnage;
 import Personnages.Magiciens.Magicien;
 import Personnages.Guerriers.Guerrier;
-import Images.Choupi;
+import Images.ASCII_Representations;
+import PlateuDeJeu.Cases.Cases;
+import PlateuDeJeu.GenerateurPlateau;
 
 import java.util.Scanner;
 
@@ -36,10 +38,12 @@ public class Menu {
 
     public void listemenu2() {
         System.out.println("1. Créer votre personnage");
-        System.out.println("2. Modifier votre personnage");
-        System.out.println("3. Afficher les paramètres de votre personnage");
-        System.out.println("4. Jouer");
-        System.out.println("5. Quitter le menu du jeu");
+        System.out.println("2. Guerrier par defaut");
+        System.out.println("3. Magicien par defaut");
+        System.out.println("4. Modifier votre personnage");
+        System.out.println("5. Afficher les paramètres de votre personnage");
+        System.out.println("6. Jouer");
+        System.out.println("7. Quitter le menu du jeu");
     }
 
     public void backtoStartMenu() {
@@ -76,7 +80,7 @@ public class Menu {
         System.out.println("Tapez 1 : Guerrier | Tapez 2 : Magicien");
         String persoType;
         String persoName;
-         //Personnage player;
+        //Personnage player;
         int choixTypePerso = getIntInput();
         switch (choixTypePerso) {
             case 1:
@@ -91,19 +95,19 @@ public class Menu {
                 space();
                 player = null;
                 //////////////////////// Fonction recursive : Personnage player = choixPersoMenu(); où un truc du genre
-               // break;
+                // break;
         }
         return player;
     }
 
-    private int getIntInput() {
+    public int getIntInput() {
         try {
             int r = this.scanner.nextInt();
             this.scanner.nextLine(); // Permet d'écraser le scanner pour ne pas avoir une boucle infinie.
             return r;
         } catch (Exception e) {
             space();
-            Choupi integer = new Choupi();
+            ASCII_Representations integer = new ASCII_Representations();
             System.out.println(integer.integer());
             System.out.println(integer.please());
             space();
@@ -113,13 +117,7 @@ public class Menu {
     }
 
 
-
-
-
-
-
 // Les menus approprement dit _________________________________________________________________________________
-
 
 
     public void StartMenu() {
@@ -144,6 +142,7 @@ public class Menu {
 
 
     public void secondMenu() {
+
         boolean lemenu = true;
         while (lemenu) {
             listemenu2();
@@ -153,7 +152,15 @@ public class Menu {
                 case 1:
                     player = createPersonnage();
                     break;
+
                 case 2:
+                    player = new Magicien("David Copperfield", 6, 15, "philtre", "sort");
+                    break;
+                case 3:
+                    player = new Guerrier("Eric cantona", 10, 10, "arme", "bouclier");
+                    break;
+
+                case 4:
                     if (player != null) {
                         space();
                         changeNamePlayer(player);
@@ -164,24 +171,28 @@ public class Menu {
                         space();
                     }
                     break;
-                case 3:
+                case 5:
                     space();
                     affichageduPersonnage(player);
                     space();
                     break;
-                case 4:
+                case 6:
                     space();
                     Game game = new Game(); // Pas là
                     if (player != null) {
-                        game.jouerauJeu(player);
+
+                        Cases[] plateau = GenerateurPlateau.plateaClassique();
+                        while (isOver(player)) {
+                            game.jouerauJeu(player,plateau);
+                        }
                     } else {
                         affichageErreurMenu();
                         space();
                     }
                     space();
-                 //   player = null;
+                    //   player = null;
                     break;
-                case 5:
+                case 7:
                     lemenu = false;
                     space();
                     break;
@@ -197,6 +208,16 @@ public class Menu {
     }
 
 
+    // private Boolean isOver(){
+//
+//        return(player.gethealth()<=0 || positon
+// }
+    public static void runOrfight() {
+
+    }
 
 
+    public boolean isOver(Personnage player) {
+        return ((player.getPosition() <= 63) || (player.getHealth() == 0));
+    }
 }

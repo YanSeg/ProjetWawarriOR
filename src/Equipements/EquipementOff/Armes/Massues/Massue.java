@@ -5,20 +5,21 @@ import Personnages.Guerriers.Guerrier;
 import Personnages.Personnage;
 
 public abstract class Massue extends Armes {
-    public Massue(String offensifType, int offensifStrenght, String offensifName) {
-        super(offensifType, offensifStrenght, offensifName);
-    }
 
-    public Massue() {
+    public Massue(String offensifType, String offensifName, int offensifStrenght, String image) {
+        super(offensifType, offensifName, offensifStrenght, image);
     }
 
     public Massue(String offensifType, String offensifName, int offensifStrenght) {
         super(offensifType, offensifName, offensifStrenght);
     }
 
-    public Massue(String offensifName, int offensifStrenght) {
-        super(offensifName, offensifStrenght);
+    public Massue() {
     }
+
+
+
+
 
 
 

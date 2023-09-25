@@ -1,12 +1,11 @@
 package Ennemis.JeuFilm;
 
-import Ennemis.Ennemi;
-import Images.Choupi;
+import Images.ASCII_Representations;
 
 public class Kurbi extends SuperHero {
     public Kurbi() {
         super("Ennemis", "kurbi", 8, 7, "L'épée de Morpho Knight", "Eject Punch");
-        Choupi image = new Choupi();
+        ASCII_Representations image = new ASCII_Representations();
         setImage(image.kurbi());
 
         String description =

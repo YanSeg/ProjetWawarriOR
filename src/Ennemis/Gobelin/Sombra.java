@@ -1,12 +1,11 @@
 package Ennemis.Gobelin;
 
-import Ennemis.Ennemi;
-import Images.Choupi;
+import Images.ASCII_Representations;
 
 public class Sombra extends Gobelin {
     public Sombra() {
         super("Gobelin", "Sombra l'Ombre", 3, 5, "Dagues empoisonnées", "Manteau d'invisibilité");
-        Choupi image = new Choupi();
+        ASCII_Representations image = new ASCII_Representations();
         setImage(image.phantom());
 
         String description =

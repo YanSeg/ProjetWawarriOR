@@ -3,6 +3,9 @@
 
 
 
+// Tableau case fixe, à instancier
+
+
 //package Memo;
 //package com.company;
 //
@@ -79,3 +82,24 @@
 
 //Pour tout sortir mon tableau d'object
 //        System.out.println(arrayListEnnemi.toString());
+
+
+
+// imaginons un warrior et et wizard qui extends de personnage et un weapon et un spell spé à l un ou a l autre
+//class Offensive blabla {
+//}
+//
+//Spelle et Weapon extends Offensive
+//
+////
+//class warrior factory {
+//    public Personnage createPerso (){
+//        return new Warrior();
+//    }
+//    public EquipementOff createEquipement (){
+//        return new Offensive();
+//    }
+//
+
+
+// Stream().map() UTILISER STREAM EN JAVA POUR ALLER CHERCHER DES FILTERS,FOREACH, MAP etc.

@@ -1,12 +1,11 @@
 package Ennemis.Gobelin;
 
-import Ennemis.Ennemi;
-import Images.Choupi;
+import Images.ASCII_Representations;
 
 public class Roublard extends Gobelin {
     public Roublard() {
         super("Gobelin", "Roublard le Sournois", 3, 5, "Arc furtif", " Cape d'ombres");
-        Choupi image = new Choupi();
+        ASCII_Representations image = new ASCII_Representations();
         setImage(image.gogobelin());
 
         String description =

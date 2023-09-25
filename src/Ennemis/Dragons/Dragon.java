@@ -1,8 +1,13 @@
 package Ennemis.Dragons;
 
 import Ennemis.Ennemi;
+import Images.ASCII_Representations;
+import Personnages.Personnage;
+import PlateuDeJeu.Cases.Cases;
 
-public abstract class Dragon extends Ennemi {
+public abstract class Dragon extends Ennemi  {
+    private final String REPRESENTATION = ASCII_Representations.dragonCaseMessage();
+
     private String image;
     private String type;
     private String name;
@@ -13,7 +18,12 @@ public abstract class Dragon extends Ennemi {
 
     private String defensive;
 
+    @Override
+    public void interact(Personnage player) {
+        System.out.println(REPRESENTATION);
 
+
+    }
     @Override
     public String toString() {
         return " " + image + "\n"

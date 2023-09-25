@@ -1,13 +1,12 @@
 package Ennemis.Gobelin;
 
-import Ennemis.Ennemi;
-import Images.Choupi;
+import Images.ASCII_Representations;
 
 public class Grimmog extends Gobelin {
 
     public Grimmog() {
         super("Gobelin", "Le Troll Truculent", 3, 5, "Massue à pointes", "Plastron en os");
-        Choupi image = new Choupi();
+        ASCII_Representations image = new ASCII_Representations();
         setImage(image.monstercool());
 
         String description =

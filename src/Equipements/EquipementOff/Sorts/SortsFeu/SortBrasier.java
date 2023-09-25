@@ -1,13 +1,13 @@
 package Equipements.EquipementOff.Sorts.SortsFeu;
 
 import Equipements.EquipementOff.Sorts.Sorts;
-import Images.Choupi;
+import Images.ASCII_Representations;
 
 public class SortBrasier extends Sorts {
 
     public SortBrasier() {
         super("Feu", "Brasier Infernal", 12);
-        Choupi image = new Choupi();
+        ASCII_Representations image = new ASCII_Representations();
         setImage(image.fire2());
         String description = "Une déflagration de feu infernal qui engloutit la zone, laissant des cendres fumantes.";
         setDescription(description);

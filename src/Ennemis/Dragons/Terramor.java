@@ -1,11 +1,11 @@
 package Ennemis.Dragons;
 
-import Images.Choupi;
+import Images.ASCII_Representations;
 
 public class Terramor extends Dragon{
     public Terramor() {
         super("Terre", "Terramor le Terre-Briseur", 20, 20, "Manipulation des roches",  "Capacité à se fondre dans le sol");
-        Choupi image = new Choupi();
+        ASCII_Representations image = new ASCII_Representations();
         setImage(image.dragon1());
 
         String description =

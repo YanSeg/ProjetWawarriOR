@@ -1,11 +1,11 @@
 package Ennemis.Dragons;
 
-import Images.Choupi;
+import Images.ASCII_Representations;
 
 public class Umbragon extends Dragon{
     public Umbragon() {
         super("Obscurité", "Umbragon le Sombre-Mystique", 20, 20, "Manipulation de l'obscurité",  "Capacité à se fondre dans l'obscurité");
-        Choupi image = new Choupi();
+        ASCII_Representations image = new ASCII_Representations();
         setImage(image.dragon4());
 
         String description =

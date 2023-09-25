@@ -12,15 +12,12 @@ import Ennemis.JeuFilm.LinkLeMagnifique;
 import Ennemis.Sorciers.*;
 //import Equipements.EquipementDef.Boucliers.Boucliers;
 //import Equipements.EquipementDef.Philtres.Philtres;
-import Equipements.EquipementOff.Armes.Armes;
 import Equipements.EquipementOff.Armes.Epees.*;
 import Equipements.EquipementOff.Armes.Massues.*;
-import Equipements.EquipementOff.Sorts.Sorts;
 import Equipements.EquipementOff.Sorts.SortsEclair.SortAbyssale;
-import Equipements.EquipementOff.Sorts.SortsEclair.SortEclairOmbre;
+import Equipements.EquipementOff.Sorts.SortsEclair.SortEclair;
 import Equipements.EquipementOff.Sorts.SortsEclair.SortEclipse;
 import Equipements.Equipements;
-import PlateuDeJeu.Cases.Cases;
 import Equipements.PotionsPoisons.GrandesPotions.*;
 import Equipements.PotionsPoisons.Potions;
 import Equipements.PotionsPoisons.PotionsStandard.*;
@@ -28,7 +25,7 @@ import Equipements.PotionsPoisons.PotionsStandard.*;
 import java.util.ArrayList;
 
 
-public class PlateauJeu {
+public class ArrayListCases {
 
 
 //  _______________________________________________________________ Get/SET à voir
@@ -213,7 +210,7 @@ public class PlateauJeu {
         EpeeGranit epeeGranit = new EpeeGranit();
         EpeeIncendiaire epeeIncendiaire = new EpeeIncendiaire();
         SortAbyssale sortAbyssale = new SortAbyssale();
-        SortEclairOmbre sortEclairOmbre = new SortEclairOmbre();
+        SortEclair sortEclairOmbre = new SortEclair();
         SortEclipse sortEclipse = new SortEclipse();
         PotionHarricotMagique potionHarricotMagique = new PotionHarricotMagique();
         PotionDuSage potionDuSage = new PotionDuSage();
@@ -237,6 +234,8 @@ public class PlateauJeu {
 
         return listEquipement;
     }
+
+
 
 
 }

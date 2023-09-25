@@ -1,13 +1,12 @@
 package Ennemis.Sorciers;
 
-import Ennemis.Ennemi;
-import Images.Choupi;
+import Images.ASCII_Representations;
 
 public class LeCheveuduDiable extends Sorcier {
 
     public LeCheveuduDiable() {
         super("Ennemis", "L'Écorcheur de Chair", 5, 5, "La Harpie Sanguinaire", "Le Masque de l'Éclipse");
-        Choupi image = new Choupi();
+        ASCII_Representations image = new ASCII_Representations();
         setImage(image.scaryman());
     }
 }

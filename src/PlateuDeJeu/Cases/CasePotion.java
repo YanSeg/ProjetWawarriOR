@@ -1,10 +1,14 @@
 package PlateuDeJeu.Cases;
 
+import Equipements.EquipementDef.EquipementDefensif;
+import Equipements.Equipements;
+import Images.ASCII_Representations;
 import Personnages.Personnage;
 
-public class CasePotion implements Cases {
-    @Override
-    public void interact(Personnage player) {
+public class CasePotion extends CaseEquipement{
 
-    }
+
+    private final String REPRESENTATION = ASCII_Representations.messagePotion();
+
+
 }

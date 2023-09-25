@@ -6,4 +6,6 @@ public interface Cases {
 
     void interact (Personnage player);
 
+
+
 }

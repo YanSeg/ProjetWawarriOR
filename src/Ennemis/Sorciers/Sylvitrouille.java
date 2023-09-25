@@ -1,15 +1,14 @@
 package Ennemis.Sorciers;
 
 
-import Ennemis.Ennemi;
-import Images.Choupi;
+import Images.ASCII_Representations;
 
 public class Sylvitrouille extends Sorcier {
     public Sylvitrouille() {
 
 
         super("Ennemis", "Sylvitrouille", 5, 5, "Citrouille", "Marshmello");
-        Choupi image = new Choupi();
+        ASCII_Representations image = new ASCII_Representations();
         setImage(image.citrouille());
     }
 

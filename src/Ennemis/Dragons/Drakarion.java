@@ -1,12 +1,11 @@
 package Ennemis.Dragons;
 
-import Ennemis.Ennemi;
-import Images.Choupi;
+import Images.ASCII_Representations;
 
 public class Drakarion extends Dragon {
     public Drakarion() {
         super("Feu", "Drakarion le Feu-Éternel", 20, 20, "Manipulation des flammes",  "Capacité de vol rapide pour échapper aux attaques");
-        Choupi image = new Choupi();
+        ASCII_Representations image = new ASCII_Representations();
         setImage(image.dragon5());
 
         String description =

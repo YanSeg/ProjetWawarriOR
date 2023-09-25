@@ -7,9 +7,15 @@ public abstract class EquipementDefensif extends Equipements {
     private String type;
     private int defensive;
     private String description;
+
+    @Override
+    public String toString() {
+        return super.toString();
+    }
+
     private String image;
     private int health;
-
+    private String name;
 
     @Override
     public String getType() {
@@ -21,7 +27,12 @@ public abstract class EquipementDefensif extends Equipements {
         this.type = type;
     }
 
+    @Override
+    public int getDefensive() {
+        return defensive;
+    }
 
+    @Override
     public void setDefensive(int defensive) {
         this.defensive = defensive;
     }
@@ -57,10 +68,34 @@ public abstract class EquipementDefensif extends Equipements {
     }
 
     @Override
-    public int getDefensive() {
-        return defensive;
+    public String getName() {
+        return name;
     }
 
+    @Override
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public EquipementDefensif(int strength, String name, int health, int defensive, int offensive, String type, int defensive1, String name1) {
+        super(strength, name, health, defensive, offensive);
+        this.type = type;
+        this.defensive = defensive1;
+        this.name = name;
+    }
+
+    public EquipementDefensif(String name, String type, int defensive, String name1) {
+        super(name);
+        this.type = type;
+        this.defensive = defensive;
+        this.name = name1;
+    }
+
+    public EquipementDefensif(String type, int defensive, String name) {
+        this.type = type;
+        this.defensive = defensive;
+        this.name = name;
+    }
 }
 
 

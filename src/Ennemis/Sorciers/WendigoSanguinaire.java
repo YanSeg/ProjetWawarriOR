@@ -1,13 +1,12 @@
 package Ennemis.Sorciers;
 
-import Ennemis.Ennemi;
-import Images.Choupi;
+import Images.ASCII_Representations;
 
 public class WendigoSanguinaire extends Sorcier {
 
     public WendigoSanguinaire() {
         super("Ennemis", "Le Wendigo Sanguinaire", 6, 12, "Le Sceptre de l'Abysse", "L'Armure Infernale");
-        Choupi image = new Choupi();
+        ASCII_Representations image = new ASCII_Representations();
         setImage(image.monstreviolent());
     }
 }

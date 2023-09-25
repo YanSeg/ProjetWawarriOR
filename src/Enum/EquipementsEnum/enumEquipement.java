@@ -1,6 +1,5 @@
 package Enum.EquipementsEnum;
 
-import Ennemis.Ennemi;
 import Equipements.EquipementOff.Armes.Epees.*;
 import Equipements.EquipementOff.Armes.Massues.*;
 import Equipements.EquipementOff.Sorts.SortsEclair.*;
@@ -16,7 +15,7 @@ import java.util.Random;
 
 
 public enum enumEquipement {
-    SORTECLAIR(new SortAbyssale(), new SortEclairOmbre(), new SortEclipse(), new SortElec(), new SortRage()),
+    SORTECLAIR(new SortAbyssale(), new SortEclair(), new SortEclipse(), new SortElec(), new SortRage()),
     SORTFEU(new SortBrasier(), new SortDrakoFeu(), new SortEcarlate(), new SortEruptio(), new SortFlamme()),
     SORTGLACE(new SortAvalanche(), new SortGelee(), new SortGivre(), new SortGlace(), new SortTempete()),
     SORTTERRE(new SortTerreCreationGolem(), new SortTerreEruptionVolcanique(), new SortTerreFrappeSismique(), new SortTerreMurRoc(), new SortTerreTremblementDevastateur()),

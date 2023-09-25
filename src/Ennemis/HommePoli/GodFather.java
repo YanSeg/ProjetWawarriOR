@@ -1,13 +1,12 @@
 package Ennemis.HommePoli;
 
-import Ennemis.Ennemi;
-import Images.Choupi;
+import Images.ASCII_Representations;
 
 public class GodFather extends HommePo {
 
     public GodFather() {
         super("Ennemis", "Le Parrain", 5, 10, "La Lupara", "La vendetta");
-        Choupi image = new Choupi();
+        ASCII_Representations image = new ASCII_Representations();
         setImage(image.thegod());
     }
 }

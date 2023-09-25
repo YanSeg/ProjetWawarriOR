@@ -1,16 +1,16 @@
 package Images;
 
-public class Choupi {
+public class ASCII_Representations {
     String image;
 
-    public Choupi() {
+    public ASCII_Representations() {
         imageChoupi();
     }
 
-    public String imageChoupi() {
+    public static final String imageChoupi() {
 
 
-        return image = "                                   ........                                          \n" +
+        return "                                   ........                                          \n" +
                 "                                  .:-===+++++++++==-:.                                    \n" +
                 "                              .:-=+++++++++++++++++++++=-:                                \n" +
                 "                            :=+++++++++++++++++++++++++++++-.                             \n" +
@@ -83,8 +83,8 @@ public class Choupi {
     ;
 
 
-    public String welcome() {
-        return image =
+    public static final String welcome() {
+        return
 
                 "                                 d8b      d8b                  d8b       \n" +
                         "                                88P      88P                  ?88       \n" +
@@ -99,12 +99,12 @@ public class Choupi {
 
     }
 
-    public String walter() {
-        return image = "";
+    public static final String walter() {
+        return "";
 
     }
 
-    public String integer() {
+    public static final String integer() {
         return " .----------------.  .-----------------. .----------------.  .----------------.  .----------------.  .----------------.  .----------------. \n" +
                 "| .--------------. || .--------------. || .--------------. || .--------------. || .--------------. || .--------------. || .--------------. |\n" +
                 "| |     _____    | || | ____  _____  | || |  _________   | || |  _________   | || |    ______    | || |  _________   | || |  _______     | |\n" +
@@ -121,7 +121,7 @@ public class Choupi {
     }
 
 
-    public String please() {
+    public static final String please() {
         return "'||''|.  '||'      '||''''|      |      .|'''.|  '||''''|  \n" +
                 " ||   ||  ||        ||  .       |||     ||..  '   ||  .    \n" +
                 " ||...|'  ||        ||''|      |  ||     ''|||.   ||''|    \n" +
@@ -133,7 +133,7 @@ public class Choupi {
 
     }
 
-    public String rick() {
+    public static final String rick() {
         return " \n" +
                 "12px\n" +
                 "   ....   ..........::......::::::::::::--:=***#*###**=::::---::-----::----::::::.........\n" +
@@ -164,7 +164,7 @@ public class Choupi {
     }
 
 
-    public String panda() {
+    public static final String panda() {
         return "..........................................................................................\n" +
                 "..........................................................................................\n" +
                 "..........................................................................................\n" +
@@ -230,7 +230,7 @@ public class Choupi {
                 "..........................................................................................";
     }
 
-    public String Abou() {
+    public static final String Abou() {
         return
                 "                           ...::------==++++=++++=++++++++++==-::..                       \n" +
                         "                       ...::-=-=++++==++++***********************+=-::.                   \n" +
@@ -294,7 +294,7 @@ public class Choupi {
                         ":====+*+=*####+=++********###########################################***##################";
     }
 
-    public String jerome() {
+    public static final String jerome() {
         return
                 "%***####%##%##*########%###**#*****++++++++++++++++++****###******#%#%%%%%%%%%%%#*####*+*%\n" +
                         "%+*%%################***#*****+++++++++++++++++++++++++++*******###*+#%%#%#%%#%%%@@@@%%##%\n" +
@@ -360,7 +360,7 @@ public class Choupi {
 
     }
 
-    public String citrouille() {
+    public static final String citrouille() {
         return
                 "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\n" +
                         "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\n" +
@@ -407,7 +407,7 @@ public class Choupi {
     }
 
 
-    public String luck() {
+    public static final String luck() {
         return
                 "---------#%##########%%%%%%@%@@@@@@@@@@@@@@@@@@@@@@@@@@%%%%%%%%%@@@%%%%%%%%%#+------------\n" +
                         "--------*%%%##########%%%%%@@%%@@@@@@@@@@@@@@@@@@@@@@@@@#%@@%%%%%@@@%%%%%%%%%%=-----------\n" +
@@ -471,7 +471,7 @@ public class Choupi {
     }
 
 
-    public String leZ() {
+    public static final String leZ() {
         return " @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@%%%%%%%%##%%%%%%%%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\n" +
                 "@@@@@@@@@@@@@@@@@@@@@@@@@@@%%%%%%##***++++****#%%%%%%%%%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\n" +
                 "@@@@@@@@@@@@@@@@@@@@@%%%%%@%%%##++======-==+=+++*#%%%@%%%%%%%%%%%@@@@@@@@@@@@@@@@@@@@@@@@@\n" +
@@ -509,7 +509,7 @@ public class Choupi {
     }
 
 
-    public String booba() {
+    public static final String booba() {
         return "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\n" +
                 "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@%%#####%%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\n" +
                 "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@##**********##%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\n" +
@@ -553,7 +553,7 @@ public class Choupi {
                 "+=+#**=:+*===-==++*#%%%*+====---=**##%%%%%##*+*=++=++==++*++**##*###*#######*****##%@@%%@@\n";
     }
 
-    public String younes() {
+    public static final String younes() {
         return "--------------------------------:-:-------------:----------------------------:::::::::::::\n" +
                 "---------------------------------------------------------------------------:::::::::::::::\n" +
                 "----------------------:--:------============+==+++++===-------------------::::::::::::::::\n" +
@@ -619,7 +619,7 @@ public class Choupi {
                 "------*%#########%%%%%#+++++++*****************++++++++++++++==----------------=+**####-+#\n";
     }
 
-    public String lina() {
+    public static final String lina() {
         return "@@@@@@@@@@@@@@@%%%%%%%%%%%%%%%%%%%%%%%%%@%%%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\n" +
                 "@@@@@@@@@@%%%%%%%%%%%%%%%%%%%%%%%%%%%%%@%@@%%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\n" +
                 "@@@@@%%%%%%%%%%%%%%%%%%%%%%%%%%@@@@@@@@%%@%@@@@@@@@@@@@@%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\n" +
@@ -678,7 +678,7 @@ public class Choupi {
                 "@@@@@%#**********************====*********************#%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\n";
     }
 
-    public String il() {
+    public static final String il() {
         return "     :===========++=++*******++++++++++++++++++++++======+++++++++++++++++++++++****+****.\n" +
                 "      .+###%%%###@%#@@@@@@@@@@@%%%%%%%%%%%%%%%%#*=-..    ..:=+#%%%%%%%%%%%@@@@@@@@@@@@@@@.\n" +
                 "       .*##%%%###@%%%@@@@@@@@@@%%%%%%%%%%%%%%*:                -*%%%%%%%%%%%%%%@@@@@@@@@@.\n" +
@@ -725,7 +725,7 @@ public class Choupi {
                 "                                                                                          \n";
     }
 
-    public String orc() {
+    public static final String orc() {
         return " ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀\n" +
                 "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀\n" +
                 "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⣿⣿⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀\n" +
@@ -743,7 +743,7 @@ public class Choupi {
                 "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀";
     }
 
-    public String v() {
+    public static final String v() {
         return "⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄\n" +
                 "⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⡀⠄⠄⠄⠄\n" +
                 "⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠈⠄⠄⠄⠁⠄⠁⠄⠄⠄⠄⠄\n" +
@@ -770,7 +770,7 @@ public class Choupi {
                 "⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄";
     }
 
-    public String donald() {
+    public static final String donald() {
         return "⣿⡟⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠉⣿⣿⣿\n" +
                 "⡟⠄⠄⠄⠄⠄⠄⠄⠄⠄⢀⣠⣰⣶⣽⣽⣷⣶⣀⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⣿⣿⣿\n" +
                 "⠁⠄⠄⠄⠄⠄⡀⢀⣴⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣯⣆⡀⠄⠄⠄⠄⠄⣀⠄⠄⣿⣿⣿\n" +
@@ -788,7 +788,7 @@ public class Choupi {
                 "⠄⠄⢸⣿⣿⣦⡀⠄⠄⠄⠄⠄⠈⠛⠛⡟⠿⡿⢻⠛⠟⠿⠋⠁";
     }
 
-    public String helloworld() {
+    public static final String helloworld() {
         return "⢿⣿⣿⣿⣭⠹⠛⠛⠛⢿⣿⣿⣿⣿⡿⣿⠷⠶⠿⢻⣿⣛⣦⣙⠻⣿\n" +
                 "⣿⣿⢿⣿⠏⠀⠀⡀⠀⠈⣿⢛⣽⣜⠯⣽⠀⠀⠀⠀⠙⢿⣷⣻⡀⢿\n" +
                 "⠐⠛⢿⣾⣖⣤⡀⠀⢀⡰⠿⢷⣶⣿⡇⠻⣖⣒⣒⣶⣿⣿⡟⢙⣶⣮\n" +
@@ -801,7 +801,7 @@ public class Choupi {
                 "⣿⣿⣷⣮⣭⣍⡛⠻⢿⣷⠿⣶⣶⣬⣬⣁⣉⣀⣀⣁⡤⢴⣺⣾⣽⡇";
     }
 
-    public String fuck() {
+    public static final String fuck() {
         return "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣴⠏⠁⠀⠙⢿⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀\n" +
                 "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⣿⠀⠀⠀⠀⢸⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀\n" +
                 "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⡏⠀⠀⠀⠀⢸⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀\n" +
@@ -825,7 +825,7 @@ public class Choupi {
                 "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⡏⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⡏⠀⠀⠀⠀⠀⠀⠀⠀";
     }
 
-    public String ogre() {
+    public static final String ogre() {
         return "⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡯⠟⠛⠋⠉⠉⠉⠉⠉⠙⠛⠓⠿⠿⣟⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿\n" +
                 "⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡯⠞⠋⢁⡀⠤⠀⠒⠀⠀⠀⠐⠒⠠⢀⠢⠀⠀⠀⠉⠛⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿\n" +
                 "⣿⣿⣿⣿⣿⡿⣿⠽⠛⠃⣀⠔⠉⠀⠀⠀⠀⢀⣀⣀⣤⣤⠤⠤⠄⠈⠀⠑⢀⡀⠀⠀⠈⠙⠿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿\n" +
@@ -853,7 +853,7 @@ public class Choupi {
                 "⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣭⣛⣿";
     }
 
-    public String dragon1() {
+    public static final String dragon1() {
         return "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⠤⣲⠟⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀\n" +
                 "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡠⠖⠋⢀⠞⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⠜⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀\n" +
                 "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡰⠊⠀⠀⡠⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⠊⡰⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀\n" +
@@ -874,7 +874,7 @@ public class Choupi {
                 "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⠀⠑⠦⠤⠤⠄⢲⠁⠀⠀⠀⠀⠀⠘⣆⣀⣹";
     }
 
-    public String dragon2() {
+    public static final String dragon2() {
         return "\n" +
                 "\n" +
                 "                                ,- \n" +
@@ -908,7 +908,7 @@ public class Choupi {
                 "\n";
     }
 
-    public String dragon3() {
+    public static final String dragon3() {
         return "         ` )\n" +
                 "                              (         (\n" +
                 "                               )      (\n" +
@@ -935,7 +935,7 @@ public class Choupi {
                 "         -bf-  `:.      --'     __   `.\n";
     }
 
-    public String dragon4() {
+    public static final String dragon4() {
         return "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣤⠆⠀⠀⢠⡞⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀\n" +
                 "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡾⡇⠀⠀⠀⡿⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣴⠟⣶⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀\n" +
                 "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣇⠹⣆⠀⢠⠃⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⡏⡏⠀⠘⡼⣆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀\n" +
@@ -983,7 +983,7 @@ public class Choupi {
                 "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⠲⣴⡤⠴⠚⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀";
     }
 
-    public String dragon5() {
+    public static final String dragon5() {
         return "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀\n" +
                 "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠲⣄⢀⡀⠀⠀⠀⠀⠀⠀⢀⠄⠀⣸⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀\n" +
                 "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡄⠈⠳⣕⢄⠀⠀⠀⠀⢠⣏⠀⠀⣹⡆⠀⠀⠀⠀⠀⠀⣀⡀⣀⠀⠀⠀⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀\n" +
@@ -1016,7 +1016,7 @@ public class Choupi {
     }
 
 
-    public String leV() {
+    public static final String leV() {
         return "⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⢀⠄⡀⠄⡀⢀⠄⡀⡀⠠⢀⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄\n" +
                 "⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⡀⠠⢀⠄⡅⢔⠰⡨⢢⢡⢑⠔⠅⠕⠄⠅⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄\n" +
                 "⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⡀⠅⢔⠨⢐⠅⡌⢆⢣⠪⡪⡘⡌⡮⡱⡡⣊⢌⢀⢀⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄\n" +
@@ -1053,7 +1053,7 @@ public class Choupi {
                 "⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠈⢿⣿⣿⣻⣿⣿⣯⣿⣢⣄⠄⠄⠄⠑⠠⢸⣿⣿⣮⢞⣿⣧⠄⠄⠄⠄⠄⠄⠄";
     }
 
-    public String gordon() {
+    public static final String gordon() {
         return "⠁⡼⠋⠀⣆⠀⠀⣰⣿⣫⣾⢿⣿⣿⠍⢠⠠⠀⠀⢀⠰⢾⣺⣻⣿⣿⣿⣷⡀⠀\n" +
                 "⣥⠀⠀⠀⠁⠀⠠⢻⢬⠁⣠⣾⠛⠁⠀⠀⠀⠀⠀⠀⠀⠐⠱⠏⡉⠙⣿⣿⡇⠀\n" +
                 "⢳⠀⢰⡖⠀⠀⠈⠀⣺⢰⣿⢻⣾⣶⣿⣿⣶⣶⣤⣤⣴⣾⣿⣷⣼⡆⢸⣿⣧⠀\n" +
@@ -1071,7 +1071,7 @@ public class Choupi {
                 "⣰⣿⠀⣿⣿⣴⡀⠂⠘⢹⣭⡂⡚⠿⢿⣿⣿⣿⡿⢿⢿⡿⠿⢁⣴⣿⣷⣶⣦⣤";
     }
 
-    public String illuminati() {
+    public static final String illuminati() {
         return "⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿\n" +
                 "⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿\n" +
                 "⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿\n" +
@@ -1099,7 +1099,7 @@ public class Choupi {
                 "⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿";
     }
 
-    public String bender() {
+    public static final String bender() {
         return "─────────────────────────────\n" +
                 "─────────────▐█▌─────────────\n" +
                 "─────────────▐░▌─────────────\n" +
@@ -1133,7 +1133,7 @@ public class Choupi {
                 "────▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀────";
     }
 
-    public String puit() {
+    public static final String puit() {
         return
                 "⣿⣿⣿⣿⣇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠉⠛⠻⣿⣿⣿⣿⣿⣿\n" +
                         "⣿⣿⣿⣿⣿⣦⠀⠀⠀⠀⠀⠀⠀⠀⢀⣤⣄⡀⠀⢻⣿⣿⣿⣿⣿\n" +
@@ -1151,7 +1151,7 @@ public class Choupi {
                         "⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿";
     }
 
-    public String octopus() {
+    public static final String octopus() {
         return "⣿⣿⣿⣿⣿⣿⡟⣵⠟⠁⠄⠄⠄⠄⢀⡀⠄⠄⠙⢾⢽⣿⣿⣿⣿⣿⣿⣿⣿⣿\n" +
                 "⣿⣿⣿⣿⣿⡿⢸⡏⠄⠄⠄⠄⠄⣶⣿⣿⣇⡀⠄⠄⠩⠹⣿⣿⣿⣿⣿⣿⣿⣿\n" +
                 "⣿⣿⣿⣿⣿⡇⠋⠄⠄⠄⠄⠠⠭⣿⣿⣿⣯⠭⣄⠄⠄⠄⢿⣿⣿⣿⣿⣿⣿⣿\n" +
@@ -1170,7 +1170,7 @@ public class Choupi {
                 "⠈⠁⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠈⠉⠄⠄⠄⠄⠄";
     }
 
-    public String toucan() {
+    public static final String toucan() {
         return "░░░░░░░░░░░░▄█▀█▀▀▀▀▀▀▀▀▄▄░░░░░░░░\n" +
                 "░░░░░░░░░░▄██▀░█░░░░░░░░░░▀▀▄▄░░░░\n" +
                 "░░░░░░░░░░███▀█▀█▄▄▄▄▄▄▄▒▒▒▄███░░░\n" +
@@ -1185,7 +1185,7 @@ public class Choupi {
                 "░░░▄▄███▀░░░░░░░░░░░░░░░░░░░░░░░░░";
     }
 
-    public String men() {
+    public static final String men() {
         return "⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⢀⣀⣤⣴⣶⣾⣆⠄⠄⠄⠄⠄\n" +
                 "⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠠⣤⣤⣤⠄⢤⣴⣶⣿⣿⣿⢟⣿⣿⣿⠄⠄⠄⠄⠄\n" +
                 "⠄⠄⠄⠄⠄⣀⣠⣤⡾⢏⢠⣶⣶⣾⡑⡀⢸⠋⠁⠄⢠⣾⣿⣿⣿⠄⠄⠄⠄⠄\n" +
@@ -1204,7 +1204,7 @@ public class Choupi {
                 "⠄⠄⠄⠄⠄⠄⣾⣿⣿⣿⣿⣿⣿⣿⡿⠋⠄⠄⠈⠙⠿⢿⣿⣿⣿⣿⣿⣿⣿⡇";
     }
 
-    public String tesMort() {
+    public static final String tesMort() {
         return
                 "▒▒▒░░░░░░░░░░▄▐░░░░\n" +
                         "▒░░░░░░▄▄▄░░▄██▄░░░\n" +
@@ -1225,7 +1225,7 @@ public class Choupi {
     }
 
 
-    public String weapon() {
+    public static final String weapon() {
         return "⠀⠀⠀⠀⠀⢀⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣀⣀⣀⣀⣀⣀⣀⣤⣤\n" +
                 "⠀⠀⢶⣶⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿\n" +
                 "⠀⠀⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿\n" +
@@ -1239,7 +1239,7 @@ public class Choupi {
                 "⠀⠀⠛⠛⠛⠛⠻⠿⠛⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀";
     }
 
-    public String ironMan() {
+    public static final String ironMan() {
         return "⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⢀⢄⢄⠢⡠⡀⢀⠄⡀⡀⠄⠄⠄⠄⠐⠡⠄⠉⠻⣻⣟⣿⣿⣄⠄⠄⠄⠄⠄⠄⠄⠄\n" +
                 "⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⢠⢣⠣⡎⡪⢂⠊⡜⣔⠰⡐⠠⠄⡾⠄⠈⠠⡁⡂⠄⠔⠸⣻⣿⣿⣯⢂⠄⠄⠄⠄⠄⠄\n" +
                 "⠄⠄⠄⠄⠄⠄⠄⠄⡀⠄⠄⠄⠄⠄⠄⠄⠐⢰⡱⣝⢕⡇⡪⢂⢊⢪⢎⢗⠕⢕⢠⣻⠄⠄⠄⠂⠢⠌⡀⠄⠨⢚⢿⣿⣧⢄⠄⠄⠄⠄⠄\n" +
@@ -1272,7 +1272,7 @@ public class Choupi {
                 "⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠢⠠⠊⠨⠐⠈⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄";
     }
 
-    public String weaponGun() {
+    public static final String weaponGun() {
         return "…_…..____________________, ,\n" +
                 "……/ KAWAII GUN\n" +
                 "`—-___________——_____] = = = = =(ﾉ◕ヮ◕)ﾉ*:･ﾟ✧\n" +
@@ -1284,7 +1284,7 @@ public class Choupi {
                 ".//___//";
     }
 
-    public String donkey() {
+    public static final String donkey() {
         return "───────────────▄████████▄────────\n" +
                 "─────────────▄█▀▒▒▒▒▒▒▒▀██▄──────\n" +
                 "───────────▄█▀▒▒▒▒▒▒▒▒▒▒▒██──────\n" +
@@ -1324,7 +1324,7 @@ public class Choupi {
     }
 
 
-    public String link() {
+    public static final String link() {
         return "⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⡿⣟⢟⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿\n" +
                 "⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⣻⠽⡝⡎⡏⠭⡪⠪⡒⣽⣽⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿\n" +
                 "⣿⣿⣿⣿⣿⡿⣻⢝⢎⢝⢜⠸⡨⢊⢌⠪⡈⢪⢸⢸⢽⢯⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿\n" +
@@ -1346,7 +1346,7 @@ public class Choupi {
                 "⣿⣿⣿⣿⣿⣿⣇⡊⠄⠡⢈⣄⣿⣿⣿⣷⣶⣶⣷⣶⣶⣷⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿";
     }
 
-    public String sider() {
+    public static final String sider() {
         return "────▐──▌─────▐──▌────\n" +
                 "───▐▌─█───────█─▐▌───\n" +
                 "──▄█──▀▀▄▌▄▐▄▀▀──█▄──\n" +
@@ -1362,7 +1362,7 @@ public class Choupi {
                 "────▌───▌───▐───▐────";
     }
 
-    public String guerriere() {
+    public static final String guerriere() {
         return "⡆⠀⠀⠀⠀⠀⠀⠀⠐⠒⠒⠲⠿⣿⣯⣭⣍⠉⠉⠉⠉⠉⠁⢲⣦⢮⡐⠊⠉⢱⣮⠀⠈⠃⢔⣢⣼⣿⣷⡦⠾⠦⠲⣶⣶⣉⣶⣶⣶⣶\n" +
                 "⡇⠀⠀⠀⠀⠀⠀⠀⠀⣠⣤⣶⣤⣤⣍⣙⠻⢿⣿⣦⣄⡀⠀⠘⣿⡻⣿⣿⡟⠛⠙⠀⢀⣴⣿⡿⠟⠉⠀⠀⠀⠀⠀⠈⣿⣿⣿⣿⣿⣿\n" +
                 "⡇⠀⠀⠀⠀⠀⠀⠈⠉⠛⠋⠉⠀⠀⠀⠀⠈⠑⠨⡙⠿⣿⣶⣄⣿⣷⣿⠀⣮⠀⡀⢰⣿⡿⠋⠀⠀⠀⠀⠀⢀⠀⠀⠀⢿⣿⣿⣿⣿⣿\n" +
@@ -1390,7 +1390,7 @@ public class Choupi {
                 "⡌⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⢄⠀⠀⠀⠀⠀⠀⡠⣶⡿⣫⠾⠛⠉⢁⣀⣤⣴⣶⣿⣿⠿";
     }
 
-    public String licorne() {
+    public static final String licorne() {
         return "⢠⣤⣀⠀⠀⠀⠀⠀⠀⠀⢰⢦⡀⠀⢰⢆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀\n" +
                 "⠀⠙⣎⠙⠲⢤⣀⠀⠀⠀⡌⠈⣗⣄⡌⠘⣷⣀⣠⣄⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀\n" +
                 "⠀⠀⠈⢦⡀⠀⠈⠙⠲⢄⣣⡖⣯⡷⣧⠀⢸⢿⣦⡀⠈⠳⣦⡀⠀⠀⠀⠀⠀⠀\n" +
@@ -1407,7 +1407,7 @@ public class Choupi {
                 "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀";
     }
 
-    public String puit2() {
+    public static final String puit2() {
         return "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣀⣀⣀⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀\n" +
                 "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣾⠋⠉⠉⠉⠙⠛⠻⢶⣤⡀⠀⠀⠀⠀⠀⠀\n" +
                 "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⡾⠁⠀⠀⠀⠀⠀⠀⠀⠀⠈⢻⡆⠀⠀⠀⠀⠀\n" +
@@ -1435,7 +1435,7 @@ public class Choupi {
                 "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠁⠀⠀⠈⠛⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀";
     }
 
-    public String menbaton() {
+    public static final String menbaton() {
         return "⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⢀⠔⠈⠁⠄⠒⠢⡀⠄⠄⠄⠄⠄⠄⠄⠄⠄\n" +
                 "⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⣀⣀⣀⣀⣀⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄\n" +
                 "⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⡠⠖⠉⠁⠄⠄⠄⠈⠉⠒⢤⡀⠄⠄⠄⠄⠄⠄⠄⠄\n" +
@@ -1467,7 +1467,7 @@ public class Choupi {
                 "⠄⠄⠄⠄⠄⠄⠄⠉⠛⠛⠉⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄";
     }
 
-    public String question() {
+    public static final String question() {
         return "⠀⠘⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡜⠀⠀⠀\n" +
                 "⠀⠀⠀⠑⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡔⠁⠀⠀⠀\n" +
                 "⠀⠀⠀⠀⠈⠢⢄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⠴⠊⠀⠀⠀⠀⠀\n" +
@@ -1490,7 +1490,7 @@ public class Choupi {
                 "⠀⠀⠀⠀⠀⢨⡷⣤⡀⠈⠉⠉⢁⡴⠋⠀⠀⠀⣸⠃⠀⠀";
     }
 
-    public String therock() {
+    public static final String therock() {
         return "⣶⣿⣾⣷⣷⣾⣿⣿⣿⠋⠀⠀⠀⢠⣾⣿⣿⣿⣶⣤⣤⡀⠀⠀⢀⠀⢹⣿⣿⣿\n" +
                 "⣿⣿⣿⣿⣿⣿⣿⣿⡏⠀⠀⠀⢰⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣶⣿⣷⣸⣿⣿⣿\n" +
                 "⣿⣿⣿⣿⣿⣿⡿⡟⠀⠀⠀⠀⢿⣿⣿⣿⢷⣿⣿⣿⣿⣿⣿⣿⠿⠁⠃⣿⣿⣿\n" +
@@ -1508,7 +1508,7 @@ public class Choupi {
                 "⠓⠄⡀⠈⠢⠀⠀⠐⢤⣄⡀⠀⠀⠀⠀⠰⠀⠀⠀⠀⠀⠣⡄⠀⠀⠀⠀⠀⠀⠀";
     }
 
-    public String potion1() {
+    public static final String potion1() {
         return
                 "⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄\n" +
                         "⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄\n" +
@@ -1533,7 +1533,7 @@ public class Choupi {
                         "⠉⠉⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄ ";
     }
 
-    public String gorilla() {
+    public static final String gorilla() {
         return "⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿\n" +
                 "⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠟⠉⠉⠉⠉⠉⠙⠻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿\n" +
                 "⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇⠀⠀⠀⠀⠀⠀⠀⠀⠘⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿\n" +
@@ -1561,7 +1561,7 @@ public class Choupi {
                 "⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿";
     }
 
-    public String smileStrange() {
+    public static final String smileStrange() {
         return "░░░░░░░░░░░░░░░░░░░░░░░░░░░░░\n" +
                 "░░░░░░░░░░░░░▄▄▄▄▄▄▄░░░░░░░░░\n" +
                 "░░░░░░░░░▄▀▀▀░░░░░░░▀▄░░░░░░░\n" +
@@ -1584,7 +1584,7 @@ public class Choupi {
     }
 
 
-    public String girl2() {
+    public static final String girl2() {
         return "⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠟⠋⠉⠉⠛⠻⢿⣿⠿⠛⠋⠁⠈⠙\n" +
                 "⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠁⠴⣿⠟⠉⠀⠀⠈⡀⠀⠀⠀⠀⠀⠀\n" +
                 "⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠋⠀⣾⣿⣿⣿⣿⣿⠿⠿⠿⠛⠛⠉⠉⠀⠀⠀⠀⠀⠀⠀⠉⢁⠀⠀⠈⠀⠀⠀⠀⢀⡇⠀⠀⠀⠀⠀⠀\n" +
@@ -1614,7 +1614,7 @@ public class Choupi {
     }
 
 
-    public String homer() {
+    public static final String homer() {
         return "⣿⣿⣿⣿⣿⣿⣿⣿⣿⠟⠏⢀⣀⣤⣤⣤⣤⣤⣤⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀\n" +
                 "⣿⣿⣿⣿⣿⣿⡿⣿⣴⢶⣶⣿⣟⣶⣿⣭⠿⠦⠤⠽⣷⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀\n" +
                 "⣿⣿⣿⣿⡿⢫⣿⢋⣠⣿⣿⡶⢻⡏⠀⠀⠀⠀⠀⠀⠀⠉⠙⢦⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀\n" +
@@ -1642,7 +1642,7 @@ public class Choupi {
                 "⠻⠿⢿⣿⣿⣿⣿⠏⠉⠉⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠢⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀";
     }
 
-    public String question2() {
+    public static final String question2() {
         return "⠀⠀⠘⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡜⠀⠀⠀\n" +
                 "⠀⠀⠀⠑⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡔⠁⠀⠀⠀\n" +
                 "⠀⠀⠀⠀⠈⠢⢄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⠴⠊⠀⠀⠀⠀⠀\n" +
@@ -1676,7 +1676,7 @@ public class Choupi {
                 "⣿⡿⠋⠁⠀⠀⢀⣀⣠⡴⣸⣿⣇⡄⠀⠀⠀⠀⢀⡿⠄⠙⠛⠀⣀⣠⣤⣤⠄⠀";
     }
 
-    public String banane() {
+    public static final String banane() {
         return "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣴⣶⣶⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀\n" +
                 "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⠀⢸⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀\n" +
                 "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢰⠛⠀⠀⠹⣧⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀\n" +
@@ -1690,7 +1690,7 @@ public class Choupi {
                 "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠉⠉⠉⠉⠀⠀⠀⠀⠀⠀⠀⠀";
     }
 
-    public String monsterblup() {
+    public static final String monsterblup() {
         return "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀\n" +
                 "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀\n" +
                 "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀\n" +
@@ -1709,7 +1709,7 @@ public class Choupi {
                 "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀";
     }
 
-    public String tete() {
+    public static final String tete() {
         return "⠄⣾⣿⡇⢸⣿⣿⣿⠄⠈⣿⣿⣿⣿⠈⣿⡇⢹⣿⣿⣿⡇⡇⢸⣿⣿⡇⣿⣿⣿\n" +
                 "⢠⣿⣿⡇⢸⣿⣿⣿⡇⠄⢹⣿⣿⣿⡀⣿⣧⢸⣿⣿⣿⠁⡇⢸⣿⣿⠁⣿⣿⣿\n" +
                 "⢸⣿⣿⡇⠸⣿⣿⣿⣿⡄⠈⢿⣿⣿⡇⢸⣿⡀⣿⣿⡿⠸⡇⣸⣿⣿⠄⣿⣿⣿\n" +
@@ -1727,7 +1727,7 @@ public class Choupi {
                 "⢻⣿⣿⣿⡄⢢⠨⠄⣯⠄⠄⣌⣉⠛⠻⠟⠛⢋⣉⣤⠄⢸⡇⣨⣤⠄⢸⣿⣿⣿";
     }
 
-    public String monsieurToutnu() {
+    public static final String monsieurToutnu() {
         return
                 "⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠿⠿⠿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿\n" +
                         "⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠟⠁⠀⠀⠀⠀⠀⠈⠻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿\n" +
@@ -1758,7 +1758,7 @@ public class Choupi {
                         "⣿⣿⣿⣷⣻⣷⣀⣀⣀⣃⣀⣿⣿⣿⣿⣃⣴⣎⣀⣙⣄⣻⣿⣄⣀⣀⣀⣀⣰⠄⣺⣁⣸⣇⣀⣰⣶⣈⣿⣿⣿⣿⣹⣇⣀⣀⣰⣿⣿⣿";
     }
 
-    public String sangoku() {
+    public static final String sangoku() {
         return "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠰⣤⣤⢀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀\n" +
                 "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣀⣀⠀⠀⢿⣿⣦⠈⢄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀\n" +
                 "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠻⣿⣶⣦⣍⠐⢼⣿⣿⣧⠈⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀\n" +
@@ -1792,7 +1792,7 @@ public class Choupi {
                 ;
     }
 
-    public String trollolo() {
+    public static final String trollolo() {
         return "⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠟⠛⠛⠛⠋⠉⠉⠉⠉⠉⠉⠉⠉⠉⠉⠉⠉⠉⠙⠛⠛⠛⠿⠻⠿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿\n" +
                 "⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠋⠀⠀⠀⠀⠀⡀⠠⠤⠒⢂⣉⣉⣉⣑⣒⣒⠒⠒⠒⠒⠒⠒⠒⠀⠀⠐⠒⠚⠻⠿⠿⣿⣿⣿⣿⣿⣿⣿⣿\n" +
                 "⣿⣿⣿⣿⣿⣿⣿⣿⠏⠀⠀⠀⠀⡠⠔⠉⣀⠔⠒⠉⣀⣀⠀⠀⠀⣀⡀⠈⠉⠑⠒⠒⠒⠒⠒⠈⠉⠉⠉⠁⠂⠀⠈⠙⢿⣿⣿⣿⣿⣿\n" +
@@ -1817,7 +1817,7 @@ public class Choupi {
                 ;
     }
 
-    public String scaryman() {
+    public static final String scaryman() {
         return
                 "⣿⣿⣿⣿⣿⣿⣿⡿⠟⠛⠛⠉⢹⡿⠫⣩⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿  ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿\n" +
                         "⣿⣿⣿⣿⣿⠻⠋⠄⠄⠄⠄⠄⠄⠁⠄⠙⠻⠿⢿⣿⣿⣿⣿⣿⣿⣿⣿  ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿\n" +
@@ -1838,7 +1838,7 @@ public class Choupi {
                 ;
     }
 
-    public String manchauve() {
+    public static final String manchauve() {
         return "⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿\n" +
                 "⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿\n" +
                 "⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿\n" +
@@ -1856,7 +1856,7 @@ public class Choupi {
                 ;
     }
 
-    public String thegod() {
+    public static final String thegod() {
         return "⠄⠄⠄⠄⠄⠄⠄⠄⠄⡀⠄⡀⠄⡀⠄⡀⢀⠄⡀⢀⠄⡀⠄⡀⠄⠄⠄⠄⢀⠄⠄⡀⢀⠄⠄⡀⠄⠄⠄⠄\n" +
                 "⠄⠄⠄⠈⠄⠁⠈⠄⠂⠄⡀⠄⠄⡀⢀⠄⢀⠄⢀⠄⡀⠠⠄⠄⠂⠁⠈⡀⠄⠄⠁⠄⠄⠄⠂⠄⡀⠁⠄⠄\n" +
                 "⠄⠄⠄⠁⠄⠁⠄⠁⠄⠄⠄⠄⠄⠄⠄⠄⠄⢀⠄⡀⡀⠄⠄⠁⢀⢁⠄⡀⠠⠄⠁⡈⢀⠈⢀⠠⠄⢀⠄⠄\n" +
@@ -1887,7 +1887,7 @@ public class Choupi {
 
     }
 
-    public String magefemme() {
+    public static final String magefemme() {
         return "⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⣀⣤⠠⠤⣤⡤⣀⠄⠄⠄⠄⠄⠄⠄⠄\n" +
                 "⠄⠄⠄⠄⠄⠄⠄⢀⣴⡲⠶⣺⡋⠋⠁⠄⠄⠙⠢⡀⠘⠱⠱⡄⣀⠄⠄⠄⠄⠄\n" +
                 "⠄⠄⠄⠄⠄⢀⠔⠋⠄⠄⣴⣿⡣⠄⠄⠄⠄⠄⠄⠈⠂⠄⠁⠹⡏⢢⠄⠄⠄⠄\n" +
@@ -1906,7 +1906,7 @@ public class Choupi {
                 ;
     }
 
-    public String creepymaneyes() {
+    public static final String creepymaneyes() {
 
         return "⣿⣿⣿⣿⣿⣿⣿⣿⠟⠋⠁⠄⠄⠄⠄⠄⠄⠄⠄⠙⢿⣿⣿⣿⣿⣿⣿⣿⣿\n" +
                 "⣿⣿⣿⣿⣿⣿⡟⠁⠄⠄⠄⠄⣠⣤⣴⣶⣶⣶⣶⣤⡀⠈⠙⢿⣿⣿⣿⣿⣿\n" +
@@ -1925,7 +1925,7 @@ public class Choupi {
                 ;
     }
 
-    public String morpheus() {
+    public static final String morpheus() {
         return "⢕⢕⢕⢑⠁⢁⣼⣿⣻⢿⣟⢿⡻⡙⡏⡏⣟⡽⡹⣹⢪⡻⢽⡫⠯⣻⢛⢿⣻⣿⣿⡿⣧⢍⠝⡍⡏⡎⡕⢵\n" +
                 "⢕⢕⠸⡐⣠⣿⣗⢯⡺⡽⡸⡅⠕⢕⢐⠑⢕⠸⢙⢕⢱⢸⠸⢜⠴⡈⡜⡔⢅⢟⢞⣿⣿⣧⠨⡊⣜⢜⢜⡵\n" +
                 "⢕⢌⢂⢀⣿⡷⡧⣯⡣⡹⡎⠪⣈⡂⣦⣁⣱⡱⣱⣡⢑⣘⡨⢮⢝⢞⣎⣖⣵⢳⣸⣯⣿⣿⣇⢣⢪⡪⣣⣻\n" +
@@ -1952,7 +1952,7 @@ public class Choupi {
                 "⡕⣌⣄⣿⣾⣄⠄⠄⠄⠄⠄⠄⠂⠁⠄⠄⠄⠄⠄⠄⠄⠄⠄⢀⠄⠄⠈⠄⠄⠄⠄⠄⠄⠈⠄⠄⠄⢂⠠⠠";
     }
 
-    public String neo() {
+    public static final String neo() {
         return "⡿⡿⣻⢿⢿⢿⢿⢿⣿⣿⣿⠟⡋⠍⠊⠌⠌⠌⠂⠊⠄⠂⠙⠿⠻⡻⠻⢛⠻⠿⢿⣿⣿⣿⣿⢿⢿⢿⢿⣻\n" +
                 "⣗⡽⡮⡷⣽⣺⣽⣿⣾⠟⠈⠄⠄⡀⢁⠂⢘⠈⡈⡠⠁⠄⢀⠘⠄⠄⠈⠄⠄⠄⠈⠈⠳⠻⣯⣿⣽⣞⣵⡳\n" +
                 "⣗⢯⢫⢯⣷⡿⣽⠏⡁⠁⠄⠄⠄⢄⠅⠐⡂⠁⠁⠄⠄⠄⠐⡑⠄⠌⡄⠅⠄⡀⠄⠄⠄⠄⠘⢿⣻⣾⣳⢯\n" +
@@ -1980,7 +1980,7 @@ public class Choupi {
                 "⡰⢺⣾⡗⠄⡜⢔⠡⢊⠢⢅⢀⠑⠨⡪⠩⠣⠃⠜⡈⡐⡈⡊⡈⡐⢄⠣⢀⠂⡂⡁⢂⠄⢱⢨⠝⠄⠄⠄⠄";
     }
 
-    public String booda() {
+    public static final String booda() {
         return "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⠤⠒⠒⠢⢄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀\n" +
                 "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡯⠴⠶⠶⠒⠢⢇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀\n" +
                 "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡎⡤⠖⠂⡀⠒⡢⡌⢣⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀\n" +
@@ -2003,14 +2003,14 @@ public class Choupi {
                 ;
     }
 
-    public String allin() {
+    public static final String allin() {
         return "⠀⠀⠀⠀⠀⢠⣄⠀⠀⣄⠀⠀⢀⣄⠀⠀⠀⠀⢠⡄⢠⣄⠀⢀⡄⠀⠀⠀⠀⠀\n" +
                 "⠀⠀⠀⠀⢀⡿⢻⡄⠀⣿⠀⠀⢸⣿⠀⠀⠀⠀⢸⡇⢸⡿⣦⢸⡇⠀⠀⠀⠀⠀\n" +
                 "⠀⠀⠀⠀⣼⠛⠛⣿⡀⣿⣤⣤⢸⣿⣤⣤⠀⠀⢸⡇⢸⡇⠘⢿⡇⠀"
                 ;
     }
 
-    public String barak() {
+    public static final String barak() {
         return "⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠟⠛⠛⠛⠉⠉⠉⠋⠛⠛⠛⠻⢻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿\n" +
                 "⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡟⠛⠉⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠉⠙⠻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿\n" +
                 "⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠟⠋⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠈⠿⣿⣿⣿⣿⣿⣿⣿⣿⣿\n" +
@@ -2049,7 +2049,7 @@ public class Choupi {
                 ;
     }
 
-    public String findupiege() {
+    public static final String findupiege() {
         return "what time is it? \n" +
                 "\n" +
                 "             12\n" +
@@ -2062,7 +2062,7 @@ public class Choupi {
                 ;
     }
 
-    public String gg() {
+    public static final String gg() {
         return "░██████╗░░██████╗░\n" +
                 "██╔════╝░██╔════╝░\n" +
                 "██║░░██╗░██║░░██╗░\n" +
@@ -2072,7 +2072,7 @@ public class Choupi {
                 ;
     }
 
-    public String magenoir() {
+    public static final String magenoir() {
         return "⠀⢀⣤⢚⣉⣉⣹⡿⠿⠛⣛⣛⣛⣛⣛⣛⣛⠛⠳⠶⠶⠬⡙⠿⣦⣄⠀⠀⠀⠀\n" +
                 "⣰⠟⣡⠞⢛⣩⣤⣶⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣶⣶⣤⣤⣐⠳⣄⠀⠀\n" +
                 "⣿⠞⣰⣾⣿⣿⠟⢛⣩⣥⣶⣶⣶⣶⣶⣶⣾⣭⣭⣭⣭⣝⣛⡻⠿⣿⣷⣦⡀⠀\n" +
@@ -2091,7 +2091,7 @@ public class Choupi {
                 ;
     }
 
-    public String mankrip() {
+    public static final String mankrip() {
         return "⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠟⠛⠛⠛⠛⠛⠛⠛⠻⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿\n" +
                 "⣿⣿⣿⣿⣿⣿⡿⠋⠁⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠈⠛⢿⣿⣿⣿⣿⣿⣿⣿\n" +
                 "⣿⣿⣿⣿⣿⠟⠁⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠈⠻⣿⣿⣿⣿⣿⣿\n" +
@@ -2111,7 +2111,7 @@ public class Choupi {
                 ;
     }
 
-    public String mankrip2() {
+    public static final String mankrip2() {
         return "⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡆⠄\n" +
                 "⣿⣿⣿⣿⣿⣿⣿⡟⣩⣭⣭⡈⠙⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇⠄\n" +
                 "⣿⣿⣿⣿⣿⣿⣿⢸⡿⠉⠉⢻⡆⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠄\n" +
@@ -2130,7 +2130,7 @@ public class Choupi {
                 ;
     }
 
-    public String pqmonster() {
+    public static final String pqmonster() {
         return "⠀⠀⠀⠀⠀⠀⣀⠤⠔⠒⠒⠶⠤⠤⠤⠤⠤⠤⢤⣤⣤⣀⡀⠀⠀⠀⠀⠀⠀⠀\n" +
                 "⠀⠀⠀⠀⢀⡞⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⡠⠚⠁⠀⠀⠀⠉⠛⢦⡀⠀⠀⠀⠀\n" +
                 "⠀⠀⠀⠀⡜⢀⣀⣀⡀⠀⠀⠀⠀⠀⠀⡸⠀⠀⠀⢀⠤⢄⡀⠀⠀⠹⡀⠀⠀⠀\n" +
@@ -2150,7 +2150,7 @@ public class Choupi {
                 ;
     }
 
-    public String fight() {
+    public static final String fight() {
         return "⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⠄⢀⣤⣾⡇⠀⠀⠀⠀⢀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀\n" +
                 "⠀⠀⠀⠀⢀⣴⠀⢠⣾⠏⢀⣿⣿⣿⣷⠀⠀⢠⣶⡿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀\n" +
                 "⠀⠀⠀⣴⣿⣿⢀⣿⠏⠀⢸⣿⣿⣿⣿⡆⠀⠚⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀\n" +
@@ -2167,7 +2167,7 @@ public class Choupi {
                 ;
     }
 
-    public String monstergentil() {
+    public static final String monstergentil() {
         return "⠀⠀⠀⠀⣀⣀⣤⣤⣦⣶⢶⣶⣿⣿⣿⣿⣿⣿⣿⣷⣶⣶⡄⠀⠀⠀⠀⠀⠀⠀\n" +
                 "⠀⠀⠀⠀⣿⣿⣿⠿⣿⣿⣾⣿⣿⣿⣿⣿⣿⠟⠛⠛⢿⣿⡇⠀⠀⠀⠀⠀⠀⠀\n" +
                 "⠀⠀⠀⠀⣿⡟⠡⠂⠀⢹⣿⣿⣿⣿⣿⣿⡇⠘⠁⠀⠀⣿⡇⠀⢠⣄⠀⠀⠀⠀\n" +
@@ -2181,7 +2181,7 @@ public class Choupi {
                 ;
     }
 
-    public String monstercool() {
+    public static final String monstercool() {
         return "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣴⣶⡀⠀⠀⠀⠀\n" +
                 "⠀⠀⠀⠀⠀⠀⠀⠀⢱⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣼⣿⣿⣷⠀⠀⠀⠀\n" +
                 "⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⣶⡀⠀⠀⠀⠀⣀⣀⣀⣀⣀⣼⣿⣿⡏⢹⠀⠀⠀⠀\n" +
@@ -2200,7 +2200,7 @@ public class Choupi {
                 ;
     }
 
-    public String arme2() {
+    public static final String arme2() {
         return "⠀⠀⠀ ⠀⠀⢀⣤⣀⣀⣀⠀⠻⣷⣄\n" +
                 "⠀⠀⠀⠀⢀⣴⣿⣿⣿⡿⠋⠀⠀⠀⠹⣿⣦⡀\n" +
                 "⠀⠀⢀⣴⣿⣿⣿⣿⣏⠀⠀⠀⠀⠀⠀⢹⣿⣧\n" +
@@ -2213,7 +2213,7 @@ public class Choupi {
                 ;
     }
 
-    public String clapdefin() {
+    public static final String clapdefin() {
         return "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡠⣄⡀⠀⠀⡠⠞⠛⢦⣠⢤⡀⠀\n" +
                 "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡀⢠⠏⠀⠀⢱⡀⣸⠁⠀⡴⠋⠀⠀⣹⠀\n" +
                 "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡴⠋⠉⢿⢀⡤⠶⣴⠇⣯⠀⣼⠁⠀⢀⡴⠷⣄\n" +
@@ -2235,7 +2235,7 @@ public class Choupi {
                 ;
     }
 
-    public String troll2() {
+    public static final String troll2() {
         return "⢋⣴⠒⡝⣿⣿⣿⣿⣿⡿⢋⣥⣶⣿⣿⣿⣿⣿⣿⣶⣦⣍⠻⣿⣿⣿⣿⣿⣷⣿\n" +
                 "⢾⣿⣀⣿⡘⢿⣿⡿⠋⠄⠻⠛⠛⠛⠻⠿⣿⣿⣿⣿⣿⣿⣷⣌⠻⣿⣿⣿⣿⣿\n" +
                 "⠄⠄⠈⠙⢿⣦⣉⡁⠄⠄⣴⣶⣿⣿⢷⡶⣾⣿⣿⣿⣿⡛⠛⠻⠃⠙⢿⣿⣿⣿\n" +
@@ -2254,7 +2254,7 @@ public class Choupi {
                 ;
     }
 
-    public String potion2() {
+    public static final String potion2() {
         return "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣠⣴⣶⣶⣦⣀⠀⠀⠀⠀\n" +
                 "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣀⣤⣶⣾⣿⣿⡿⠟⠋⣡⣽⡳⡄⠀⠀\n" +
                 "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣠⣴⣾⣿⣿⣿⣿⠛⢿⣷⣴⣿⣷⡹⣿⣿⣞⣆⠀\n" +
@@ -2271,7 +2271,7 @@ public class Choupi {
                 ;
     }
 
-    public String san() {
+    public static final String san() {
         return "⣿⣿⠿⠿⠿⠿⣿⣷⣂⠄⠄⠄⠄⠄⠄⠈⢷⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿\n" +
                 "⣷⡾⠯⠉⠉⠉⠉⠚⠑⠄⡀⠄⠄⠄⠄⠄⠈⠻⠿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿\n" +
                 "⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⡀⠄⠄⠄⠄⠄⠄⠄⠄⠉⠻⣿⣿⣿⣿⣿⣿⣿⣿⣿\n" +
@@ -2289,7 +2289,7 @@ public class Choupi {
                 ;
     }
 
-    public String monster3() {
+    public static final String monster3() {
         return "⠄⠄⠄⠄⠄⠄⠄⠄⠄⣴⣦⡀⠄⠄⠄⠄⠄⠄⢀⣴⣷⡀⠄⠄⠄⠄⠄⠄⠄⠄\n" +
                 "⠄⠄⠄⠄⠄⠄⠄⠄⣸⣿⣿⠁⠄⠄⢀⡀⠄⠄⠈⣿⣿⣇⠄⠄⠄⠄⠄⠄⠄⠄\n" +
                 "⠄⠄⠄⠄⠄⠄⠄⠄⢻⣿⣷⢀⣠⣶⣿⣿⣶⣄⡀⣾⣿⡟⠄⠄⠄⠄⠄⠄⠄⠄\n" +
@@ -2309,7 +2309,7 @@ public class Choupi {
                 ;
     }
 
-    public String potion3() {
+    public static final String potion3() {
         return "⠀⡠⡤⢤⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀\n" +
                 "⠀⠀⠀⢿⡢⣁⢄⢫⡲⢤⡀⠀⠀⠀⠀⢀⠄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀\n" +
                 "⠀⠀⠀⠘⣧⡁⢔⢑⢄⠙⣬⠳⢄⠀⠀⣾⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀\n" +
@@ -2324,7 +2324,7 @@ public class Choupi {
                 "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠻⠿⠋⠁⠀⠀⠀⠀";
     }
 
-    public String phantom() {
+    public static final String phantom() {
         return "⠀⠀⠀⠀⠀⠀⠀⠀⣀⣤⠞⠀⠀⠀⠀⠀⠀⠀⠀⠀⢤⣄⡀⠀⠀⠀⠀⠀⠀⠀\n" +
                 "⠀⠀⠀⠠⠄⠤⠐⠚⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠙⠓⠢⠤⣀⠀⠀⠀\n" +
                 "⠀⠀⠀⠀⢀⠤⣖⣶⣭⣷⣼⣄⠁⠀⠀⠀⠀⠀⠀⢐⣫⣭⣴⣶⣦⢄⠀⠀⠀⠀\n" +
@@ -2343,7 +2343,7 @@ public class Choupi {
                 "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⠳⣈⡭⠭⣭⠴⠚⠁⠀⠀⠀⠀⠀⠀⠀";
     }
 
-    public String poison3() {
+    public static final String poison3() {
         return "⠄⠄⠄⠄⠄⠄⠄⠄⣀⣤⡴⠶⠟⠛⠛⠛⠛⠻⠶⢦⣤⣀⠄⠄⠄⠄⠄⠄⠄⠄\n" +
                 "⠄⠄⠄⠄⠄⣠⣴⡟⠋⠁⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠈⠙⢻⣦⣄⠄⠄⠄⠄⠄\n" +
                 "⠄⠄⠄⣠⡾⠋⠈⣿⣶⣄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⣠⣶⣿⠁⠙⢷⣄⠄⠄⠄\n" +
@@ -2361,7 +2361,7 @@ public class Choupi {
                 "⠄⠄⠄⠄⠄⠄⠄⠄⠉⠛⠳⠶⣦⣤⣼⣧⣤⣴⠶⠞⠛⠉⠄⠄⠄⠄⠄⠄⠄⠄";
     }
 
-    public String morty() {
+    public static final String morty() {
         return "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⣿⣷⡄⢀⣴⣿⣿⣿⡇⠀⠀⠀⠀⠀⠀⠀\n" +
                 "⠀⠀⠀⠀⠀⠀⠀⢀⣀⠀⠀⢻⣿⣿⣿⣿⣿⣿⣿⣿⣇⣀⣠⣤⣤⡤⠀⠀\n" +
                 "⠀⠀⠀⠀⠀⠀⠀⠀⢿⣿⣿⣿⣿⣋⣅⣀⣀⣌⠉⠻⢿⣿⣿⣿⡿⠁⠀⠀\n" +
@@ -2380,7 +2380,7 @@ public class Choupi {
                 "⠀⠀⠀⢸⠀⠀⠉⠉⠀⣠⣾⣿⠻⣄⣻⣿⣿⣿⡇⣤⡾⠃⠀⠀⡇⠀⠀⠀";
     }
 
-    public String poison4() {
+    public static final String poison4() {
         return "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡀⠀⠀⠀⠀⢀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀\n" +
                 "⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⡖⠁⠀⠀⠀⠀⠀⠀⠈⢲⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀\n" +
                 "⠀⠀⠀⠀⠀⠀⠀⠀⣼⡏⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢹⣧⠀⠀⠀⠀⠀⠀⠀⠀\n" +
@@ -2398,7 +2398,7 @@ public class Choupi {
                 "⠀⠀⠀⠀⠀⠈⠉⠛⠛⠛⠛⠉⠀⠀⠀⠀⠀⠈⠉⠛⠛⠛⠛⠋⠁⠀⠀⠀⠀⠀";
     }
 
-    public String arme3() {
+    public static final String arme3() {
         return "⣿⣿⣿⣿⣿⣿⣿⡿⢉⣴⣶⣌⠹⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿\n" +
                 "⣿⣿⣿⣿⣿⠿⢃⣴⣿⣇⡙⢿⣷⣄⠻⢿⣿⣿⣿⣿⣿⣿⣿⣿\n" +
                 "⣿⣿⣿⡟⢋⣴⣿⣿⣄⠨⣍⡀⠙⣿⡇⢸⣿⣿⣿⣿⣿⣿⣿⣿\n" +
@@ -2413,7 +2413,7 @@ public class Choupi {
                 "⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣌⠛⢋⣴";
     }
 
-    public String monstreviolent() {
+    public static final String monstreviolent() {
         return "⣿⣿⣿⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇⣿⣿⣿⣽⣶⠄\n" +
                 "⢸⣿⣿⣿⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇⣿⣿⣿⣿⡿\n" +
                 "⠈⢿⣿⣿⣏⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⢅⠄⠶⠿⣿⡿\n" +
@@ -2431,7 +2431,7 @@ public class Choupi {
                 "⣿⣿⣿⣿⣿⣿⣷⣾⣻⣿⣿⣿⣦⣤⣭⣥⣤⣤⣶⣾⡟⠑⠋⠄";
     }
 
-    public String monstreflippanbt() {
+    public static final String monstreflippanbt() {
         return "⠄⠄⠄⠄⠄⠄⠪⡳⣶⣾⣿⣿⣶⠦⠤⠒⣶⣶⣤⣄⡀⠄⠄⠄⠄⠄⠄⠄⠄⠄\n" +
                 "⠄⠄⠄⠄⠄⠄⠄⠉⠪⡻⣿⣀⣶⣶⣶⡤⠬⠙⠛⠃⢤⣭⠖⣢⡀⢄⠄⠄⠄⠄\n" +
                 "⠄⠄⠄⠄⠄⠄⠄⠄⠄⠈⢚⢿⣿⣿⣯⠴⢛⣭⣽⣽⣕⡉⢜⣵⠾⢿⣿⣄⠄⠄\n" +
@@ -2448,11 +2448,11 @@ public class Choupi {
                 "⠄⠄⠄⠄⠑⠫⢿⣿⣿⣿⣿⣷⣶⣬⣭⣭⣭⠭⠭⠙⠂⠉⠄⠄⠄⠄⠄⠄⠄⠄";
     }
 
-    public String sorciereflipp() {
+    public static final String sorciereflipp() {
         return "";
     }
 
-    public String numflippant() {
+    public static final String numflippant() {
         return "⠄⠄⠄⠄⠄⠄⠄⠄⣔⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣄⠄⢣⠄⠄⠄⠄⠄⠄⠄\n" +
                 "⠄⠄⠄⠄⠄⠄⠄⣘⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣆⠈⠇⠄⠄⠄⠄⠄⠄\n" +
                 "⠄⠄⠄⠄⠄⠄⢠⣹⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡄⠘⠄⠄⠄⠄⠄⠄\n" +
@@ -2470,7 +2470,7 @@ public class Choupi {
                 "⠘⠄⠄⠄⠄⠄⠄⠄⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡄⠄⠄⠄⠄⠸⡄";
     }
 
-    public String guerrierautop() {
+    public static final String guerrierautop() {
         return "⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠿⠟⠛⠛⠛⢛⠻⠿⣿⣿⣿⣿⣿⣿⣿⣿\n" +
                 "⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠟⠉⠐⠄⠄⠄⠄⠠⠄⠄⢀⣀⡈⢻⣿⣿⣿⣿⣿\n" +
                 "⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠋⡀⠴⢒⡒⠂⠄⢀⡀⢐⡀⡀⠄⠄⢀⠙⣿⣿⣿⣿\n" +
@@ -2487,7 +2487,7 @@ public class Choupi {
                 "⡤⡴⠶⠚⠋⠻⣆⠄⠁⣠⠡⠐⠁⠄⠄⠄⠄⠄⠁⠄⠠⣦⠄⠄⠄⠄⠄⠲⠎⠉";
     }
 
-    public String chifoumiiiiii() {
+    public static final String chifoumiiiiii() {
         return "⣿⣿⣿⣿⡿⠿⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿\n" +
                 "⣿⣿⡿⠁⣀⣤⣤⣄⢿⣿⣿⣿⣿⣿⣿⣿⠋⠁⣀⣀⡀⠙⣿⣿⣿⣿⣿⣿⣿⣿\n" +
                 "⣿⣿⠁⢀⣟⣓⡲⣿⡡⣿⣿⣿⣿⣿⣿⠃⢠⣽⠿⢿⣿⣦⢹⣿⣿⣿⣿⣿⣿⣿\n" +
@@ -2505,7 +2505,7 @@ public class Choupi {
                 "⣿⣿⣿⣿⠸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠿⣿⣿⣛⣛⣛⣱⣊⣴⣿⣿";
     }
 
-    public String potioncool() {
+    public static final String potioncool() {
         return "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⣤⣶⣶⣦⣄⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀\n" +
                 "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢰⣿⣿⣿⣿⣿⣿⣿⣷⣦⡀⠀⠀⠀⠀⠀⠀\n" +
                 "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⣷⣤⠀⠈⠙⢿⣿⣿⣿⣿⣿⣦⡀⠀⠀⠀⠀\n" +
@@ -2522,7 +2522,7 @@ public class Choupi {
                 "⠈⠓⠾⠇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀";
     }
 
-    public String kurbi() {
+    public static final String kurbi() {
         return "⡿⠿⠛⠋⠉⠁⠀⠀⣀⣀⣀⠀⠉⠉⠛⠻⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿\n" +
                 "⠀⢀⣤⣶⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣶⣦⣄⡈⠙⠻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿\n" +
                 "⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣦⡈⠻⣿⣿⣿⣿⣿⣿⣿⣿\n" +
@@ -2538,7 +2538,7 @@ public class Choupi {
                 "⡇⠀⠹⣿⣿⣿⡿⠿⠛⣋⣥⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠃⠀⣾⣿⣿";
     }
 
-    public String yodaaaaa() {
+    public static final String yodaaaaa() {
         return "⠀⢀⣠⣄⣀⣀⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣤⣴⣶⡾⠿⠿⠿⠿⢷⣶⣦⣤⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀\n" +
                 "⢰⣿⡟⠛⠛⠛⠻⠿⠿⢿⣶⣶⣦⣤⣤⣀⣀⡀⣀⣴⣾⡿⠟⠋⠉⠀⠀⠀⠀⠀⠀⠀⠀⠉⠙⠻⢿⣷⣦⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣀⣀⣀⣀⣀⣀⣀⡀\n" +
                 "⠀⠻⣿⣦⡀⠀⠉⠓⠶⢦⣄⣀⠉⠉⠛⠛⠻⠿⠟⠋⠁⠀⠀⠀⣤⡀⠀⠀⢠⠀⠀⠀⣠⠀⠀⠀⠀⠈⠙⠻⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠟⠛⠛⢻⣿\n" +
@@ -2560,7 +2560,7 @@ public class Choupi {
                 "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⠛⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠟⠛⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀";
     }
 
-    public String yodaBesta() {
+    public static final String yodaBesta() {
         return "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣤⣤⠤⠐⠂⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀\n" +
                 "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡌⡦⠊⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀\n" +
                 "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡀⣼⡊⢀⠔⠀⠀⣄⠤⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣤⣤⣄⣀⠀\n" +
@@ -2591,7 +2591,7 @@ public class Choupi {
                 "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⠿⠄⠈⠻⠿⠿⠿⠿⠿⠿⠛⠛⠿⠛⠉⠁⠀⠀⠀⠀⠀⠀⠻⠿⠿⠿⠿⠟⠉⠀⠀⠤⠴⠶⠌⠿⠘⠿⠿⠿⠿⠶⠤⠀⠀⠀⠀";
     }
 
-    public String poisonMort() {
+    public static final String poisonMort() {
         return "" +
                 "███████████████████████████\n" +
                 "███████▀▀▀░░░░░░░▀▀▀███████\n" +
@@ -2614,7 +2614,7 @@ public class Choupi {
                 "███████████████████████████";
     }
 
-    public String choubaka() {
+    public static final String choubaka() {
         return "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣤⣤⣦⣶⣾⣶⣶⣶⣤⣤⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀\n" +
                 "⠀⠀⠀⠀⠀⠀⠀⠀⢀⣴⣿⣿⣿⣿⣿⢿⢿⣿⡿⣿⣿⠿⣿⣷⣦⣄⡀⠀⠀⠀⠀⠀⠀⠀⠀\n" +
                 "⠀⠀⠀⠀⠀⠀⠀⣰⣿⣿⣿⣭⡋⠂⠉⠀⠈⠈⡸⣿⣷⡾⣿⣿⣿⣿⣦⠀⠀⠀⠀⠀⠀⠀⠀\n" +
@@ -2642,7 +2642,7 @@ public class Choupi {
                 "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠀⠘⠃⠀⠀⠘⠀⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀";
     }
 
-    public String poison11() {
+    public static final String poison11() {
         return "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣴⣦⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀\n" +
                 "⠀⠀⠀⠀⠀⠀⡠⠀⠀⠀⠀⠀⢰⣿⣿⣿⣿⠆⠀⠀⠀⠀⠀⢄⡀⠀⠀⠀⠀⠀\n" +
                 "⠀⠀⠀⠀⣴⡟⠀⠀⠀⠀⣰⣦⣀⢻⣿⣿⡏⣀⣴⣄⠀⠀⠀⠀⢻⣦⡀⠀⠀⠀\n" +
@@ -2660,7 +2660,7 @@ public class Choupi {
                 "⠀⠀⠀⠀⠀⠀⠀⠀⠈⠙⠛⠿⠿⣿⣿⣿⣿⡿⠿⠟⠛⠉⠀⠀⠀⠀⠀⠀⠀⠀";
     }
 
-    public String sitMaster() {
+    public static final String sitMaster() {
         return "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡜⢳⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀\n" +
                 "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⣾⣥⣬⣧⣄⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀\n" +
                 "⠀⠀⠀⠀⠀⡶⢆⣀⣀⡤⠔⠋⠁⠀⣴⠖⡄⠀⠉⠙⠲⢤⣀⣠⠔⢳⠀⠀⠀⠀\n" +
@@ -2681,7 +2681,7 @@ public class Choupi {
                 "⠈⠁⠀⠀⠀⢠⡇⠘⣇⠀⠘⣿⡟⠷⠶⣦⣤⠶⠞⠋⡎⠀⣰⢹⡄⠀⠀⠈⠀⠀";
     }
 
-    public String mando() {
+    public static final String mando() {
         return "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢰⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀\n" +
                 "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣤⣤⠄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⣿⣷⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀\n" +
                 "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⣿⠀⠀⠀⠀⠀⣀⣀⣀⣀⡀⠀⠀⠀⠀⢸⣿⣿⣧⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀\n" +
@@ -2706,7 +2706,7 @@ public class Choupi {
                 "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠙⠛⠿⠟⠛⢻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠀⠀⠀⠀⠀⠀";
     }
 
-    public String darkvad() {
+    public static final String darkvad() {
         return "⠀⠀⠀⠀⠀⠀⠀⠀⠀⡀⠐⠉⠁⠀⠉⠉⢻⣶⣤⡀⠀⠀⠀⠀⠀⠀\n" +
                 "⠀⠀⠀⠀⠀⠀⢀⢀⠎⠀⠀⢀⣀⣤⣤⣀⣘⣿⣿⣿⣆⠀⠀⠀⠀⠀\n" +
                 "⠀⠀⠀⠀⠀⠀⢠⣏⡀⠀⠀⠈⣉⣻⣿⣿⣿⣿⣿⣿⣿⠀⠀⠀⠀⠀\n" +
@@ -2722,7 +2722,7 @@ public class Choupi {
                 "⣠⣾⣿⣿⣿⠁⠀⢠⠁⢠⠏⣿⡿⠁⣸⡝⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿";
     }
 
-    public String luckSky() {
+    public static final String luckSky() {
         return "⠀⠀⠀⠀⠀⠀⠀⠀⢀⡶⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀\n" +
                 "⠀⠀⠀⠀⠀⠀⠀⠀⣾⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀\n" +
                 "⠀⠀⠀⠀⠀⠀⠀⣼⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀\n" +
@@ -2750,7 +2750,7 @@ public class Choupi {
 
     }
 
-    public String messageEnnemi() {
+    public static final String messageEnnemi() {
         return "\n" +
                 " /$$$$$$$$                                                                           /$$      \n" +
                 "| $$_____/                                                                          |__/      \n" +
@@ -2767,7 +2767,7 @@ public class Choupi {
 
     }
 
-    public String gogobelin() {
+    public static final String gogobelin() {
         return
                 "-=[ goblins ]=-  6/97\n" +
                         "             ,      ,\n" +
@@ -2783,7 +2783,7 @@ public class Choupi {
                         "      /       '----'       \\\n";
     }
 
-    public String ghostandGoblin() {
+    public static final String ghostandGoblin() {
         return "⠀⠀⠀⠀⠀⠀⠀⢀⠤⠐⠀⠀⠒⠂⠄⡀⠀⠀\n" +
                 "⠀⠀⠀⠀⠀⠀⡠⠁⠀⠀⠀⠀⠀⠀⠀⢸⣦⠀\n" +
                 "⠀⠀⠀⠀⠀⠰⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠻⢃\n" +
@@ -2798,7 +2798,7 @@ public class Choupi {
     }
 
 
-    public String bestoGG() {
+    public static final String bestoGG() {
         return "\n" +
                 "    ████████████████████████▀▀██████████████████████████████████████████████████████\n" +
                 "    ████████████████████▀ ▄▓▓╣▓█████████████████████████████████████████████████████\n" +
@@ -2842,13 +2842,13 @@ public class Choupi {
     }
 
 
-    //    public String (){
+    //    public static final String (){
 ////        return "";}
 
-    //    public String (){
+    //    public static final String (){
 ////        return "";}
 
-    public String mace1() {
+    public static final String mace1() {
         return
                 "          |\\\n" +
                         "          | \\        /|\n" +
@@ -2872,7 +2872,7 @@ public class Choupi {
                         "                         /  /   ";
     }
 
-    public String mace2() {
+    public static final String mace2() {
         return "               <<()>>\n" +
                 "                )__(\n" +
                 "                )__(\n" +
@@ -2891,7 +2891,7 @@ public class Choupi {
                 "                V  V\n";
     }
 
-    public String mace3() {
+    public static final String mace3() {
         return "⣿⣿⣿⣿⣿⣿⣿⡿⢉⣴⣶⣌⠹⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿\n" +
                 "⣿⣿⣿⣿⣿⠿⢃⣴⣿⣇⡙⢿⣷⣄⠻⢿⣿⣿⣿⣿⣿⣿⣿⣿\n" +
                 "⣿⣿⣿⡟⢋⣴⣿⣿⣄⠨⣍⡀⠙⣿⡇⢸⣿⣿⣿⣿⣿⣿⣿⣿\n" +
@@ -2907,7 +2907,7 @@ public class Choupi {
     }
 
 
-    public String mace4() {
+    public static final String mace4() {
         return "⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠿⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿\n" +
                 "⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣶⣄⠈⠙⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿\n" +
                 "⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠟⠉⠉⠁⠀⢹⣿⣿⣧⡀⠀⠙⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿\n" +
@@ -2922,7 +2922,7 @@ public class Choupi {
 
     }
 
-    public String mace5() {
+    public static final String mace5() {
         return "  .----.-----.-----.-----.\n" +
                 " /      \\     \\     \\     \\\n" +
                 "|  \\/    |     |   __L_____L__\n" +
@@ -2939,7 +2939,7 @@ public class Choupi {
 
     }
 
-    public String eclair1() {
+    public static final String eclair1() {
         return "                  .-~*~--,.   .-.\n" +
                 "          .-~-. ./OOOOOOOOO\\.'OOO`9~~-.\n" +
                 "        .`OOOOOO.OOM.OLSONOOOOO@@OOOOOO\\\n" +
@@ -2966,7 +2966,7 @@ public class Choupi {
                 "                                 \\";
     }
 
-    public String eclair2() {
+    public static final String eclair2() {
         return
                 "                                   \n" +
                         "              *      .            dZZZZZ,       .          *\n" +
@@ -2991,7 +2991,7 @@ public class Choupi {
                         "   __________________________________\\|/_________________________\n";
     }
 
-    public String eclair3() {
+    public static final String eclair3() {
         return "               ,/\n" +
                 "                                 ,'/\n" +
                 "                               ,' /\n" +
@@ -3003,7 +3003,7 @@ public class Choupi {
                 "                             /'";
     }
 
-    public String eclair4() {
+    public static final String eclair4() {
         return "            '-.       /\\        .-'\n" +
                 "               '-.   /__\\    .-'       _  _       .   _       _\n" +
                 "                  '-.:  : .-'         |_ | ||\\||\\||| |_||_||\\|_ |\\|\n" +
@@ -3031,7 +3031,7 @@ public class Choupi {
                 "#################################################################";
     }
 
-    public String eclair5() {
+    public static final String eclair5() {
         return "\n" +
                 "\n" +
                 " ___    A\n" +
@@ -3044,7 +3044,7 @@ public class Choupi {
                 "";
     }
 
-    public String eclair6() {
+    public static final String eclair6() {
         return "\n" +
                 "\n" +
                 "                 ___\n" +
@@ -3069,14 +3069,14 @@ public class Choupi {
                 "               `\"\"u\"\"`\n";
     }
 
-    public String fire1() {
+    public static final String fire1() {
         return "    ,.   (   .      )        .      \"\n" +
                 "   (\"     )  )'     ,'        )  . (`     '`\n" +
                 " .; )  ' (( (\" )    ;(,     ((  (  ;)  \"  )\"\n" +
                 " _\"., ,._'_.,)_(..,( . )_  _' )_') (. _..( '..\n";
     }
 
-    public String fire2() {
+    public static final String fire2() {
         return "\n" +
                 "\n" +
                 "               (  .      )\n" +
@@ -3089,7 +3089,7 @@ public class Choupi {
                 "    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n";
     }
 
-    public String fire3() {
+    public static final String fire3() {
         return "⠀⠀⠀⠀⠀⠀⢱⣆⠀⠀⠀⠀⠀⠀\n" +
                 "⠀⠀⠀⠀⠀⠀⠈⣿⣷⡀⠀⠀⠀⠀\n" +
                 "⠀⠀⠀⠀⠀⠀⢸⣿⣿⣷⣧⠀⠀⠀\n" +
@@ -3104,7 +3104,7 @@ public class Choupi {
                 "⠀⠀⠀⠀⠀⠀⠉⠀⠀⠀⠀⠀⠀⠀";
     }
 
-    public String fire4() {
+    public static final String fire4() {
         return "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀\n" +
                 "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢻⣦⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀\n" +
                 "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢿⣿⣦⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀\n" +
@@ -3131,7 +3131,7 @@ public class Choupi {
                 "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠉⠓⠂⠀⠈⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀";
     }
 
-    public String fire5() {
+    public static final String fire5() {
         return "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀\n" +
                 "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⡆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀\n" +
                 "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠆⠀⠀⠀⠀⠀⠀⠀⠀⠀⣧⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⡃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡇⠀⠀⠀⠀⠀⠀⠀⠀\n" +
@@ -3179,7 +3179,7 @@ public class Choupi {
     }
 
 
-    public String ice7() {
+    public static final String ice7() {
         return
                 "\n" +
                         "\n" +
@@ -3227,7 +3227,7 @@ public class Choupi {
                         "                       \"\"\"\"\"'       `\"\"\"\"'";
     }
 
-    public String ice2() {
+    public static final String ice2() {
         return "               _                      _\n" +
                 "            (\\/ )        _  _        ( \\/)\n" +
                 "             \\  |       ( \\/ )       |  /\n" +
@@ -3244,7 +3244,7 @@ public class Choupi {
                 "            \"\"\"\"\"'              `\"\"\"\"'\n";
     }
 
-    public String ice3() {
+    public static final String ice3() {
         return "  _,                          _                \n" +
                 ".'  `.                  ___.>\"''-..-.          \n" +
                 "`-.   ;           .--\"\"\"        .-._@;         \n" +
@@ -3259,7 +3259,7 @@ public class Choupi {
                 "              ]__\\     \\___;";
     }
 
-    public String ice4() {
+    public static final String ice4() {
         return "                         .-.\n" +
                 "                        |/`\\\\.._\n" +
                 "     _..._,,--.         `\\ /.--.\\ _.-. \n" +
@@ -3276,7 +3276,7 @@ public class Choupi {
                 "        `\\,  ;:..    \\ \\ _>     >'";
     }
 
-    public String ice5() {
+    public static final String ice5() {
         return "                  ,--\"`-.-._\n" +
                 "                   ,' ,.:::::. `.\n" +
                 "                   | ;'     `:: |\n" +
@@ -3303,7 +3303,7 @@ public class Choupi {
                 "             `-`--`--'";
     }
 
-    public String ice6() {
+    public static final String ice6() {
         return "                                                   _                      \n" +
                 "                                              .--\"\" `\"-.                  \n" +
                 "                                             / .,---.__ \\                 \n" +
@@ -3339,7 +3339,7 @@ public class Choupi {
     }
 
 
-    public String protectionFire1() {
+    public static final String protectionFire1() {
         return "       ()\n" +
                 "      (__)\n" +
                 "     (____)\n" +
@@ -3353,7 +3353,7 @@ public class Choupi {
                 "       \\/\n";
     }
 
-    public String protectionFire2() {
+    public static final String protectionFire2() {
         return "\n" +
                 "         _.-.\n" +
                 "       ,'/ //\\\n" +
@@ -3369,7 +3369,7 @@ public class Choupi {
                 "(_/  ";
     }
 
-    public String protectionFire3() {
+    public static final String protectionFire3() {
         return "Ice cube (melting)\n" +
                 "  .------,\n" +
                 ",'_____,'|\n" +
@@ -3381,7 +3381,7 @@ public class Choupi {
                 "      `-._.'";
     }
 
-    public String protectionFire4() {
+    public static final String protectionFire4() {
         return "\n" +
                 "                        .---.\n" +
                 "                       /_____\\\n" +
@@ -3405,7 +3405,7 @@ public class Choupi {
                 "      \" \\/-'         \"-_________|     '\"-Y\n";
     }
 
-    public String protectionFire5() {
+    public static final String protectionFire5() {
         return "                   .'*.*'.==.            .==.'*.*'.\n" +
                 "                      '*/X@*'  (            )  '*@X\\*'\n" +
                 "                       //X@    '.          .'    @X\\\\\n" +
@@ -3417,7 +3417,7 @@ public class Choupi {
                 "               ''------------------'    '------------------'`";
     }
 
-    public String Gun5() {
+    public static final String Gun5() {
         return "        /\\\n" +
                 "                   //\\\\\n" +
                 "                  ||##||\n" +
@@ -3461,7 +3461,7 @@ public class Choupi {
                 "                    \\/";
     }
 
-    public String Gun1() {
+    public static final String Gun1() {
         return "  /\\\n" +
                 "  ||\n" +
                 "  ||\n" +
@@ -3473,7 +3473,7 @@ public class Choupi {
                 "  **";
     }
 
-    public String earth1() {
+    public static final String earth1() {
         return "\n" +
                 "\"!!!ROCK IT, MAN!!!\n" +
                 " !!!GO, MAN, GO!!!\"                       _____\n" +
@@ -3497,7 +3497,7 @@ public class Choupi {
                 "rocknrollrocknrollrocknrollrocknrollrocknrollrocknroll";
     }
 
-    public String earth2() {
+    public static final String earth2() {
         return "\n" +
                 "   \"!!!RIGHT ON MAN!!! KEEP PLAYIN' IT, MAN!!!\n" +
                 "    HEAVV-EE!!! KEEP IT HEAVY, MAN!!! KEEP IT HEAVY!!!\"\n" +
@@ -3524,7 +3524,7 @@ public class Choupi {
                 "rollnrockrollnrockrollnrockrollnrockrollnrockrollnrock";
     }
 
-    public String earth3() {
+    public static final String earth3() {
         return "\"!!!THAT'S IT, MAN!!! KEEP THROWING THAT\n" +
                 "HEAVY SHIT AT ME!!! THAT HEAVY SHIT!!!\"   _____\n" +
                 "        \\                              /\\| | | |\n" +
@@ -3545,7 +3545,7 @@ public class Choupi {
                 "\n";
     }
 
-    public String earth4() {
+    public static final String earth4() {
         return "\n" +
                 "    .._                             wWWWw\n" +
                 " ,;//\\\\\\                           www@-O\\\n" +
@@ -3564,7 +3564,7 @@ public class Choupi {
                 " ";
     }
 
-    public String earth5() {
+    public static final String earth5() {
         return "/_\\_/_\\_/_\\_/_\\_/_\\_/_\\_/_\\_/_\\_/_\\_/_\\_/_\\_/_\\_/_\\_/_\\_/_\\_/_\\_/_\\_/_\\\n" +
                 "                      ..oooooo...oo.......ooooo...\n" +
                 "                      ..oo.......oo.......oo..oo..\n" +
@@ -3582,43 +3582,43 @@ public class Choupi {
     }
 
 
-    public String sword1() {
+    public static final String sword1() {
         return "         />_________________________________\n" +
                 "[########[]_________________________________>\n" +
                 "         \\>";
     }
 
-    public String sword2() {
+    public static final String sword2() {
         return " __-----_________________{]__________________________________________________\n" +
                 "{&&&&&&&#%%&#%&%&%&%&%#%&|]__________________________________________________\\\n" +
                 "                         {";
     }
 
-    public String sword3() {
+    public static final String sword3() {
         return ",_,_,_,_,_,_,_,_,_,_|___________________________________________________\n" +
                 "| | | | | | | | | | |__________________________________________________/\n" +
                 "'-'-'-'-'-'-'-'-'-'-|-------------------------------------------------";
     }
 
-    public String sword4() {
+    public static final String sword4() {
         return ",_._._._._._._._._|__________________________________________________________,\n" +
                 "|_|_|_|_|_|_|_|_|_|_________________________________________________________/\n" +
                 "                  !";
     }
 
-    public String sword5() {
+    public static final String sword5() {
         return ".______________________________________________________|_._._._._._._._._._.\n" +
                 " \\_____________________________________________________|_#_#_#_#_#_#_#_#_#_|\n" +
                 "                                                       l";
     }
 
-    public String swordTriforce() {
+    public static final String swordTriforce() {
         return "      /| ________________\n" +
                 "O|===|* >________________>\n" +
                 "      \\|";
     }
 
-    public String potionsmall() {
+    public static final String potionsmall() {
         return "    _____\n" +
                 "     `.___,'\n" +
                 "      (___)\n" +
@@ -3634,7 +3634,7 @@ public class Choupi {
                 "     `.___.' ";
     }
 
-    public String potion5() {
+    public static final String potion5() {
         return "\n" +
                 "       ___\n" +
                 "       )_(                                            _\n" +
@@ -3649,7 +3649,7 @@ public class Choupi {
                 "    `-.._..-'   `-...-'    `-...-'     `-...-'    `-.____.-'";
     }
 
-    public String potion6() {
+    public static final String potion6() {
         return "              __\n" +
                 "              )==(\n" +
                 "              )==(\n" +
@@ -3675,7 +3675,7 @@ public class Choupi {
                 "     ~~~~~~~~~~~~~~~~  ~~~~~~";
     }
 
-    public String potion7() {
+    public static final String potion7() {
         return "              __\n" +
                 "              )==(\n" +
                 "              )==(\n" +
@@ -3702,7 +3702,7 @@ public class Choupi {
     }
 
 
-    public String potion8() {
+    public static final String potion8() {
         return "     ______\n" +
                 "              ( _ _ _)\n" +
                 "               |_ _ |\n" +
@@ -3742,7 +3742,7 @@ public class Choupi {
                 "                 `'";
     }
 
-    public String potion12() {
+    public static final String potion12() {
         return "            _________\n" +
                 "           |_-_-_-_-_|\n" +
                 "           |_________|\n" +
@@ -3780,7 +3780,7 @@ public class Choupi {
                 "      '-------------------'";
     }
 
-    public String potion9() {
+    public static final String potion9() {
         return "\n" +
                 "                   _\n" +
                 "                  |=|\n" +
@@ -3814,7 +3814,7 @@ public class Choupi {
                 "        |_____| |_____||_____|";
     }
 
-    public String potion10() {
+    public static final String potion10() {
         return "                    __\n" +
                 "                          [__]\n" +
                 "                          |  |\n" +
@@ -3834,83 +3834,162 @@ public class Choupi {
     }
 
 
-    public String dragonCaseMessage() {
+    public static final String dragonCaseMessage() {
         return "\n" +
-                "  _____  _____            _____  ____  _   _  \n" +
-                " |  __ \\|  __ \\     /\\   / ____|/ __ \\| \\ | | \n" +
-                " | |  | | |__) |   /  \\ | |  __| |  | |  \\| | \n" +
-                " | |  | |  _  /   / /\\ \\| | |_ | |  | | . ` | \n" +
-                " | |__| | | \\ \\  / ____ \\ |__| | |__| | |\\  | \n" +
-                " |_____/|_|  \\_\\/_/    \\_\\_____|\\____/|_| \\_| \n" +
-                "                                              \n" +
+                " _______  .______           ___        _______   ______   .__   __.      _______.\n" +
+                "|       \\ |   _  \\         /   \\      /  _____| /  __  \\  |  \\ |  |     /       |\n" +
+                "|  .--.  ||  |_)  |       /  ^  \\    |  |  __  |  |  |  | |   \\|  |    |   (----`\n" +
+                "|  |  |  ||      /       /  /_\\  \\   |  | |_ | |  |  |  | |  . `  |     \\   \\    \n" +
+                "|  '--'  ||  |\\  \\----. /  _____  \\  |  |__| | |  `--'  | |  |\\   | .----)   |   \n" +
+                "|_______/ | _| `._____|/__/     \\__\\  \\______|  \\______/  |__| \\__| |_______/    \n" +
+                "                                                                                 \n";
+    }
+
+    public static final String messagePotion() {
+        return "\n" +
+                ".______     ______   .___________. __    ______   .__   __. \n" +
+                "|   _  \\   /  __  \\  |           ||  |  /  __  \\  |  \\ |  | \n" +
+                "|  |_)  | |  |  |  | `---|  |----`|  | |  |  |  | |   \\|  | \n" +
+                "|   ___/  |  |  |  |     |  |     |  | |  |  |  | |  . `  | \n" +
+                "|  |      |  `--'  |     |  |     |  | |  `--'  | |  |\\   | \n" +
+                "| _|       \\______/     |__|     |__|  \\______/  |__| \\__| \n";
+    }
+
+    public static final String messageGPotion() {
+        return "\n" +
+                "  _______ .______           ___      .__   __.  _______     .______     ______   .___________. __    ______   .__   __. \n" +
+                " /  _____||   _  \\         /   \\      |  \\ |  | |       \\   |   _  \\   /  __  \\  |           ||  |  /  __  \\  |  \\ |  | \n" +
+                "|  |  __  |  |_)  |       /  ^  \\      |   \\|  | |  .--.  |   |  |_)  | |  |  |  | `---|  |----`|  | |  |  |  | |   \\|  | \n" +
+                "|  | |_ | |      /       /  /_\\  \\    |  . `   | |  |  |  |   |   ___/  |  |  |  |     |  |     |  | |  |  |  | |  . `  | \n" +
+                "|  |__| | |  |\\  \\----. /  _____  \\  |  |\\   | |  '--'  |   |  |      |  `--'  |     |  |     |  | |  `--'  | |  |\\   | \n" +
+                " \\______| | _| `._____|/__/     \\__\\ |__| \\__| |_______/    | _|      \\______/      |__|     |__|  \\______/ |__| \\__| \n";
+    }
+
+    public static final String messageGobelin() {
+        return "\n" +
+                "  _______   ______   .______    _______  __       __  .__   __. \n" +
+                " /  _____| /  __  \\  |   _  \\  |   ____||  |     |  | |  \\ |  | \n" +
+                "|  |  __  |  |  |  | |  |_)  | |  |__   |  |     |  | |   \\|  | \n" +
+                "|  | |_ | |  |  |  | |   _  <  |   __|  |  |     |  | |  . `  | \n" +
+                "|  |__| | |  `--'  | |  |_)  | |  |____ |  `----.|  | |  |\\   | \n" +
+                "\\______| \\______/  |______/  |_______||_______||__| |__| \\__| \n";
+    }
+
+    public static final String messageEquipement() {
+        return "\n" +
+                " _______   ______       __    __   __  .______    _______ .___  ___.  _______ .__   __. .___________.\n" +
+                "|   ____| /  __  \\    |  |  |  | |  | |   _  \\  |   ____||   \\/ | |   ____||  \\ |  | |           |\n" +
+                "|  |__   |  |  |  |    |  |  |  | |  | |  |_)  | |  |__   |  \\  / | |  |__   |   \\|  | `---|  |----`\n" +
+                "|   __|  |  |  |  |    |  |  |  | |  | |   ___/  |   __|  |  |\\/| | |   __|  |  . `   |     |  |     \n" +
+                "|  |____ |  `--'  '--. |  `--'  | |  | |  |      |  |____ |  |  |  | |  |____ |  |\\   |     |  |     \n" +
+                "|_______|\\_____\\_____\\______/  |__| | _|      |_______||__|  |__| |_______||__| \\__|     |__|     \n" +
+                "                                                                                                     \n";
+    }
+
+    public static final String messageSorcier() {
+        return "\n" +
+                "                              _               \n" +
+                "  ___    ___    _ __    ___  (_)   ___   _ __ \n" +
+                " / __|  / _ \\  | '__|  / __| | |  / _ \\ | '__|\n" +
+                " \\__ \\ | (_) | | |    | (__  | | |  __/ | |   \n" +
+                " |___/  \\___/  |_|     \\___| |_|  \\___| |_|   \n" +
                 "                                              \n";
     }
 
-    public String messagePotion() {
+    public static final String messageArme() {
         return "\n" +
-                "                                                                         \n" +
-                ",-.----.                                                                 \n" +
-                "\\    /  \\                ___                                             \n" +
-                "|   :    \\             ,--.'|_    ,--,                                   \n" +
-                "|   |  .\\ :   ,---.    |  | :,' ,--.'|    ,---.        ,---,             \n" +
-                ".   :  |: |  '   ,'\\   :  : ' : |  |,    '   ,'\\   ,-+-. /  | .--.--.    \n" +
-                "|   |   \\ : /   /   |.;__,'  /  `--'_   /   /   | ,--.'|'   |/  /    '   \n" +
-                "|   : .   /.   ; ,. :|  |   |   ,' ,'| .   ; ,. :|   |  ,\"' |  :  /`./   \n" +
-                ";   | |`-' '   | |: ::__,'| :   '  | | '   | |: :|   | /  | |  :  ;_     \n" +
-                "|   | ;    '   | .; :  '  : |__ |  | : '   | .; :|   | |  | |\\  \\    `.  \n" +
-                ":   ' |    |   :    |  |  | '.'|'  : |_|   :    ||   | |  |/  `----.   \\ \n" +
-                ":   : :     \\   \\  /   ;  :    ;|  | '.'\\   \\  / |   | |--'  /  /`--'  / \n" +
-                "|   | :      `----'    |  ,   / ;  :    ;`----'  |   |/     '--'.     /  \n" +
-                "`---'.|                 ---`-'  |  ,   /         '---'        `--'---'   \n" +
-                "  `---`                          ---`-'                                  \n" +
-                "                                                                         \n";
+                "     ___      .______      .___  ___.  _______      _______.\n" +
+                "    /   \\     |   _  \\     |   \\/   | |   ____|    /       |\n" +
+                "   /  ^  \\    |  |_)  |    |  \\  /  | |  |__      |   (----`\n" +
+                "  /  /_\\  \\   |      /     |  |\\/|  | |   __|      \\   \\    \n" +
+                " /  _____  \\  |  |\\  \\----.|  |  |  | |  |____ .----)   |   \n" +
+                "/__/     \\__\\ | _| `._____||__|  |__| |_______||_______/    \n" +
+                "                                                            \n";
     }
 
-    public String GPotion() {
+
+    public static final String messageSorts() {
         return "\n" +
-                "          _____                   _______               _____                    _____                   _______                   _____                    _____          \n" +
-                "         /\\    \\                 /::\\    \\             /\\    \\                  /\\    \\                 /::\\    \\                 /\\    \\                  /\\    \\         \n" +
-                "        /::\\    \\               /::::\\    \\           /::\\    \\                /::\\    \\               /::::\\    \\               /::\\____\\                /::\\    \\        \n" +
-                "       /::::\\    \\             /::::::\\    \\          \\:::\\    \\               \\:::\\    \\             /::::::\\    \\             /::::|   |               /::::\\    \\       \n" +
-                "      /::::::\\    \\           /::::::::\\    \\          \\:::\\    \\               \\:::\\    \\           /::::::::\\    \\           /:::::|   |              /::::::\\    \\      \n" +
-                "     /:::/\\:::\\    \\         /:::/~~\\:::\\    \\          \\:::\\    \\               \\:::\\    \\         /:::/~~\\:::\\    \\         /::::::|   |             /:::/\\:::\\    \\     \n" +
-                "    /:::/__\\:::\\    \\       /:::/    \\:::\\    \\          \\:::\\    \\               \\:::\\    \\       /:::/    \\:::\\    \\       /:::/|::|   |            /:::/__\\:::\\    \\    \n" +
-                "   /::::\\   \\:::\\    \\     /:::/    / \\:::\\    \\         /::::\\    \\              /::::\\    \\     /:::/    / \\:::\\    \\     /:::/ |::|   |            \\:::\\   \\:::\\    \\   \n" +
-                "  /::::::\\   \\:::\\    \\   /:::/____/   \\:::\\____\\       /::::::\\    \\    ____    /::::::\\    \\   /:::/____/   \\:::\\____\\   /:::/  |::|   | _____    ___\\:::\\   \\:::\\    \\  \n" +
-                " /:::/\\:::\\   \\:::\\____\\ |:::|    |     |:::|    |     /:::/\\:::\\    \\  /\\   \\  /:::/\\:::\\    \\ |:::|    |     |:::|    | /:::/   |::|   |/\\    \\  /\\   \\:::\\   \\:::\\    \\ \n" +
-                "/:::/  \\:::\\   \\:::|    ||:::|____|     |:::|    |    /:::/  \\:::\\____\\/::\\   \\/:::/  \\:::\\____\\|:::|____|     |:::|    |/:: /    |::|   /::\\____\\/::\\   \\:::\\   \\:::\\____\\\n" +
-                "\\::/    \\:::\\  /:::|____| \\:::\\    \\   /:::/    /    /:::/    \\::/    /\\:::\\  /:::/    \\::/    / \\:::\\    \\   /:::/    / \\::/    /|::|  /:::/    /\\:::\\   \\:::\\   \\::/    /\n" +
-                " \\/_____/\\:::\\/:::/    /   \\:::\\    \\ /:::/    /    /:::/    / \\/____/  \\:::\\/:::/    / \\/____/   \\:::\\    \\ /:::/    /   \\/____/ |::| /:::/    /  \\:::\\   \\:::\\   \\/____/ \n" +
-                "          \\::::::/    /     \\:::\\    /:::/    /    /:::/    /            \\::::::/    /             \\:::\\    /:::/    /            |::|/:::/    /    \\:::\\   \\:::\\    \\     \n" +
-                "           \\::::/    /       \\:::\\__/:::/    /    /:::/    /              \\::::/____/               \\:::\\__/:::/    /             |::::::/    /      \\:::\\   \\:::\\____\\    \n" +
-                "            \\::/____/         \\::::::::/    /     \\::/    /                \\:::\\    \\                \\::::::::/    /              |:::::/    /        \\:::\\  /:::/    /    \n" +
-                "             ~~                \\::::::/    /       \\/____/                  \\:::\\    \\                \\::::::/    /               |::::/    /          \\:::\\/:::/    /     \n" +
-                "                                \\::::/    /                                  \\:::\\    \\                \\::::/    /                /:::/    /            \\::::::/    /      \n" +
-                "                                 \\::/____/                                    \\:::\\____\\                \\::/____/                /:::/    /              \\::::/    /       \n" +
-                "                                  ~~                                           \\::/    /                 ~~                      \\::/    /                \\::/    /        \n" +
-                "                                                                                \\/____/                                           \\/____/                  \\/____/         \n" +
-                "                                                                                                                                                                           \n";
+                "███████╗ ██████╗ ██████╗ ████████╗\n" +
+                "██╔════╝██╔═══██╗██╔══██╗╚══██╔══╝\n" +
+                "███████╗██║   ██║██████╔╝   ██║   \n" +
+                "╚════██║██║   ██║██╔══██╗   ██║   \n" +
+                "███████║╚██████╔╝██║  ██║   ██║   \n" +
+                "╚══════╝ ╚═════╝ ╚═╝  ╚═╝   ╚═╝   \n" +
+                "                                  \n";
     }
 
-    public String messageGobelin(){
+    public static final String messageMassue() {
         return "\n" +
-                "                                                  ,--,                         \n" +
-                "                ,----..                        ,---.'|                    ,--. \n" +
-                "  ,----..      /   /   \\      ,---,.     ,---,.|   | :      ,---,       ,--.'| \n" +
-                " /   /   \\    /   .     :   ,'  .'  \\  ,'  .' |:   : |   ,`--.' |   ,--,:  : | \n" +
-                "|   :     :  .   /   ;.  \\,---.' .' |,---.'   ||   ' :   |   :  :,`--.'`|  ' : \n" +
-                ".   |  ;. / .   ;   /  ` ;|   |  |: ||   |   .';   ; '   :   |  '|   :  :  | | \n" +
-                ".   ; /--`  ;   |  ; \\ ; |:   :  :  /:   :  |-,'   | |__ |   :  |:   |   \\ | : \n" +
-                ";   | ;  __ |   :  | ; | ':   |    ; :   |  ;/||   | :.'|'   '  ;|   : '  '; | \n" +
-                "|   : |.' .'.   |  ' ' ' :|   :     \\|   :   .''   :    ;|   |  |'   ' ;.    ; \n" +
-                ".   | '_.' :'   ;  \\; /  ||   |   . ||   |  |-,|   |  ./ '   :  ;|   | | \\   | \n" +
-                "'   ; : \\  | \\   \\  ',  / '   :  '; |'   :  ;/|;   : ;   |   |  ''   : |  ; .' \n" +
-                "'   | '/  .'  ;   :    /  |   |  | ; |   |    \\|   ,/    '   :  ||   | '`--'   \n" +
-                "|   :    /     \\   \\ .'   |   :   /  |   :   .''---'     ;   |.' '   : |       \n" +
-                " \\   \\ .'       `---`     |   | ,'   |   | ,'            '---'   ;   |.'       \n" +
-                "  `---`                   `----'     `----'                      '---'         \n" +
-                "                                                                               \n";
+                "███╗   ███╗ █████╗ ███████╗███████╗██╗   ██╗███████╗\n" +
+                "████╗ ████║██╔══██╗██╔════╝██╔════╝██║   ██║██╔════╝\n" +
+                "██╔████╔██║███████║███████╗███████╗██║   ██║█████╗  \n" +
+                "██║╚██╔╝██║██╔══██║╚════██║╚════██║██║   ██║██╔══╝  \n" +
+                "██║ ╚═╝ ██║██║  ██║███████║███████║╚██████╔╝███████╗\n" +
+                "╚═╝     ╚═╝╚═╝  ╚═╝╚══════╝╚══════╝ ╚═════╝ ╚══════╝\n";
+
     }
+
+    public static final String messageEpee() {
+        return "\n" +
+                "███████╗██████╗ ██████╗ ███████╗\n" +
+                "██╔════╝██╔══██╗██╔══██╗██╔════╝\n" +
+                "█████╗  ██████╔╝██████╔╝█████╗  \n" +
+                "██╔══╝  ██╔═══╝ ██╔═══╝ ██╔══╝  \n" +
+                "███████╗██║     ██║     ███████╗\n" +
+                "╚══════╝╚═╝     ╚═╝     ╚══════╝\n";
+
+    }
+
+
+    public static final String messagePhyltre() {
+        return "\n" +
+                "██████╗ ██╗  ██╗██╗   ██╗██╗     ████████╗██████╗ ███████╗\n" +
+                "██╔══██╗██║  ██║╚██╗ ██╔╝██║     ╚══██╔══╝██╔══██╗██╔════╝\n" +
+                "██████╔╝███████║ ╚████╔╝ ██║        ██║   ██████╔╝█████╗  \n" +
+                "██╔═══╝ ██╔══██║  ╚██╔╝  ██║        ██║   ██╔══██╗██╔══╝  \n" +
+                "██║     ██║  ██║   ██║   ███████╗   ██║   ██║  ██║███████╗\n" +
+                "╚═╝     ╚═╝  ╚═╝   ╚═╝   ╚══════╝   ╚═╝   ╚═╝  ╚═╝╚══════╝\n" +
+                "                                                          \n";
+    }
+
+    public static final String messageArc() {
+        return "\n" +
+                " █████╗ ██████╗  ██████╗\n" +
+                "██╔══██╗██╔══██╗██╔════╝\n" +
+                "███████║██████╔╝██║     \n" +
+                "██╔══██║██╔══██╗██║     \n" +
+                "██║  ██║██║  ██║╚██████╗\n" +
+                "╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝\n" +
+                "                        \n";
+
+    }
+
+
+    public static final String messageBouclier() {
+        return "\n" +
+                "██████╗  ██████╗ ██╗   ██╗ ██████╗██╗     ██╗███████╗██████╗ \n" +
+                "██╔══██╗██╔═══██╗██║   ██║██╔════╝██║     ██║██╔════╝██╔══██╗\n" +
+                "██████╔╝██║   ██║██║   ██║██║     ██║     ██║█████╗  ██████╔╝\n" +
+                "██╔══██╗██║   ██║██║   ██║██║     ██║     ██║██╔══╝  ██╔══██╗\n" +
+                "██████╔╝╚██████╔╝╚██████╔╝╚██████╗███████╗██║███████╗██║  ██║\n" +
+                "╚═════╝  ╚═════╝  ╚═════╝  ╚═════╝╚══════╝╚═╝╚══════╝╚═╝  ╚═╝\n" +
+                "                                                             \n";
+    }
+
+
+//    public static final String messageEpee() {
+//        return  "\n" +
+//                "███████╗██████╗ ██████╗ ███████╗\n" +
+//                "██╔════╝██╔══██╗██╔══██╗██╔════╝\n" +
+//                "█████╗  ██████╔╝██████╔╝█████╗  \n" +
+//                "██╔══╝  ██╔═══╝ ██╔═══╝ ██╔══╝  \n" +
+//                "███████╗██║     ██║     ███████╗\n" +
+//                "╚══════╝╚═╝     ╚═╝     ╚══════╝\n";
+//
+//    }
+
+
 }
 
 

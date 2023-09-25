@@ -1,13 +1,13 @@
 package Equipements.EquipementOff.Armes.Massues;
 
-import Images.Choupi;
+import Images.ASCII_Representations;
 
 public class MassueTitan extends Massue{
     public MassueTitan()
 
     {
-        super("Massue du Titan de Pierre", 10);
-        Choupi image = new Choupi();
+        super("Glace","Massue du Titan de Pierre", 30);
+        ASCII_Representations image = new ASCII_Representations();
         setImage(image.mace2());
         String description =  "Une massue massive sculptée à partir de la roche solide des montagnes, capable d'écraser les ennemis sous son poids.";
         setDescription(description);

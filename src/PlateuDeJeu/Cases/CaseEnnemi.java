@@ -1,40 +1,63 @@
 package PlateuDeJeu.Cases;
 
 import Ennemis.Ennemi;
+import Enum.EnnemisEnum.enumEnnemi;
 import Personnages.Personnage;
-import Images.Choupi;
-import PlateuDeJeu.PlateauJeu;
+import Images.ASCII_Representations;
+import PlateuDeJeu.ArrayListCases;
 
+import java.awt.*;
 import java.util.*;
 import java.util.Collections;
+
+import static MiseEnPage.MiseEnPage.space;
 
 
 public class CaseEnnemi implements Cases {
 
 
+    private final Scanner scanner = new Scanner(System.in);
+
+    public int getIntInput() {
+        try {
+            int r = this.scanner.nextInt();
+            this.scanner.nextLine(); // Permet d'écraser le scanner pour ne pas avoir une boucle infinie.
+            return r;
+        } catch (Exception e) {
+            space();
+            ASCII_Representations integer = new ASCII_Representations();
+            System.out.println(integer.integer());
+            System.out.println(integer.please());
+            space();
+            this.scanner.nextLine();
+            return getIntInput();
+        }
+    }
+
     @Override
+
     public void interact(Personnage player) {
 
-        PlateauJeu plty = new PlateauJeu();
-        ArrayList<Ennemi> arrayListEnnemis = plty.arrayDesEnnemis();
-        Collections.shuffle(arrayListEnnemis);
-        Ennemi ennemiRandom = arrayListEnnemis.get(3);
 
 
 
-       Choupi choup = new Choupi();
+        boolean fightMenu = true;
+        while (fightMenu) {
+            System.out.println("1. Se battre");
+            System.out.println("2. Reculer d'un nombre de case alétoire ");
+            int choice = getIntInput();
 
-        System.out.println(choup.messageEnnemi());
-        System.out.println("\033[H\033[2J");
-
-        System.out.println("\033[H\033[2J");
-        System.out.println(ennemiRandom.getImage());
-        System.out.println("\033[H\033[2J");
-
-      int result = (player.gethealth() - ennemiRandom.getHealth());
-     player.setHealth(result);
-     System.out.println(player.gethealth());
-
+            switch (choice) {
+                case 1:
+//                    player.getStrength() -
+                    break;
+                case 2:
+                    fightMenu = false;
+                    break;
+                default:
+                    break;
+            }
+        }
     }
 }
 

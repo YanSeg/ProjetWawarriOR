@@ -1,13 +1,12 @@
 package Ennemis.Sorciers;
 
-import Ennemis.Ennemi;
-import Images.Choupi;
+import Images.ASCII_Representations;
 
 public class SorciereXena extends Sorcier {
 
     public SorciereXena() {
         super("Ennemis", "Xena La Guerriere ", 8, 12, "Le Chakram", "Le Bouclier d'Acier Éternel");
-        Choupi image = new Choupi();
+        ASCII_Representations image = new ASCII_Representations();
         setImage(image.guerriere());
     }
 }

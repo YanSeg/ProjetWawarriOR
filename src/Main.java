@@ -2,12 +2,16 @@
 import Ennemis.Ennemi;
 import Enum.EnnemisEnum.enumEnnemi;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+
+import static MiseEnPage.MiseEnPage.space;
+
 
 public class Main {
     public static void main(String[] args) {
 
-
-
+//
         enumEnnemi ennemiEnum = enumEnnemi.DRAGON;
 
         Ennemi randomSorcier = ennemiEnum.getRandomEnnemi();
@@ -16,12 +20,12 @@ public class Main {
 
 
 
-      //  EnnemiEnum.DRAGON.getRandomEnnemi();
+//        EnnemiEnum.DRAGON.getRandomEnnemi();
 
         Menu menu = new Menu();
 
 
-        menu.space();
+        space();
 
         menu.StartMenu();
 

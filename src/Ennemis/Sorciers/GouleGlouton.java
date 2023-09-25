@@ -1,14 +1,13 @@
 package Ennemis.Sorciers;
 
-import Ennemis.Ennemi;
-import Images.Choupi;
+import Images.ASCII_Representations;
 
 public class GouleGlouton extends Sorcier {
 
 
     public GouleGlouton() {
         super("Ennemis", "Le Goule Glouton", 5, 10, "La Griffe du Cauchemar", "Le Bouclier des Ombres");
-        Choupi image = new Choupi();
+        ASCII_Representations image = new ASCII_Representations();
         setImage(image.monstreflippanbt());
     }
 }

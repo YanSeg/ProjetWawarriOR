@@ -1,6 +1,8 @@
 package Ennemis;
 
-public class Ennemi {
+import PlateuDeJeu.Cases.Cases;
+
+public abstract class Ennemi implements Cases {
     @Override
     public String toString() {
         return " " + image + "\n"

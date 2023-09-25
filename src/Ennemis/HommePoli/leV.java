@@ -1,12 +1,12 @@
 package Ennemis.HommePoli;
 
-import Images.Choupi;
+import Images.ASCII_Representations;
 
 public class leV extends HommePo {
 
     public leV() {
         super("Ennemis", "Le Necromancien Sombre", 10, 10, "La Hache de la Ruine", "Le Masque de l'Éclipse");
-        Choupi image = new Choupi();
+        ASCII_Representations image = new ASCII_Representations();
         setImage(image.leV());
     }
 }

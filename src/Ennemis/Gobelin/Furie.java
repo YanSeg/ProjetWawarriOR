@@ -1,13 +1,12 @@
 package Ennemis.Gobelin;
 
-import Ennemis.Ennemi;
-import Images.Choupi;
+import Images.ASCII_Representations;
 
 public class Furie extends Gobelin {
 
     public Furie() {
         super("Gobelin", "Furie l'Écumante", 3, 5, "Trident empoisonné", "Écailles toxiques");
-        Choupi image = new Choupi();
+        ASCII_Representations image = new ASCII_Representations();
         setImage(image.mankrip2());
 
         String description =

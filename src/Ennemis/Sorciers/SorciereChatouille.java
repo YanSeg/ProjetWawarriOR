@@ -1,13 +1,12 @@
 package Ennemis.Sorciers;
 
-import Ennemis.Ennemi;
-import Images.Choupi;
+import Images.ASCII_Representations;
 
 public class SorciereChatouille extends Sorcier {
 
     public SorciereChatouille() {
         super("Ennemis", "La Sorcière à Chatouille", 5, 6, "Doigts soigneux", "Cape");
-        Choupi image = new Choupi();
+        ASCII_Representations image = new ASCII_Representations();
         setImage(image.girl2());
     }
 }

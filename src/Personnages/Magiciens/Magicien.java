@@ -9,6 +9,10 @@ import Personnages.Personnage;
  */
 
 public class Magicien extends Personnage {
+    @Override
+    public String toString() {
+        return super.toString();
+    }
 
     public Magicien(int health, int strength, String type, String name) {
         super(health, strength, type, name);

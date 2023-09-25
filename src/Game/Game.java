@@ -5,8 +5,11 @@ import Images.ASCII_Representations;
 import Personnages.Personnage;
 import PlateuDeJeu.Cases.*;
 import PlateuDeJeu.GenerateurPlateau;
+import PlateuDeJeu.PlateauDuJeu;
 
 import java.util.ArrayList;
+
+import java.util.*;
 
 
 public class Game {
@@ -41,47 +44,50 @@ public class Game {
      * @param player
      * @param plateau C'est ma méthode pour jouer au jeu
      */
-    public void jouerauJeu(Personnage player, Cases[] plateau) {
+    public void jouerauJeu(Personnage player, PlateauDuJeu plateauDuJeu) {
 
         if (player != null)
 
             try {
-                jouer1tour(player, plateau);
+                jouer1tour(player, plateauDuJeu);
             } catch (PersonnageHorsPlateauException e) {
                 System.out.println("Personnage hors plateau : " + e.getMessage());
-                player.setPosition(player.getPosition() - 40);
+                System.out.println("VOUS AVEZ GAGNE");
+
 
             }
     }
 
 
-    public void jouer1tour(Personnage player, Cases[] plateau) throws PersonnageHorsPlateauException {
+    public void jouer1tour(Personnage player, PlateauDuJeu plateauDuJeu) throws PersonnageHorsPlateauException {
 
-
-        System.out.println(plateau.getClass().getSimpleName());
+//for (int i = 0; i < plateauDuJeu.getPlateau().length; i++) {
+  //          System.out.print(plateauDuJeu.getPlateau()[i] + " "); // Affiche l'élément du plateau
+    //        if ((i + 1) % 8 == 0) {
+      //          System.out.println(); // Passe à une nouvelle ligne après chaque ligne de 8 éléments
+        //    }
+        //}
 
         int de = lancementDuddE();
-        player.setPosition(player.getPosition() + de);
+        plateauDuJeu.setPositionPlayer(plateauDuJeu.getPositionPlayer()+de);
+        if ((plateauDuJeu.getPositionPlayer()) < 63) {
 
-        if ((player.getPosition()) < 63) {
-
-            plateau[(player.getPosition())].interact(player);
-            System.out.println(plateau.getClass());
-//            int newpoiton = Math.min(63, player.getPosition() + de);
+           plateauDuJeu.getPlateau()[plateauDuJeu.getPositionPlayer()].interact(player);
+            System.out.println(plateauDuJeu.getClass());
+           int newpoiton = Math.min(63, player.getPosition() + de);
             player.setPosition((player.getPosition()));
             System.out.println("_______________________________________________________________________");
             System.out.println("LANCE DE DE " + de);
 
             System.out.println(" Vous êtes à la position " + (player.getPosition()));
             System.out.println("_______________________________________________________________________");
-        } else if ((player.getPosition()) == 63) {
-            String REPRESENTATION = ASCII_Representations.messageBouclier();
+        } else if ((player.getPosition()) >= 63) {
+            String REPRESENTATION = ASCII_Representations.men();
             System.out.println(REPRESENTATION);
+            System.out.println("GAGNE");
 
         } else {
             throw new PersonnageHorsPlateauException();
-
-
         }
 
     }

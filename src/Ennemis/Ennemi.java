@@ -5,6 +5,8 @@ import Equipements.Equipements;
 import Images.ASCII_Representations;
 import Personnages.Personnage;
 import PlateuDeJeu.Cases.Cases;
+import PlateuDeJeu.Cases.InterfacePlateau;
+import PlateuDeJeu.PlateauDuJeu;
 
 
 import java.awt.*;
@@ -13,15 +15,13 @@ import java.util.Scanner;
 import static Game.Game.lancementDuddE;
 import static MiseEnPage.MiseEnPage.space;
 
-public abstract class Ennemi implements Cases {
 
 
-    @Override
-    public String toString() {
-        return " " + image + "\n"
-                + name + "\n" + description + "\n" +
-                " | Vie: " + health + " | Force : " + strength + " | Attaque : " + offensive + " | Défense : " + defensive + "";
-    }
+public abstract class Ennemi implements Cases, InterfacePlateau {
+
+    private int choice;
+
+    private int forceAttaquePlayer;
 
     @Override
     public void interact(Personnage player) {
@@ -40,7 +40,7 @@ public abstract class Ennemi implements Cases {
         System.out.println("2. Reculer d'un nombre de cases aléatoires ");
 
         int choice = scanner.nextInt();
-
+        this.choice= choice;
         switch (choice) {
             case 1:
                 while (player.getHealth() > 0 && this.getHealth() > 0) {
@@ -48,10 +48,11 @@ public abstract class Ennemi implements Cases {
                     int a = player.getStrength();
                     Equipements arme = player.getEquipemenOf();
                     int b = arme.getStrength();
-                    int forceAttaque = a + b;
-                    int ennemiLife = this.getHealth() - forceAttaque;
+                    int forceAttaquePlayer = a + b;
+                    this.forceAttaquePlayer = forceAttaquePlayer;
+                    int ennemiLife = this.getHealth() - forceAttaquePlayer;
                     this.setHealth(ennemiLife);
-                    System.out.println("La vie du dragon est à : " + this.getHealth());
+                    System.out.println("La vie du " + this.getClass() +" est à : " + this.getHealth());
                     space();
                     System.out.println("A votre tour d'être attaqué");
                     space();
@@ -69,6 +70,24 @@ public abstract class Ennemi implements Cases {
 
         }
     }
+
+    @Override
+    public void miseAjourPlateau(PlateauDuJeu plateau) {
+        Cases caseActuelle = plateau.getPlateau()[plateau.getPositionPlayer()];
+        if (caseActuelle instanceof Ennemi && this.choice ==  1){
+            Ennemi ennemi = (Ennemi) caseActuelle;
+            ennemi.setHealth(ennemi.getHealth()-forceAttaquePlayer);
+        }
+    }
+
+    @Override
+    public String toString() {
+        return " " + image + "\n"
+                + name + "\n" + description + "\n" +
+                " | Vie: " + health + " | Force : " + strength + " | Attaque : " + offensive + " | Défense : " + defensive + "";
+    }
+
+
 
 
 //    private final Scanner scanner = new Scanner(System.in);

@@ -12,6 +12,7 @@ import Personnages.Guerriers.Guerrier;
 import Images.ASCII_Representations;
 import PlateuDeJeu.Cases.Cases;
 import PlateuDeJeu.GenerateurPlateau;
+import PlateuDeJeu.PlateauDuJeu;
 
 import java.util.Scanner;
 
@@ -170,32 +171,20 @@ public class Menu {
                 case 1:
                     player = createPersonnage();
                     break;
-
                 case 2:
                     player = new Guerrier(100, 100, "Guerrier", "Eric Cantona");
-
                     Bouclier bouclier = new Bouclier("De base", 15, "Bouclier");
                     Epee epee = new EpeeGranit();
                     player.setEquipementDef(bouclier);
                     player.setEquipemenOf(epee);
-
-
                     break;
-
-
                 case 3:
-
-
                     player = new Magicien(100, 100, "Magicien", "David Copperfield");
-
                     SortBasique sort = new SortBasique();
                     Phyltre phyltre = new Phyltre("De Base", 15, "Phyltre");
-
-                    player.setEquipemenOf(sort);
                     player.setEquipementDef(phyltre);
+                    player.setEquipemenOf(sort);
                     break;
-
-
                 case 4:
                     if (player != null) {
                         space();
@@ -217,12 +206,12 @@ public class Menu {
                     Game game = new Game(); // Pas là
                     if (player != null) {
 
-                        Cases[] plateau = GenerateurPlateau.plateaClassique();
-
-                        System.out.println(plateau.getClass().getSimpleName());
+                        //Cases[] plateau = GenerateurPlateau.plateaClassique();
+                        PlateauDuJeu plateauDuJeu = new PlateauDuJeu(0);
+                        System.out.println(plateauDuJeu.getClass().getSimpleName());
 
                         while (isOver(player)) {
-                            game.jouerauJeu(player, plateau);
+                            game.jouerauJeu(player, plateauDuJeu);
                         }
                     } else {
                         affichageErreurMenu();

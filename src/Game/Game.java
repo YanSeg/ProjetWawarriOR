@@ -7,9 +7,13 @@ import PlateuDeJeu.Cases.*;
 import PlateuDeJeu.GenerateurPlateau;
 import PlateuDeJeu.PlateauDuJeu;
 
+import java.awt.*;
 import java.util.ArrayList;
 
 import java.util.*;
+
+import static PlateuDeJeu.Son.Son.playEpee;
+import static PlateuDeJeu.Son.Son.playExplosed;
 
 
 public class Game {
@@ -17,6 +21,11 @@ public class Game {
 
     private Personnage player;
     private ArrayList<Cases> plateau;
+
+    private Menu menu;
+
+
+
 
     //ArrayList<Cases> plateau = new ArrayList<Cases>();
 
@@ -44,49 +53,70 @@ public class Game {
      * @param player
      * @param plateau C'est ma méthode pour jouer au jeu
      */
-    public void jouerauJeu(Personnage player, PlateauDuJeu plateauDuJeu) {
+    public  void  jouerauJeu(Personnage player, PlateauDuJeu plateauDuJeu) {
 
-        if (player != null)
+        if (player != null || plateauDuJeu.getPositionPlayer() ==63)
 
             try {
                 jouer1tour(player, plateauDuJeu);
             } catch (PersonnageHorsPlateauException e) {
                 System.out.println("Personnage hors plateau : " + e.getMessage());
-                System.out.println("VOUS AVEZ GAGNE");
-
-
+//                player = null;
             }
+
     }
 
+    public int  movePlayer(PlateauDuJeu plateauDuJeu){
 
-    public void jouer1tour(Personnage player, PlateauDuJeu plateauDuJeu) throws PersonnageHorsPlateauException {
+        int de = lancementDuddE();
+        int postionRelle = plateauDuJeu.getPositionPlayer();
+        int r = de + postionRelle;
+        return de+postionRelle;
+
+    }
+
+    public  void jouer1tour (Personnage player, PlateauDuJeu plateauDuJeu) throws PersonnageHorsPlateauException {
 
 //for (int i = 0; i < plateauDuJeu.getPlateau().length; i++) {
-  //          System.out.print(plateauDuJeu.getPlateau()[i] + " "); // Affiche l'élément du plateau
-    //        if ((i + 1) % 8 == 0) {
-      //          System.out.println(); // Passe à une nouvelle ligne après chaque ligne de 8 éléments
+        //          System.out.print(plateauDuJeu.getPlateau()[i] + " "); // Affiche l'élément du plateau
+        //        if ((i + 1) % 8 == 0) {
+        //          System.out.println(); // Passe à une nouvelle ligne après chaque ligne de 8 éléments
         //    }
         //}
 
-        int de = lancementDuddE();
-        plateauDuJeu.setPositionPlayer(plateauDuJeu.getPositionPlayer()+de);
-        if ((plateauDuJeu.getPositionPlayer()) < 63) {
+        System.out.println("LA POSITION DU JOUEUR");
 
-           plateauDuJeu.getPlateau()[plateauDuJeu.getPositionPlayer()].interact(player);
+        System.out.println(plateauDuJeu.getPositionPlayer());
+        System.out.println("____________________________________________________");
+
+
+        int position = movePlayer(plateauDuJeu);
+        int de = lancementDuddE();
+
+        if (position < 0) {
+            plateauDuJeu.setPositionPlayer(0);
+        } else if (0 <= position && position<= 63) {
+
+            plateauDuJeu.setPositionPlayer(position + de);
+
+            plateauDuJeu.getPlateau()[position].interact(player, plateauDuJeu);
+
             System.out.println(plateauDuJeu.getClass());
-           int newpoiton = Math.min(63, player.getPosition() + de);
-            player.setPosition((player.getPosition()));
+            int newpoiton = Math.min(63, player.getPosition() + de);
+            player.setPosition(newpoiton);
             System.out.println("_______________________________________________________________________");
             System.out.println("LANCE DE DE " + de);
 
-            System.out.println(" Vous êtes à la position " + (player.getPosition()));
+            System.out.println(" Vous êtes à la position " + plateauDuJeu.getPositionPlayer());
             System.out.println("_______________________________________________________________________");
-        } else if ((player.getPosition()) >= 63) {
+        } else if (position == 63){
             String REPRESENTATION = ASCII_Representations.men();
             System.out.println(REPRESENTATION);
             System.out.println("GAGNE");
-
+//            this.player = null;
         } else {
+            playExplosed();
+            playEpee();
             throw new PersonnageHorsPlateauException();
         }
 

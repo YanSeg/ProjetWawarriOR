@@ -7,10 +7,6 @@ import Personnages.Personnage;
 public class SortTerreTremblementDevastateur extends Sorts {
     private final String REPRESENTATION = ASCII_Representations.earth4();
 
-    @Override
-    public void interact(Personnage player) {
-
-    }
 
     public SortTerreTremblementDevastateur() {
         super("Terre", "Tremblement de Terre Dévastateur", 22);

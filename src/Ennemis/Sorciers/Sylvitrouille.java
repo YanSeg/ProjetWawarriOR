@@ -5,10 +5,7 @@ import Images.ASCII_Representations;
 import Personnages.Personnage;
 
 public class Sylvitrouille extends Sorcier {
-    @Override
-    public void interact(Personnage player) {
 
-    }
 
     public Sylvitrouille() {
 

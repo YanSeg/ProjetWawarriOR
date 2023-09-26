@@ -6,10 +6,7 @@ import Personnages.Personnage;
 
 public class SortBrasier extends Sorts {
 
-    @Override
-    public void interact(Personnage player) {
 
-    }
 
     public SortBrasier() {
         super("Feu", "Brasier Infernal", 12);

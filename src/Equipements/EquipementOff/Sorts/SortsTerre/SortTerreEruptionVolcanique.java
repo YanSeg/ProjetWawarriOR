@@ -12,10 +12,8 @@ public class SortTerreEruptionVolcanique extends Sorts {
         setImage(REPRESENTATION);
         String description = "Une éruption volcanique cataclysmique qui projette des roches en fusion et des flammes ardentes sur les ennemis.";
         setDescription(description);
-    }
 
-    @Override
-    public void interact(Personnage player) {
+
 
     }
 }

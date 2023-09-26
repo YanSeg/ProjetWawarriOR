@@ -6,10 +6,7 @@ import Personnages.Personnage;
 
 public class PotionEquilibreMagique extends Potions {
 
-    @Override
-    public void interact(Personnage player) {
 
-    }
 
     public PotionEquilibreMagique() {
         super(15,"Potion d'Équilibre Magique", 15, 15, 15);

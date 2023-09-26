@@ -11,6 +11,7 @@ import Personnages.Guerriers.Guerrier;
 import Personnages.Magiciens.Magicien;
 import Personnages.Personnage;
 import PlateuDeJeu.ArrayListCases;
+import PlateuDeJeu.PlateauDuJeu;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -25,7 +26,7 @@ public class CaseEquipement implements Cases {
 
 
     @Override
-    public void interact(Personnage player) {
+    public void interact(Personnage player, PlateauDuJeu plateauDuJeu) {
 
         Equipements equipements = arrayDesEquipements();
 

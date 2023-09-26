@@ -8,6 +8,7 @@ import Equipements.Equipements;
 import Personnages.Personnage;
 import Images.ASCII_Representations;
 import PlateuDeJeu.ArrayListCases;
+import PlateuDeJeu.PlateauDuJeu;
 
 import java.awt.*;
 import java.util.*;
@@ -18,8 +19,10 @@ import static MiseEnPage.MiseEnPage.space;
 
 
 public class CaseEnnemi implements Cases {
+    @Override
+    public void interact(Personnage player, PlateauDuJeu plateauDuJeu) {
 
-
+    }
 //    private final Scanner scanner = new Scanner(System.in);
 
 //    public int getIntInput() {
@@ -38,11 +41,7 @@ public class CaseEnnemi implements Cases {
 //        }
 //    }
 
-    @Override
 
-    public void interact(Personnage player) {
-
-    }
 //
 //        boolean fightMenu = true;
 //

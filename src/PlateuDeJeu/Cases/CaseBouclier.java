@@ -7,8 +7,5 @@ public class CaseBouclier extends CaseEquipement{
 
     private final String REPRESENTATION = ASCII_Representations.messageBouclier();
 
-    @Override
-    public void interact(Personnage player) {
 
-    }
 }

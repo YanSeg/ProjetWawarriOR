@@ -6,10 +6,6 @@ import Personnages.Personnage;
 
 public class SortGlace extends Sorts {
 
-    @Override
-    public void interact(Personnage player) {
-
-    }
 
     public SortGlace() {
         super("Glace", "Prison de Cristal", 22);

@@ -6,10 +6,6 @@ import Personnages.Personnage;
 
 public class PotionVieDefense extends Potions {
 
-    @Override
-    public void interact(Personnage player) {
-
-    }
 
     public PotionVieDefense() {
         super( 0, "Potion de Vie/Defense",10,10,0);

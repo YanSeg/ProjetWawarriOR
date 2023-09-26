@@ -5,10 +5,7 @@ import Personnages.Personnage;
 
 public class WendigoSanguinaire extends Sorcier {
 
-    @Override
-    public void interact(Personnage player) {
 
-    }
 
     public WendigoSanguinaire() {
         super("Ennemis", "Le Wendigo Sanguinaire", 6, 12, "Le Sceptre de l'Abysse", "L'Armure Infernale");

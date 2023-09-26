@@ -8,10 +8,7 @@ public class SortTerreMurRoc extends Sorts {
 
     private final String REPRESENTATION = ASCII_Representations.earth3();
 
-    @Override
-    public void interact(Personnage player) {
 
-    }
 
     public SortTerreMurRoc() {
         super("Terre", "Mur de Roc", 22);

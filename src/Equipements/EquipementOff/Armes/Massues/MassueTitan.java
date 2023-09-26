@@ -4,10 +4,7 @@ import Images.ASCII_Representations;
 import Personnages.Personnage;
 
 public class MassueTitan extends Massue{
-    @Override
-    public void interact(Personnage player) {
 
-    }
 
     public MassueTitan()
 

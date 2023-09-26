@@ -10,8 +10,5 @@ public class IronMan extends SuperHero {
         setImage(image.ironMan());
     }
 
-    @Override
-    public void interact(Personnage player) {
 
-    }
 }

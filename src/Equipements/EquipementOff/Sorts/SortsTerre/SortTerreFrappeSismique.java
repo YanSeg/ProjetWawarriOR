@@ -8,10 +8,6 @@ public class SortTerreFrappeSismique extends Sorts {
 
     private final String REPRESENTATION = ASCII_Representations.earth5();
 
-    @Override
-    public void interact(Personnage player) {
-
-    }
 
     public SortTerreFrappeSismique() {
         super("Terre", "Frappe Sismique", 22);

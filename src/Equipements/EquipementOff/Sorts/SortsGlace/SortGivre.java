@@ -5,10 +5,7 @@ import Images.ASCII_Representations;
 import Personnages.Personnage;
 
 public class SortGivre extends Sorts {
-    @Override
-    public void interact(Personnage player) {
 
-    }
 
     public SortGivre() {
         super("Glace", "Lance de Givre", 22);

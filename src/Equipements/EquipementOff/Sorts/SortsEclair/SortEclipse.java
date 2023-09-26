@@ -14,8 +14,5 @@ public class SortEclipse extends Sorts {
         setDescription(description);
     }
 
-    @Override
-    public void interact(Personnage player) {
 
-    }
 }

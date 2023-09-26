@@ -6,10 +6,7 @@ import Personnages.Personnage;
 
 public class SortDrakoFeu extends Sorts {
 
-    @Override
-    public void interact(Personnage player) {
 
-    }
 
     public SortDrakoFeu() {
         super("Feu", "Déflagration Infernale", 12);

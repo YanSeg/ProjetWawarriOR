@@ -13,8 +13,5 @@ public class MassueEcumeur extends Massue  {
         setDescription(description);
     }
 
-    @Override
-    public void interact(Personnage player) {
 
-    }
 }

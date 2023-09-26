@@ -10,10 +10,7 @@ public class Terramor extends Dragon{
         return super.toString();
     }
 
-    @Override
-    public void interact(Personnage player) {
 
-    }
 
     public Terramor() {
         super("Terre", "Terramor le Terre-Briseur", 20, 20, "Manipulation des roches",  "Capacité à se fondre dans le sol");

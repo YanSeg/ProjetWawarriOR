@@ -6,10 +6,7 @@ import Personnages.Personnage;
 
 public class SortAvalanche extends Sorts {
 
-    @Override
-    public void interact(Personnage player) {
 
-    }
 
     public SortAvalanche() {
         super("Glace", "Avalanche Dévastatrice", 22);

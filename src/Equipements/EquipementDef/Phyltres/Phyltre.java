@@ -3,11 +3,12 @@ package Equipements.EquipementDef.Phyltres;
 import Equipements.EquipementDef.EquipementDefensif;
 import Personnages.Magiciens.Magicien;
 import Personnages.Personnage;
+import PlateuDeJeu.PlateauDuJeu;
 
 public class Phyltre extends EquipementDefensif {
 
     @Override
-    public void interact(Personnage player) {
+    public void interact(Personnage player, PlateauDuJeu plateauDuJeu) {
 
     }
 

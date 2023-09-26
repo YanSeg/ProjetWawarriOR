@@ -5,10 +5,7 @@ import Personnages.Personnage;
 
 public class leV extends HommePo {
 
-    @Override
-    public void interact(Personnage player) {
 
-    }
 
     public leV() {
         super("Ennemis", "Le Necromancien Sombre", 10, 10, "La Hache de la Ruine", "Le Masque de l'Éclipse");

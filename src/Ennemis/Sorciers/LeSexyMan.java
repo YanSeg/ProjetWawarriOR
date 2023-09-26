@@ -10,8 +10,5 @@ public class LeSexyMan extends Sorcier {
         setImage(image.monsieurToutnu());
     }
 
-    @Override
-    public void interact(Personnage player) {
 
-    }
 }

@@ -13,8 +13,5 @@ public class SortElec extends Sorts {
         setDescription(description);
     }
 
-    @Override
-    public void interact(Personnage player) {
 
-    }
 }

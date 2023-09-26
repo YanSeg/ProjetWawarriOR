@@ -21,12 +21,12 @@ public abstract class Personnage {
     public String toString() {
         return
                 "health=" + health +
-                ", strength=" + strength +
-                ", type='" + type + '\'' +
-                ", position=" + position +
-                ", equipementDef=" + equipementDef.getName() +
-                ", equipemenOf=" + equipemenOf.getName() +
-                ", name='" + name ;
+                        ", strength=" + strength +
+                        ", type='" + type + '\'' +
+                        ", position=" + position +
+                        ", equipementDef=" + equipementDef.getName() +
+                        ", equipemenOf=" + equipemenOf.getName() +
+                        ", name='" + name;
     }
 
 
@@ -46,7 +46,6 @@ public abstract class Personnage {
     private Equipements equipemenOf;
 
     private String name;
-
 
 
     public int getHealth() {
@@ -108,7 +107,7 @@ public abstract class Personnage {
 
     public String evolutionPartie() {
         MiseEnPage.space();
-        return " Vous en êtes  à la positon " + position + "/n" + "| Force d'attaque : " + strength + " | Vie : " + health + "| Equipement-Offensif : " + equipemenOf.getName()+
+        return " Vous en êtes  à la positon " + position + "/n" + "| Force d'attaque : " + strength + " | Vie : " + health + "| Equipement-Offensif : " + equipemenOf.getName() +
                 " | Equipement-Defensif : " + equipementDef.getName();
 
     }
@@ -123,15 +122,11 @@ public abstract class Personnage {
     }
 
 
-//
-//
-//    String input = "bonjour";
-//    String capitalized = capitalizeFirstLetter(input);
-//System.out.println(capitalized); // Cela affichera "Bonjour"
-
+    public boolean isAlive(Personnage player) {
+     return (player.getHealth()>0);
+    }
 
 }
-
 
 
 

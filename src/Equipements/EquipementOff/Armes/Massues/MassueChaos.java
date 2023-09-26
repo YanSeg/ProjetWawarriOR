@@ -5,10 +5,7 @@ import Personnages.Personnage;
 
 public class MassueChaos extends Massue{
 
-    @Override
-    public void interact(Personnage player) {
 
-    }
 
     public MassueChaos() {
         super("Ombre","Massue du Chaos Primordial", 36);

@@ -10,8 +10,7 @@ public class CaseArme extends CaseEquipement {
 
     private final String REPRESENTATION = ASCII_Representations.messageArme();
 
-    @Override
-    public void interact(Personnage player) {
+
 
 //        enumEnnemi ennemiEnum = enumEnnemi.DRAGON;
 //
@@ -36,4 +35,3 @@ public class CaseArme extends CaseEquipement {
 //        }
 //    }
     }
-}

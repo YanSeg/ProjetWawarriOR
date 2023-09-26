@@ -6,10 +6,7 @@ import Personnages.Personnage;
 
 public class SortEruptio extends Sorts {
 
-    @Override
-    public void interact(Personnage player) {
 
-    }
 
     public SortEruptio() {
         super("Feu", "Éruption Infernale", 22);

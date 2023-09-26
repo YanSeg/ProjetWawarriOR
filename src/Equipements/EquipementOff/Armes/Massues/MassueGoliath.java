@@ -5,10 +5,6 @@ import Personnages.Personnage;
 
 public class MassueGoliath extends Massue {
 
-    @Override
-    public void interact(Personnage player) {
-
-    }
 
     public MassueGoliath()
 

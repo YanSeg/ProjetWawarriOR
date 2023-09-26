@@ -6,10 +6,6 @@ import Personnages.Personnage;
 
 public class Potionvitalite extends Potions {
 
-    @Override
-    public void interact(Personnage player) {
-
-    }
 
     public Potionvitalite() {
         super(5,"Grande Potion de Vitalité", 30, 10, 10);

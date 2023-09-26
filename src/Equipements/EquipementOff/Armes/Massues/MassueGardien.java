@@ -13,10 +13,7 @@ public class MassueGardien extends Massue{
             setDescription(description);
         }
 
-    @Override
-    public void interact(Personnage player) {
 
-    }
 }
 
 

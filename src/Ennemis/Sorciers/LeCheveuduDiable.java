@@ -11,8 +11,5 @@ public class LeCheveuduDiable extends Sorcier {
         setImage(image.scaryman());
     }
 
-    @Override
-    public void interact(Personnage player) {
 
-    }
 }

@@ -9,10 +9,7 @@ public class Drakarion extends Dragon {
         return super.toString();
     }
 
-    @Override
-    public void interact(Personnage player) {
 
-    }
 
     public Drakarion() {
         super("Feu", "Drakarion le Feu-Éternel", 20, 20, "Manipulation des flammes",  "Capacité de vol rapide pour échapper aux attaques");

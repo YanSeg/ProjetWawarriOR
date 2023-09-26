@@ -4,6 +4,7 @@ import Equipements.PotionsPoisons.Potions;
 import Images.ASCII_Representations;
 import Personnages.Personnage;
 import PlateuDeJeu.ArrayListCases;
+import PlateuDeJeu.PlateauDuJeu;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -14,7 +15,7 @@ public class CasesGrandesPotions extends CaseEquipement{
     private final String REPRESENTATION = ASCII_Representations.messageGPotion();
 
     @Override
-    public void interact(Personnage player) {
+    public void interact(Personnage player, PlateauDuJeu plateauDuJeu) {
 
         ArrayListCases plty = new ArrayListCases();
         ArrayList<Potions> arrayListEnnemis = plty.arrayDesGrandesPotions();

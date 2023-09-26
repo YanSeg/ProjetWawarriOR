@@ -32,6 +32,7 @@ public class PlateauDuJeu {
     }
 
     public PlateauDuJeu(int positionPlayer) {
+
         this.positionPlayer = positionPlayer;
         Cases[] plateauT = new Cases[64];
         for (int i = 0; i < 64; i++) {

@@ -7,10 +7,7 @@ import Personnages.Personnage;
 
 public class PotionAttaque extends Potions {
 
-    @Override
-    public void interact(Personnage player) {
 
-    }
 
     public PotionAttaque() {
 

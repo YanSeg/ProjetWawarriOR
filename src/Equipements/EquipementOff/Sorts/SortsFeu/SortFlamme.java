@@ -5,10 +5,7 @@ import Images.ASCII_Representations;
 import Personnages.Personnage;
 
 public class SortFlamme extends Sorts {
-    @Override
-    public void interact(Personnage player) {
 
-    }
 
     public SortFlamme() {
         super("Feu", "Flammes Tourbillonnantes", 16);

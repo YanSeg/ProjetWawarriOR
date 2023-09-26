@@ -12,9 +12,6 @@ public class LicheMaudite extends Sorcier {
         setImage(image.creepymaneyes());
     }
 
-    @Override
-    public void interact(Personnage player) {
 
-    }
 }
 

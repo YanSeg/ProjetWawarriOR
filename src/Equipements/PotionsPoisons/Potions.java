@@ -2,6 +2,7 @@ package Equipements.PotionsPoisons;
 
 import Equipements.Equipements;
 import Personnages.Personnage;
+import PlateuDeJeu.PlateauDuJeu;
 
 public abstract class Potions extends Equipements {
 
@@ -38,7 +39,7 @@ public abstract class Potions extends Equipements {
     }
 
     @Override
-    public void interact(Personnage player) {
+    public void interact(Personnage player, PlateauDuJeu plateauDuJeu) {
 
     }
 }

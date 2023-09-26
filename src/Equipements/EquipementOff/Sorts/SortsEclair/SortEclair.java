@@ -6,10 +6,6 @@ import Personnages.Personnage;
 
 public class SortEclair extends Sorts {
 
-    @Override
-    public void interact(Personnage player) {
-
-    }
 
     public SortEclair() {
         super("Ombre","Éclair d'Ombre", 15);

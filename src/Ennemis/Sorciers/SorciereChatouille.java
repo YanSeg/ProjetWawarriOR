@@ -11,8 +11,5 @@ public class SorciereChatouille extends Sorcier {
         setImage(image.girl2());
     }
 
-    @Override
-    public void interact(Personnage player) {
 
-    }
 }

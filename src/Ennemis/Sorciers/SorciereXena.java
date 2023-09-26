@@ -11,8 +11,5 @@ public class SorciereXena extends Sorcier {
         setImage(image.guerriere());
     }
 
-    @Override
-    public void interact(Personnage player) {
 
-    }
 }

@@ -24,8 +24,5 @@ public abstract class Sorts extends EquipementOffensif {
         return player instanceof Magicien;
     }
 
-    @Override
-    public void interact(Personnage player) {
 
-    }
 }

@@ -6,10 +6,7 @@ import Personnages.Personnage;
 
 public class SortAbyssale extends Sorts {
 
-    @Override
-    public void interact(Personnage player) {
 
-    }
 
     public SortAbyssale() {
         super("Ombre","Fulgurance Abyssale", 0);

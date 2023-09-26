@@ -26,10 +26,7 @@ public abstract class EquipementOffensif extends Equipements {
         return false;
     }
 
-    @Override
-    public void interact(Personnage player) {
 
-    }
 
     private String description;
 

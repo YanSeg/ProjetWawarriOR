@@ -5,10 +5,7 @@ import Personnages.Guerriers.Guerrier;
 import Personnages.Personnage;
 
 public class Epee extends Armes {
-    @Override
-    public void interact(Personnage player) {
 
-    }
 
     @Override
     public boolean isUsable(Personnage player) {

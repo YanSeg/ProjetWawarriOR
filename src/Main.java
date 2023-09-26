@@ -1,17 +1,17 @@
 //import Enum.EnnemisEnnum.EnnemiEnum;
 import Ennemis.Ennemi;
 import Enum.EnnemisEnum.enumEnnemi;
-
-import java.util.ArrayList;
-import java.util.Arrays;
+import PlateuDeJeu.Son.Son;
 
 import static MiseEnPage.MiseEnPage.space;
-
+import static PlateuDeJeu.Son.Son.*;
 
 public class Main {
     public static void main(String[] args) {
 
 //
+
+
         enumEnnemi ennemiEnum = enumEnnemi.DRAGON;
 
         Ennemi randomSorcier = ennemiEnum.getRandomEnnemi();
@@ -19,21 +19,13 @@ public class Main {
         ennemiEnum.displayrandomEnum(randomSorcier);
 
 
-
-//        EnnemiEnum.DRAGON.getRandomEnnemi();
+playIntro();
 
         Menu menu = new Menu();
 
-
         space();
 
-        menu.StartMenu();
-
-
-//        choupi.imageChoupi();
-//        menu.space();
-//        System.out.println(choupi.imageChoupi());
-//        menu.space();
+        menu.startMenu();
 
 
     }

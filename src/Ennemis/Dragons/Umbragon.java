@@ -4,10 +4,7 @@ import Images.ASCII_Representations;
 import Personnages.Personnage;
 
 public class Umbragon extends Dragon{
-    @Override
-    public void interact(Personnage player) {
 
-    }
 
     @Override
     public String toString() {

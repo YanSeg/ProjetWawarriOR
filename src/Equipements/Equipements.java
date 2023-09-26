@@ -2,6 +2,7 @@ package Equipements;
 
 import Personnages.Personnage;
 import PlateuDeJeu.Cases.Cases;
+import PlateuDeJeu.PlateauDuJeu;
 
 public abstract class Equipements  implements Cases {
     protected String type;
@@ -26,6 +27,11 @@ public abstract class Equipements  implements Cases {
         this.health = health;
         this.defensive = defensive;
         this.offensive = offensive;
+    }
+
+    @Override
+    public void interact(Personnage player, PlateauDuJeu plateauDuJeu) {
+
     }
 
     public void setType(String type) {

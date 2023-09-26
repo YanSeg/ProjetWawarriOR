@@ -3,10 +3,11 @@ package Equipements.EquipementDef.Boucliers;
 import Equipements.EquipementDef.EquipementDefensif;
 import Personnages.Guerriers.Guerrier;
 import Personnages.Personnage;
+import PlateuDeJeu.PlateauDuJeu;
 
 public class Bouclier extends EquipementDefensif {
     @Override
-    public void interact(Personnage player) {
+    public void interact(Personnage player, PlateauDuJeu plateauDuJeu) {
 
     }
 

@@ -5,10 +5,7 @@ import Images.ASCII_Representations;
 import Personnages.Personnage;
 
 public class SortTempete extends Sorts {
-    @Override
-    public void interact(Personnage player) {
 
-    }
 
     public SortTempete() {
         super("Glace", "Tempête de Glace", 22);

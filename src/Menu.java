@@ -1,20 +1,18 @@
 import Equipements.EquipementDef.Boucliers.Bouclier;
 import Equipements.EquipementDef.Phyltres.Phyltre;
-import Equipements.EquipementOff.Armes.Armes;
 import Equipements.EquipementOff.Armes.Epees.Epee;
 import Equipements.EquipementOff.Armes.Epees.EpeeGranit;
-import Equipements.EquipementOff.Sorts.Sorts;
 import Equipements.EquipementOff.Sorts.SortsTerre.SortBasique;
 import Game.Game;
 import Personnages.Personnage;
 import Personnages.Magiciens.Magicien;
 import Personnages.Guerriers.Guerrier;
 import Images.ASCII_Representations;
-import PlateuDeJeu.Cases.Cases;
-import PlateuDeJeu.GenerateurPlateau;
 import PlateuDeJeu.PlateauDuJeu;
 
 import java.util.Scanner;
+
+//import static PlateuDeJeu.Son.Son.playSound;
 
 
 public class Menu {
@@ -23,6 +21,7 @@ public class Menu {
 
 
     public Menu() {
+
         this.scanner = new Scanner(System.in);
     }
 
@@ -70,7 +69,6 @@ public class Menu {
         return player;
 
 
-
     }
 
     private Personnage creerGuerrier() {
@@ -79,7 +77,7 @@ public class Menu {
         String persoName = scanner.nextLine();
         Bouclier bouclier = new Bouclier("De base", 15, "Bouclier");
         Epee epee = new EpeeGranit();
-        Guerrier player = new Guerrier(10,10, "Guerrier", persoName);
+        Guerrier player = new Guerrier(10, 10, "Guerrier", persoName);
         player.setEquipemenOf(epee);
         player.setEquipementDef(bouclier);
         return player;
@@ -139,7 +137,7 @@ public class Menu {
 // Les menus approprement dit _________________________________________________________________________________
 
 
-    public void StartMenu() {
+    public void startMenu() {
         boolean menuDisplay = true;
         while (menuDisplay) {
             System.out.println("1. Accéder au Menu");
@@ -162,6 +160,7 @@ public class Menu {
 
     public void secondMenu() {
 
+
         boolean lemenu = true;
         while (lemenu) {
             listemenu2();
@@ -172,18 +171,10 @@ public class Menu {
                     player = createPersonnage();
                     break;
                 case 2:
-                    player = new Guerrier(100, 100, "Guerrier", "Eric Cantona");
-                    Bouclier bouclier = new Bouclier("De base", 15, "Bouclier");
-                    Epee epee = new EpeeGranit();
-                    player.setEquipementDef(bouclier);
-                    player.setEquipemenOf(epee);
+                    generateWarriorDeflaut();
                     break;
                 case 3:
-                    player = new Magicien(100, 100, "Magicien", "David Copperfield");
-                    SortBasique sort = new SortBasique();
-                    Phyltre phyltre = new Phyltre("De Base", 15, "Phyltre");
-                    player.setEquipementDef(phyltre);
-                    player.setEquipemenOf(sort);
+                    genrateMagicienDefault();
                     break;
                 case 4:
                     if (player != null) {
@@ -209,8 +200,7 @@ public class Menu {
                         //Cases[] plateau = GenerateurPlateau.plateaClassique();
                         PlateauDuJeu plateauDuJeu = new PlateauDuJeu(0);
                         System.out.println(plateauDuJeu.getClass().getSimpleName());
-
-                        while (isOver(player)) {
+                        while (isOver(player, plateauDuJeu)) {
                             game.jouerauJeu(player, plateauDuJeu);
                         }
                     } else {
@@ -246,8 +236,25 @@ public class Menu {
 
     }
 
+    public Personnage generateWarriorDeflaut() {
+        player = new Guerrier(100, 100, "Guerrier", "Eric Cantona");
+        Bouclier bouclier = new Bouclier("De base", 15, "Bouclier");
+        Epee epee = new EpeeGranit();
+        player.setEquipementDef(bouclier);
+        player.setEquipemenOf(epee);
+        return player;
+    }
 
-    public boolean isOver(Personnage player) {
-        return ((player.getPosition() <= 63) || (player.getHealth() == 0));
+    public Personnage genrateMagicienDefault() {
+        player = new Magicien(100, 100, "Magicien", "David Copperfield");
+        SortBasique sort = new SortBasique();
+        Phyltre phyltre = new Phyltre("De Base", 15, "Phyltre");
+        player.setEquipementDef(phyltre);
+        player.setEquipemenOf(sort);
+        return player;
+    }
+
+    public boolean isOver(Personnage player, PlateauDuJeu plateauDuJeu) {
+        return ((plateauDuJeu.getPositionPlayer() < 63) && (player.getHealth() > 0));
     }
 }

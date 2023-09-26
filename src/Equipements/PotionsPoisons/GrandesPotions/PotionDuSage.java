@@ -20,10 +20,7 @@ public class PotionDuSage extends Potions {
                 '}';
     }
 
-    @Override
-    public void interact(Personnage player) {
 
-    }
 
     public PotionDuSage() {
         super(8, "Potion d'attaque", 20, 12, 8);

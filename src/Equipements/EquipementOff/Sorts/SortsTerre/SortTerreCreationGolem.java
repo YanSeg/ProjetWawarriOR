@@ -16,8 +16,5 @@ public class SortTerreCreationGolem extends Sorts {
         setDescription(description);
     }
 
-    @Override
-    public void interact(Personnage player) {
 
-    }
 }

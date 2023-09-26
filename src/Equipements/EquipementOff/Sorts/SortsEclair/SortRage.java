@@ -6,10 +6,6 @@ import Personnages.Personnage;
 
 public class SortRage extends Sorts {
 
-    @Override
-    public void interact(Personnage player) {
-
-    }
 
     public SortRage() {
         super("Ombre","Rage de l 'Ombre", 13);

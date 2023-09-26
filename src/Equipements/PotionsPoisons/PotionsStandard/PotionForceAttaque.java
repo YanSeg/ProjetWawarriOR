@@ -6,10 +6,7 @@ import Personnages.Personnage;
 
 public class PotionForceAttaque extends Potions {
 
-    @Override
-    public void interact(Personnage player) {
 
-    }
 
     public PotionForceAttaque() {
         super( 10, "Potion de Force/Attaque",10,10,0);

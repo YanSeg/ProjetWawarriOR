@@ -3,17 +3,12 @@ package PlateuDeJeu.Cases;
 import Ennemis.Ennemi;
 import Ennemis.Sorciers.Sorcier;
 import Images.ASCII_Representations;
-import Personnages.Personnage;
-import PlateuDeJeu.ArrayListCases;
 
-import java.util.ArrayList;
-import java.util.Collections;
-
-import static PlateuDeJeu.ArrayListCases.arrayDesSorciers;
+import static PlateuDeJeu.ArrayListCases.getRandomSorciers;
 
 public class CaseSorcier extends Ennemi {
 
-    Sorcier sorcier = arrayDesSorciers();
+    Sorcier sorcier = getRandomSorciers();
     private final String REPRESENTATION = ASCII_Representations.messageSorcier();
 
 

@@ -2,7 +2,7 @@ package Equipements.PotionsPoisons;
 
 import Equipements.Equipements;
 import Personnages.Personnage;
-import PlateuDeJeu.PlateauDuJeu;
+import PlateuDeJeu.BoardFactory;
 
 public abstract class Potions extends Equipements {
 
@@ -16,18 +16,10 @@ public abstract class Potions extends Equipements {
         super(strength, name, health, defensive, offensive);
     }
 
+
     @Override
     public String toString() {
-        return "Potions{" +
-                "type='" + type + '\'' +
-                ", strength=" + strength +
-                ", name='" + name + '\'' +
-                ", image='" + image + '\'' +
-                ", health=" + health +
-                ", defensive=" + defensive +
-                ", offensive=" + offensive +
-                ", description='" + description + '\'' +
-                '}';
+        return super.toString();
     }
 
     public Potions() {
@@ -39,7 +31,7 @@ public abstract class Potions extends Equipements {
     }
 
     @Override
-    public void interact(Personnage player, PlateauDuJeu plateauDuJeu) {
+    public void interact(Personnage player, BoardFactory plateauDuJeu) {
 
     }
 }

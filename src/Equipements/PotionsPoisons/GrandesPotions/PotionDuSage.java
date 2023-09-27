@@ -6,19 +6,6 @@ import Personnages.Personnage;
 
 public class PotionDuSage extends Potions {
 
-    @Override
-    public String toString() {
-        return "PotionDuSage{" +
-                "type='" + type + '\'' +
-                ", strength=" + strength +
-                ", name='" + name + '\'' +
-                ", image='" + image + '\'' +
-                ", health=" + health +
-                ", defensive=" + defensive +
-                ", offensive=" + offensive +
-                ", description='" + description + '\'' +
-                '}';
-    }
 
 
 

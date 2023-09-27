@@ -2,11 +2,11 @@ package Ennemis.JeuFilm;
 
 import Images.ASCII_Representations;
 import Personnages.Personnage;
-import PlateuDeJeu.PlateauDuJeu;
+import PlateuDeJeu.BoardFactory;
 
 public class Kurbi extends SuperHero {
     @Override
-    public void interact(Personnage player, PlateauDuJeu plateauDuJeu) {
+    public void interact(Personnage player) {
 
     }
 

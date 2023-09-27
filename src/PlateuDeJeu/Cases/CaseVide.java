@@ -1,11 +1,11 @@
 package PlateuDeJeu.Cases;
 
 import Personnages.Personnage;
-import PlateuDeJeu.PlateauDuJeu;
+import PlateuDeJeu.BoardFactory;
 
 public class CaseVide implements Cases {
     @Override
-    public void interact(Personnage player, PlateauDuJeu plateauDuJeu) {
+    public void interact(Personnage player, BoardFactory plateauDuJeu) {
 
     }
 }

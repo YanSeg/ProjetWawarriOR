@@ -1,26 +1,12 @@
 package PlateuDeJeu.Cases;
 
-import Ennemis.Ennemi;
-import Enum.EnnemisEnum.enumEnnemi;
-import Equipements.EquipementDef.EquipementDefensif;
-import Equipements.EquipementOff.EquipementOffensif;
-import Equipements.Equipements;
 import Personnages.Personnage;
-import Images.ASCII_Representations;
-import PlateuDeJeu.ArrayListCases;
-import PlateuDeJeu.PlateauDuJeu;
-
-import java.awt.*;
-import java.util.*;
-import java.util.Collections;
-
-import static Game.Game.lancementDuddE;
-import static MiseEnPage.MiseEnPage.space;
+import PlateuDeJeu.BoardFactory;
 
 
 public class CaseEnnemi implements Cases {
     @Override
-    public void interact(Personnage player, PlateauDuJeu plateauDuJeu) {
+    public void interact(Personnage player, BoardFactory plateauDuJeu) {
 
     }
 //    private final Scanner scanner = new Scanner(System.in);

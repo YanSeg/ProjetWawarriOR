@@ -6,10 +6,8 @@ import Personnages.Personnage;
 public class Umbragon extends Dragon{
 
 
-    @Override
-    public String toString() {
-        return super.toString();
-    }
+
+
 
     public Umbragon() {
         super("Obscurité", "Umbragon le Sombre-Mystique", 20, 20, "Manipulation de l'obscurité",  "Capacité à se fondre dans l'obscurité");

@@ -1,61 +1,244 @@
 package Game;
 
-import Ennemis.Ennemi;
+import Equipements.EquipementDef.Boucliers.Bouclier;
+import Equipements.EquipementDef.Phyltres.Phyltre;
+import Equipements.EquipementOff.Armes.Epees.Epee;
+import Equipements.EquipementOff.Armes.Epees.EpeeGranit;
+import Equipements.EquipementOff.Sorts.SortsTerre.SortBasique;
 import Images.ASCII_Representations;
 import Personnages.Personnage;
-import PlateuDeJeu.Cases.*;
-import PlateuDeJeu.GenerateurPlateau;
-import PlateuDeJeu.PlateauDuJeu;
+import Personnages.Guerriers.Guerrier;
+import Personnages.Magiciens.Magicien;
+import PlateuDeJeu.Cases.Cases;
+import PlateuDeJeu.BoardFactory;
+import Menu.MenuJeu;
 
-import java.awt.*;
-import java.util.ArrayList;
-
+import java.lang.*;
+import java.util.Scanner;
 import java.util.*;
 
-import static PlateuDeJeu.Son.Son.playEpee;
-import static PlateuDeJeu.Son.Son.playExplosed;
+import static PlateuDeJeu.Son.Son.*;
 
 
 public class Game {
-
-
     private Personnage player;
+    private int positionPlayer;
     private ArrayList<Cases> plateau;
+    private MenuJeu menuJeu;
+    private final Scanner scanner = new Scanner(System.in);
 
-    private Menu menu;
+    private boolean canPlay = true;
 
-
-
-
-    //ArrayList<Cases> plateau = new ArrayList<Cases>();
-
-    //private Map descases = new HashMap <String, String>();
+    private boolean quitterJeu = true;
 
     public Game() {
+        this.plateau = BoardFactory.createPlateauList();
+        this.positionPlayer = 0;
+        this.menuJeu = new MenuJeu();
     }
 
 
-    public void jouerUnTour() {
-        ;
+    public void changeNamePlayer(Personnage player) {
+        if (player != null) {
+            menuJeu.displayChangePersoName();
+            String persoNewName = scanner.nextLine();
+            player.setName(persoNewName);
+        } else {
+            menuJeu.affichageErreurMenu();
+        }
+    }
+
+    private void generateWarriorDeflaut() {
+        player = new Guerrier(100, 100, "Guerrier", "Eric Cantona");
+        Bouclier bouclier = new Bouclier("De base", 15, "Bouclier");
+        Epee epee = new EpeeGranit();
+        player.setEquipementDef(bouclier);
+        player.setEquipemenOf(epee);
     }
 
 
-    /**
-     * @return un entier compris entre 1 et 6
-     */
+    private void creerMagicien() {
+        String persoType = "Magicien";
+        System.out.println("Quel sera votre Nom ?");
+        String persoName = scanner.nextLine();
+        SortBasique sort = new SortBasique();
+        Phyltre phyltre = new Phyltre("De Base", 15, "Phyltre");
+        player = new Magicien(6, 15, "Magicien", persoName);
+        player.setEquipemenOf(sort);
+        player.setEquipemenOf(phyltre);
 
-    public static int lancementDuddE() {
+    }
+
+    private void creerGuerrier() {
+        String persoType = "Guerrier";
+        System.out.println("Quel sera votre Nom ?");
+        String persoName = scanner.nextLine();
+        Bouclier bouclier = new Bouclier("De base", 15, "Bouclier");
+        Epee epee = new EpeeGranit();
+        player = new Guerrier(10, 10, "Guerrier", persoName);
+        player.setEquipemenOf(epee);
+        player.setEquipementDef(bouclier);
+    }
+
+    public void genrateMagicienDefault() {
+        player = new Magicien(100, 100, "Magicien", "David Copperfield");
+        SortBasique sort = new SortBasique();
+        Phyltre phyltre = new Phyltre("De Base", 15, "Phyltre");
+        player.setEquipementDef(phyltre);
+        player.setEquipemenOf(sort);
+    }
+
+    public boolean isOver(Personnage player, BoardFactory plateau) {
+        return (this.positionPlayer < 63) && (player.getHealth() > 0);
+    }
+
+    private void createPersonnage() {
+        System.out.println("Tapez 1 : Guerrier | Tapez 2 : Magicien");
+        String persoType;
+        String persoName;
+        int choixTypePerso = menuJeu.getIntInput();
+        switch (choixTypePerso) {
+            case 1 -> creerGuerrier();
+            case 2 -> creerMagicien();
+            default -> menuJeu.affichageErreurMenu();
+        }
+    }
+
+
+    public void menuDuJeu() {
+        while (quitterJeu) {
+            while (canPlay) {
+                menuJeu.listemenu2();
+                int choiceMenu = menuJeu.getIntInput();
+                switch (choiceMenu) {
+                    case 1 -> createPersonnage();
+                    case 2 -> generateWarriorDeflaut();
+                    case 3 -> genrateMagicienDefault();
+                    case 4 -> changeNamePlayer(player);
+                    case 5 -> menuJeu.affichageduPersonnage(player);
+                    case 6 -> canPlay();
+                    case 7 -> exit();
+                    default -> menuJeu.affichageErreurMenu();
+                }
+            }
+            play();
+        }
+    }
+
+    private void exit() {
+        this.quitterJeu = false;
+    }
+
+
+    private boolean canPlay() {
+        return this.canPlay = false;
+    }
+
+    private int lancementDuddE() {
         int de = (int) (1 + 6 * Math.random());
         return de;
     }
 
-    /**
-     * @param player
-     * @param plateau C'est ma méthode pour jouer au jeu
-     */
-    public  void  jouerauJeu(Personnage player, PlateauDuJeu plateauDuJeu) {
+    public void jouerUnTour() {
 
-        if (player != null || plateauDuJeu.getPositionPlayer() ==63)
+        movePlayer();
+
+        if (positionPlayer == 63) {
+            String REPRESENTATION = ASCII_Representations.men();
+            System.out.println(REPRESENTATION);
+            System.out.println("GAGNE");
+        }
+        else if (0 <= positionPlayer && positionPlayer < 63) {
+            plateau.get(positionPlayer).interact(player);               // ici c'est cool
+        } else {
+            playExplosed();
+            playEpee();
+            throw new PersonnageHorsPlateauException();
+        }
+
+    }
+
+    private void movePlayer() {
+        int new_position = positionPlayer + lancementDuddE();
+        positionPlayer = new_position;
+    }
+
+    private void play() {
+
+        BoardFactory plateau = new BoardFactory();
+        ArrayList<Cases> pff = plateau.getPlateau();
+        System.out.println(plateau);
+        for (Cases s : pff) {
+            System.out.println(s);
+        }
+
+        while (positionPlayer < 63) {
+            System.out.println("LA POSITION DU JOUEUR est de " + positionPlayer + "vous jouez un autre tour");
+            jouerUnTour();
+
+        }
+
+
+        this.quitterJeu = false;
+
+
+    } else if(0<=position &&position< 63)
+
+    {
+//
+//
+
+        plateauDuJeu.getPlateau()[position].interact(player, plateauDuJeu);
+
+        System.out.println(plateauDuJeu.getClass().getSimpleName());
+//            int newpoiton = Math.min(63, player.getPosition() + de);
+        player.setPosition(position);
+        System.out.println("_______________________________________________________________________");
+//            System.out.println("LANCE DE DE " + de);
+
+        System.out.println(" Vous êtes à la position " + plateauDuJeu.getPositionPlayer());
+        System.out.println("_______________________________________________________________________");
+    } else if(position ==63)
+
+    {
+        String REPRESENTATION = ASCII_Representations.men();
+        System.out.println(REPRESENTATION);
+        System.out.println("GAGNE");
+//            this.player = null;
+    } else
+
+    {
+        playExplosed();
+        playEpee();
+        throw new PersonnageHorsPlateauException();
+    }
+
+}
+
+
+//
+//        if (player != null) {
+//            System.out.println(plateau.getClass().getSimpleName());
+//
+//            while (isOver(player, plateau)) {
+//                jouerauJeu(player, plateau);
+//            }
+//        } else {
+//            menuJeu.affichageErreurMenu();
+//
+//        }
+
+
+    public void init() {
+        MenuJeu menu = new MenuJeu();
+        playIntro();
+        menuDuJeu();
+    }
+
+
+    public void jouerauJeu(Personnage player, BoardFactory plateauDuJeu) {
+
+        if (player != null || plateauDuJeu.getPositionPlayer() == 63)
 
             try {
                 jouer1tour(player, plateauDuJeu);
@@ -66,64 +249,60 @@ public class Game {
 
     }
 
-    public int  movePlayer(PlateauDuJeu plateauDuJeu){
-
+    public int movePlayer(BoardFactory plateauDuJeu) {
         int de = lancementDuddE();
         int postionRelle = plateauDuJeu.getPositionPlayer();
         int r = de + postionRelle;
-        return de+postionRelle;
-
+        return de + postionRelle;
     }
 
-    public  void jouer1tour (Personnage player, PlateauDuJeu plateauDuJeu) throws PersonnageHorsPlateauException {
+    public void jouer1tour(Personnage player, BoardFactory plateauDuJeu) throws PersonnageHorsPlateauException {
 
-//for (int i = 0; i < plateauDuJeu.getPlateau().length; i++) {
-        //          System.out.print(plateauDuJeu.getPlateau()[i] + " "); // Affiche l'élément du plateau
-        //        if ((i + 1) % 8 == 0) {
-        //          System.out.println(); // Passe à une nouvelle ligne après chaque ligne de 8 éléments
-        //    }
-        //}
-
-        System.out.println("LA POSITION DU JOUEUR");
-
-        System.out.println(plateauDuJeu.getPositionPlayer());
-        System.out.println("____________________________________________________");
-
-
-        int position = movePlayer(plateauDuJeu);
-        int de = lancementDuddE();
-
-        if (position < 0) {
-            plateauDuJeu.setPositionPlayer(0);
-        } else if (0 <= position && position<= 63) {
-
-            plateauDuJeu.setPositionPlayer(position + de);
-
-            plateauDuJeu.getPlateau()[position].interact(player, plateauDuJeu);
-
-            System.out.println(plateauDuJeu.getClass());
-            int newpoiton = Math.min(63, player.getPosition() + de);
-            player.setPosition(newpoiton);
-            System.out.println("_______________________________________________________________________");
-            System.out.println("LANCE DE DE " + de);
-
-            System.out.println(" Vous êtes à la position " + plateauDuJeu.getPositionPlayer());
-            System.out.println("_______________________________________________________________________");
-        } else if (position == 63){
-            String REPRESENTATION = ASCII_Representations.men();
-            System.out.println(REPRESENTATION);
-            System.out.println("GAGNE");
-//            this.player = null;
-        } else {
-            playExplosed();
-            playEpee();
-            throw new PersonnageHorsPlateauException();
-        }
-
-    }
-}
-
-//        Cases[] plateau = new Cases[4];
+////        String choice = inGameMenu.getUserInput();
+////        switch (choice) {
+////            case "MOVE" -> movePlayer();
+////            case "QUIT" ->
+////        }
+////
+//
+//        System.out.println("LA POSITION DU JOUEUR est de " + plateauDuJeu.getPositionPlayer());
+//        System.out.println("____________________________________________________");
+//        int position = movePlayer(plateauDuJeu);
+//        plateauDuJeu.setPositionPlayer(position);
+//        System.out.println("Vous avancez à la case " + plateauDuJeu.getPositionPlayer());
+//
+//
+//        if (position < 0) {
+//            plateauDuJeu.setPositionPlayer(0);
+//        } else if (0 <= position && position < 63) {
+////
+////
+//
+//            plateauDuJeu.getPlateau()[position].interact(player, plateauDuJeu);
+//
+//            System.out.println(plateauDuJeu.getClass().getSimpleName());
+////            int newpoiton = Math.min(63, player.getPosition() + de);
+//            player.setPosition(position);
+//            System.out.println("_______________________________________________________________________");
+////            System.out.println("LANCE DE DE " + de);
+//
+//            System.out.println(" Vous êtes à la position " + plateauDuJeu.getPositionPlayer());
+//            System.out.println("_______________________________________________________________________");
+//        } else if (position == 63) {
+//            String REPRESENTATION = ASCII_Representations.men();
+//            System.out.println(REPRESENTATION);
+//            System.out.println("GAGNE");
+////            this.player = null;
+//        } else {
+//            playExplosed();
+//            playEpee();
+//            throw new PersonnageHorsPlateauException();
+//        }
+//
+//    }
+//}
+//
+////        Cases[] plateau = new Cases[4];
 //
 //        plateau[0] = new CaseVide();
 //        plateau[1] = new CaseEnnemi();
@@ -141,7 +320,8 @@ public class Game {
 //        }
 //    }
 
-
+    }
+}
 
 
 

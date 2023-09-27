@@ -3,18 +3,12 @@ package PlateuDeJeu.Cases;
 import Ennemis.Ennemi;
 import Ennemis.Gobelin.Gobelin;
 import Images.ASCII_Representations;
-import Personnages.Personnage;
-import PlateuDeJeu.ArrayListCases;
 
-import java.util.ArrayList;
-import java.util.Collections;
-
-import static PlateuDeJeu.ArrayListCases.arrayDesGobelins;
-import static PlateuDeJeu.ArrayListCases.arrayDesSorciers;
+import static PlateuDeJeu.ArrayListCases.getRandomGoblin;
 
 public class CaseGobelin extends Ennemi {
     private final String REPRESENTATION = ASCII_Representations.messageGobelin();
-    Gobelin gobelin = arrayDesGobelins();
+    Gobelin gobelin = getRandomGoblin();
 
 
 //    @Override

@@ -1,24 +1,11 @@
 package PlateuDeJeu.Cases;
 
-import Equipements.EquipementDef.EquipementDefensif;
-import Equipements.EquipementOff.Armes.Armes;
-import Equipements.EquipementOff.EquipementOffensif;
-import Equipements.EquipementOff.Sorts.Sorts;
-import Equipements.Equipements;
-import Equipements.PotionsPoisons.Potions;
-import Images.ASCII_Representations;
-import Personnages.Guerriers.Guerrier;
-import Personnages.Magiciens.Magicien;
 import Personnages.Personnage;
-import PlateuDeJeu.ArrayListCases;
-import PlateuDeJeu.PlateauDuJeu;
-
-import java.util.ArrayList;
-import java.util.Collections;
+import PlateuDeJeu.BoardFactory;
 
 public class CaseSurprise implements Cases {
     @Override
-    public void interact(Personnage player, PlateauDuJeu plateauDuJeu) {
+    public void interact(Personnage player, BoardFactory plateauDuJeu) {
 
     }
 }

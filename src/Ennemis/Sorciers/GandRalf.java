@@ -1,8 +1,6 @@
 package Ennemis.Sorciers;
 
 import Images.ASCII_Representations;
-import Personnages.Personnage;
-import PlateuDeJeu.PlateauDuJeu;
 
 public class GandRalf extends Sorcier {
 

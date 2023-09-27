@@ -5,10 +5,6 @@ import Personnages.Personnage;
 
 public class Terramor extends Dragon{
 
-    @Override
-    public String toString() {
-        return super.toString();
-    }
 
 
 

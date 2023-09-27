@@ -4,10 +4,6 @@ import Images.ASCII_Representations;
 import Personnages.Personnage;
 
 public class Drakarion extends Dragon {
-    @Override
-    public String toString() {
-        return super.toString();
-    }
 
 
 

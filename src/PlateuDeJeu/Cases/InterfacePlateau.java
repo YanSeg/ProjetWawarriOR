@@ -1,9 +1,9 @@
 package PlateuDeJeu.Cases;
 
-import PlateuDeJeu.PlateauDuJeu;
+import PlateuDeJeu.BoardFactory;
 
 public interface InterfacePlateau {
 
-    void miseAjourPlateau(PlateauDuJeu plateau);
+    void miseAjourPlateau(BoardFactory plateau);
 
 }

@@ -13,6 +13,11 @@ public abstract class Dragon extends Ennemi {
     public Dragon() {
     }
 
+    @Override
+    public void interact(Personnage player) {
+
+    }
+
     public Dragon(String type, String name, int health, int strength, String offensive, String defensive) {
         super(type, name, health, strength, offensive, defensive);
     }

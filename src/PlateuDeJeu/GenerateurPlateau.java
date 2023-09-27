@@ -26,23 +26,23 @@ public class GenerateurPlateau {
             }
             int[] casesDragonsS = {45, 52, 56, 62};
             for (int caseDragon : casesDragonsS) {
-                Dragon dragon = arrayDesDragons();
+                Dragon dragon = getRandomDragon();
                 plateau[caseDragon] = dragon;
             }
             int[] caseSorciersS = {10, 20, 25, 32, 35, 36, 37, 40, 44, 47};
             for (int caseSorcier : caseSorciersS) {
-                Sorcier sorcier = arrayDesSorciers();
+                Sorcier sorcier = getRandomSorciers();
                 plateau[caseSorcier] = sorcier;
             }
             int[] caseGobelinsS = {3, 6, 9, 12, 15, 18, 21, 24, 27, 30};
             for (int caseGobelin : caseGobelinsS) {
-                Gobelin gobelin = arrayDesGobelins();
+                Gobelin gobelin = getRandomGoblin();
                 plateau[caseGobelin] = gobelin;
             }
             int[] casesCaissesSurprises = {2, 11, 5, 22, 38, 19, 26, 42, 53, 1, 4, 8, 17, 23, 48, 49, 7, 13, 31, 33, 39, 43, 28, 41};
             for (int caseCaisseSurprise : casesCaissesSurprises) {
 
-                Equipements equipements = arrayDesEquipements();
+                Equipements equipements = getRandomEquipement();
 
                 plateau[caseCaisseSurprise] = equipements;
             }

@@ -4,6 +4,9 @@ import Equipements.Equipements;
 import Personnages.Personnage;
 
 public abstract class EquipementOffensif extends Equipements {
+    private String description;
+
+
 
     protected String type;
     protected int strenght;
@@ -28,33 +31,29 @@ public abstract class EquipementOffensif extends Equipements {
 
 
 
-    private String description;
 
 
-    public String getDescription() {
-        return description;
-    }
 
-    public void setDescription(String description) {
-        this.description = description;
-    }
-
-
-    public EquipementOffensif(String offensifType, int offensifStrenght, String offensifName) {
-        this.type = offensifType;
-        this.strenght = offensifStrenght;
-        this.name = offensifName;
-    }
 
 
     public EquipementOffensif() {
     }
-
+    protected EquipementOffensif(String offensifType, String offensifName, int offensifStrenght) {
+        this.type = offensifType;
+        this.name = offensifName;
+        this.strenght = offensifStrenght;
+    }
     public EquipementOffensif(String offensifType, String offensifName, int offensifStrenght, String image) {
         this.type = offensifType;
         this.name = offensifName;
         this.strenght = offensifStrenght;
         this.image = image;
+    }
+
+    public EquipementOffensif(String offensifType, int offensifStrenght, String offensifName) {
+        this.type = offensifType;
+        this.strenght = offensifStrenght;
+        this.name = offensifName;
     }
 
     public String getImage() {
@@ -89,13 +88,19 @@ public abstract class EquipementOffensif extends Equipements {
     public void setStrenght(int strenght) {
         this.strenght = strenght;
     }
-
-
-    protected EquipementOffensif(String offensifType, String offensifName, int offensifStrenght) {
-        this.type = offensifType;
-        this.name = offensifName;
-        this.strenght = offensifStrenght;
+    public String getDescription() {
+        return description;
     }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+
+
+
+
+
 
 
 }

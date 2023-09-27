@@ -2,17 +2,68 @@ package Equipements;
 
 import Personnages.Personnage;
 import PlateuDeJeu.Cases.Cases;
-import PlateuDeJeu.PlateauDuJeu;
+import PlateuDeJeu.BoardFactory;
 
 public abstract class Equipements  implements Cases {
-    protected String type;
-    protected int strength;
-    protected String name;
-    protected String image;
-    protected int health;
-    protected int defensive;
-    protected int offensive;
-    protected String description;
+
+    private String type;
+    private int strength;
+    private String name;
+    private String image;
+    private int health;
+    private int defensive;
+    private int offensive;
+    private String description;
+//    package-protected String test = "test";
+
+    protected Equipements equipement;
+
+
+
+
+    @Override
+    public void interact(Personnage player, BoardFactory plateauDuJeu) {
+
+//
+//
+//
+//
+//
+//        if (plateauDuJeu.getCases() instanceof Potions) {
+//            System.out.println("WELL DONE DUDE");
+//            space();
+//            int a = this.getHealth();
+//            int b = player.getHealth();
+//            int h = a + b;
+//            player.setHealth(h);
+//            int c = this.getStrength();
+//            int d = player.getStrength();
+//            int j = c + d;
+//            player.setStrength(j);
+//            System.out.println(player);
+//            space();
+//        } else if( isUsable(player)) {
+//            if (plateauDuJeu.getCases() instanceof EquipementOffensif) {
+//                player.setEquipemenOf(this.equipement);
+//                System.out.println("VOUS AVEZ RECUP :" + equipement.getName());
+//                space();
+//                System.out.println(this.equipement);
+//            }
+//            if (plateauDuJeu.getCases() instanceof EquipementDefensif) {
+//                player.setEquipementDef(this.equipement);
+//                System.out.println("VOUS AVEZ RECUP :" + equipement.getName());
+//                space();
+//                System.out.println(this.equipement);
+//            }
+//
+//        } else {
+//            System.out.println("Rien à récupérer pour vous manant");
+//        }
+//
+//
+
+
+    }
 
     public String getType() {
         return type;
@@ -29,10 +80,7 @@ public abstract class Equipements  implements Cases {
         this.offensive = offensive;
     }
 
-    @Override
-    public void interact(Personnage player, PlateauDuJeu plateauDuJeu) {
 
-    }
 
     public void setType(String type) {
         this.type = type;

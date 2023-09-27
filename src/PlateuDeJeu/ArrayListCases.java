@@ -78,7 +78,7 @@ public class ArrayListCases {
         return listEnnemis;
     }
 
-    public static Dragon arrayDesDragons() {
+    public static Dragon getRandomDragon() {
         ArrayList<Dragon> listDragon = new ArrayList<Dragon>();
         Aurorath aurorath = new Aurorath();
         Drakarion drakarion = new Drakarion();
@@ -99,7 +99,7 @@ public class ArrayListCases {
 
     }
 
-    public static Gobelin arrayDesGobelins() {
+    public static Gobelin getRandomGoblin() {
         ArrayList<Gobelin> listGobelin = new ArrayList<Gobelin>();
 
         Brulok brulok = new Brulok();
@@ -134,7 +134,7 @@ public class ArrayListCases {
     }
 
 
-    public static Sorcier arrayDesSorciers() {
+    public static Sorcier getRandomSorciers() {
         ArrayList<Sorcier> listSorcier = new ArrayList<Sorcier>();
 
         GandRalf gandRalf = new GandRalf();
@@ -167,7 +167,7 @@ public class ArrayListCases {
     }
 
 
-    public ArrayList<Potions> arrayDesPetitesPotions() {
+    public static Potions getRandomPotion() {
 
         ArrayList<Potions> listPetitePotion = new ArrayList<Potions>();
 
@@ -194,12 +194,13 @@ public class ArrayListCases {
         Collections.shuffle(listPetitePotion);
         Random random = new Random();
         int indexAleatoire = random.nextInt(listPetitePotion.size());
-        listPetitePotion.get(indexAleatoire);
-        return listPetitePotion;
+        Potions potions = listPetitePotion.get(indexAleatoire);
+        return potions;
+
     }
 
 
-    public ArrayList<Potions> arrayDesGrandesPotions() {
+    public static Potions getRadomGrandePotion() {
         ArrayList<Potions> listGrandePotion = new ArrayList<Potions>();
 
         PotionDuSage potionDuSage = new PotionDuSage();
@@ -219,12 +220,12 @@ public class ArrayListCases {
         Collections.shuffle(listGrandePotion);
         Random random = new Random();
         int indexAleatoire = random.nextInt(listGrandePotion.size());
-        listGrandePotion.get(indexAleatoire);
-        return listGrandePotion;
+        Potions potions =  listGrandePotion.get(indexAleatoire);
+        return potions;
     }
 
 
-    public static Equipements arrayDesEquipements() {
+    public static Equipements getRandomEquipement() {
         ArrayList<Equipements> listEquipement = new ArrayList<Equipements>();
 
         MassueChaos massueChaos = new MassueChaos();

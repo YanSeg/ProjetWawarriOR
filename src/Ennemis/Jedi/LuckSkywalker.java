@@ -13,8 +13,8 @@ public class LuckSkywalker extends Ennemi {
         setImage(image.luckSky());
     }
 
+    @Override
+    public void interact(Personnage player) {
 
-
-
-
+    }
 }

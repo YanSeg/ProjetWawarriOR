@@ -1,23 +1,11 @@
 package PlateuDeJeu.Cases;
 
-import Equipements.EquipementDef.EquipementDefensif;
-import Equipements.EquipementOff.Armes.Armes;
-import Equipements.EquipementOff.EquipementOffensif;
-import Equipements.EquipementOff.Sorts.Sorts;
 import Equipements.Equipements;
-import Equipements.PotionsPoisons.Potions;
 import Images.ASCII_Representations;
-import Personnages.Guerriers.Guerrier;
-import Personnages.Magiciens.Magicien;
 import Personnages.Personnage;
-import PlateuDeJeu.ArrayListCases;
-import PlateuDeJeu.PlateauDuJeu;
+import PlateuDeJeu.BoardFactory;
 
-import java.util.ArrayList;
-import java.util.Collections;
-
-import static MiseEnPage.MiseEnPage.space;
-import static PlateuDeJeu.ArrayListCases.arrayDesEquipements;
+import static PlateuDeJeu.ArrayListCases.getRandomEquipement;
 
 public class CaseEquipement implements Cases {
 
@@ -26,45 +14,13 @@ public class CaseEquipement implements Cases {
 
 
     @Override
-    public void interact(Personnage player, PlateauDuJeu plateauDuJeu) {
+    public void interact(Personnage player, BoardFactory plateauDuJeu) {
 
-        Equipements equipements = arrayDesEquipements();
+        Equipements equipements = getRandomEquipement();
 
         System.out.println(REPRESENTATION);
         System.out.println(equipements);
         System.out.println("HEY");
-
-        if (equipements instanceof Potions) {
-            System.out.println("WELL DONE DUDE");
-            space();
-            int a = equipements.getHealth();
-            int b = player.getHealth();
-            int h = a + b;
-            player.setHealth(h);
-            int c = equipements.getStrength();
-            int d = player.getStrength();
-            int j = c + d;
-            player.setStrength(j);
-            System.out.println(player);
-            space();
-        } else if (equipements.isUsable(player)) {
-            if (equipements instanceof EquipementOffensif) {
-                player.setEquipemenOf(equipements);
-                System.out.println("VOUS AVEZ RECUP :");
-                space();
-                System.out.println(equipements);
-            }
-            if (equipements instanceof EquipementDefensif) {
-                player.setEquipementDef(equipements);
-                System.out.println("VOUS AVEZ RECUP :");
-                space();
-                System.out.println(equipements);
-            }
-
-        } else {
-            System.out.println("Rien à récupérer pour vous");
-        }
-
 
     }
 }

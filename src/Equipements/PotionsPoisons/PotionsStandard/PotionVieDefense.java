@@ -8,7 +8,7 @@ public class PotionVieDefense extends Potions {
 
 
     public PotionVieDefense() {
-        super( 0, "Potion de Vie/Defense",10,10,0);
+        super("Potion de Vie/Defense", 10, 10);
         ASCII_Representations image = new ASCII_Representations();
         setImage(image.potion1());
         String description = "10 pts de force et d'attaque";

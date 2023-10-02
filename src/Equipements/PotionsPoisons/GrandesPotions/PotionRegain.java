@@ -8,7 +8,7 @@ public class PotionRegain extends Potions {
 
 
     public PotionRegain() {
-        super(5,"Potion de Regain Élémentaire", 15, 5, 25);
+        super("Potion de Regain Élémentaire", 15, 25);
         ASCII_Representations image = new ASCII_Representations();
         setImage(image.potion10());
         String description = "Une grande potion qui augment principalement l'attaque, mais aussi un peu de points de vie.";

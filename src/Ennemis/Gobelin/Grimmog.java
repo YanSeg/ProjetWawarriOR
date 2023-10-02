@@ -2,12 +2,13 @@ package Ennemis.Gobelin;
 
 import Images.ASCII_Representations;
 import Personnages.Personnage;
+import PlateuDeJeu.EquipementFactory;
 
 public class Grimmog extends Gobelin {
 
 
     public Grimmog() {
-        super("Gobelin", "Le Troll Truculent", 3, 5, "Massue à pointes", "Plastron en os");
+        super("Gobelin", "Le Troll Truculent", 3, 5, EquipementFactory.createEquipDef(), EquipementFactory.createEquipOf());
         ASCII_Representations image = new ASCII_Representations();
         setImage(image.monstercool());
 

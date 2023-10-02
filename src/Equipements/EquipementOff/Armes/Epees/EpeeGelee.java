@@ -13,13 +13,5 @@ public class EpeeGelee extends Epee{
         setDescription(description);
     }
 
-    @Override
-    public String toString() {
-        return "EpeeGelee{" +
-                "type='" + type + '\'' +
-                ", strenght=" + strenght +
-                ", name='" + name + '\'' +
-                ", image='" + image + '\'' +
-                '}';
-    }
+
 }

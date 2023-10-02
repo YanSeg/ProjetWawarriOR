@@ -8,7 +8,7 @@ public class Potionvitalite extends Potions {
 
 
     public Potionvitalite() {
-        super(5,"Grande Potion de Vitalité", 30, 10, 10);
+        super("Grande Potion de Vitalité", 30, 15);
         ASCII_Representations image = new ASCII_Representations();
         setImage(image.potion1());
         String description = "Une grande potion qui restaure considérablement la vie.";

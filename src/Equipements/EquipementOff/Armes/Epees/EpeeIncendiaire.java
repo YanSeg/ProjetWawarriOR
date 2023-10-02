@@ -5,15 +5,7 @@ import Images.ASCII_Representations;
 public class EpeeIncendiaire extends Epee{
 
     private final String REPRESENTATION = ASCII_Representations.sword1();
-    @Override
-    public String toString() {
-        return "EpeeIncendiaire{" +
-                "type='" + type + '\'' +
-                ", strenght=" + strenght +
-                ", name='" + name + '\'' +
-                ", image='" + image + '\'' +
-                '}';
-    }
+
 
     public EpeeIncendiaire() {
         super("Feu", "Lame Incendiaire", 16);

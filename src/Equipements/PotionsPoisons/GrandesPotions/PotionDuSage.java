@@ -10,7 +10,7 @@ public class PotionDuSage extends Potions {
 
 
     public PotionDuSage() {
-        super(8, "Potion d'attaque", 20, 12, 8);
+        super("Potion d'attaque", 20, 30);
         ASCII_Representations image = new ASCII_Representations();
         setImage(image.potion12());
         String description = "Une grande potion qui restaure principalement le vie, mais aussi un peu de points de défence.";

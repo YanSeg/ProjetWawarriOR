@@ -9,7 +9,7 @@ public class PotionEquilibreMagique extends Potions {
 
 
     public PotionEquilibreMagique() {
-        super(15,"Potion d'Équilibre Magique", 15, 15, 15);
+        super("Potion d'Équilibre Magique", 15, 15);
         ASCII_Representations image = new ASCII_Representations();
         setImage(image.potion8());
         String description = "Une grande potion équilibrée.";

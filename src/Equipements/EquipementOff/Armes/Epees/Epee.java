@@ -7,29 +7,12 @@ import Personnages.Personnage;
 public class Epee extends Armes {
 
 
-    @Override
-    public boolean isUsable(Personnage player) {
-        return player instanceof Guerrier;
-    }
-
-    public Epee(String offensifType, String offensifName, int offensifStrenght) {
-        super(offensifType, offensifName, offensifStrenght);
-    }
-
-    public Epee() {
-    }
-
-    public Epee(String offensifType, String offensifName, int offensifStrenght, String image) {
-        super(offensifType, offensifName, offensifStrenght, image);
+    public Epee(String type, String name, int strength) {
+        super(type, name, strength);
     }
 
     @Override
     public String toString() {
-        return "Epee{" +
-                "type='" + type + '\'' +
-                ", strenght=" + strenght +
-                ", name='" + name + '\'' +
-                ", image='" + image + '\'' +
-                '}';
+        return super.toString();
     }
 }

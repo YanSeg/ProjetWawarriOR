@@ -13,13 +13,5 @@ public class EpeeInfernale extends Epee{
         setDescription(description);
     }
 
-    @Override
-    public String toString() {
-        return "EpeeInfernale{" +
-                "type='" + type + '\'' +
-                ", strenght=" + strenght +
-                ", name='" + name + '\'' +
-                ", image='" + image + '\'' +
-                '}';
-    }
+
 }

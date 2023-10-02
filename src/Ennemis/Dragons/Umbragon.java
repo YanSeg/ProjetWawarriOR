@@ -2,6 +2,7 @@ package Ennemis.Dragons;
 
 import Images.ASCII_Representations;
 import Personnages.Personnage;
+import PlateuDeJeu.EquipementFactory;
 
 public class Umbragon extends Dragon{
 
@@ -10,7 +11,7 @@ public class Umbragon extends Dragon{
 
 
     public Umbragon() {
-        super("Obscurité", "Umbragon le Sombre-Mystique", 20, 20, "Manipulation de l'obscurité",  "Capacité à se fondre dans l'obscurité");
+        super("Obscurité", "Umbragon le Sombre-Mystique", 20, 20, EquipementFactory.createEquipDef(), EquipementFactory.createEquipOf());
         ASCII_Representations image = new ASCII_Representations();
         setImage(image.dragon4());
 

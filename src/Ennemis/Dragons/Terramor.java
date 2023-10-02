@@ -2,6 +2,7 @@ package Ennemis.Dragons;
 
 import Images.ASCII_Representations;
 import Personnages.Personnage;
+import PlateuDeJeu.EquipementFactory;
 
 public class Terramor extends Dragon{
 
@@ -9,7 +10,7 @@ public class Terramor extends Dragon{
 
 
     public Terramor() {
-        super("Terre", "Terramor le Terre-Briseur", 20, 20, "Manipulation des roches",  "Capacité à se fondre dans le sol");
+        super("Terre", "Terramor le Terre-Briseur", 20, 20, EquipementFactory.createEquipDef(), EquipementFactory.createEquipOf());
         ASCII_Representations image = new ASCII_Representations();
         setImage(image.dragon1());
 

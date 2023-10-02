@@ -2,12 +2,13 @@ package Ennemis.Gobelin;
 
 import Images.ASCII_Representations;
 import Personnages.Personnage;
+import PlateuDeJeu.EquipementFactory;
 
 public class Sombra extends Gobelin {
 
 
     public Sombra() {
-        super("Gobelin", "Sombra l'Ombre", 3, 5, "Dagues empoisonnées", "Manteau d'invisibilité");
+        super("Gobelin", "Sombra l'Ombre", 3, 5, EquipementFactory.createEquipDef(), EquipementFactory.createEquipOf());
         ASCII_Representations image = new ASCII_Representations();
         setImage(image.phantom());
 

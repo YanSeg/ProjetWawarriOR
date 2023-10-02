@@ -1,34 +1,12 @@
 package Equipements.EquipementOff.Armes.Massues;
 
 import Equipements.EquipementOff.Armes.Armes;
+import Equipements.EquipementOff.EquipementOffensif;
 import Personnages.Guerriers.Guerrier;
 import Personnages.Personnage;
 
-public abstract class Massue extends Armes {
-
-    public Massue(String offensifType, String offensifName, int offensifStrenght, String image) {
-        super(offensifType, offensifName, offensifStrenght, image);
+public abstract class Massue extends EquipementOffensif {
+    public Massue(String type, String name, int strength) {
+        super(type, name, strength);
     }
-
-    public Massue(String offensifType, String offensifName, int offensifStrenght) {
-        super(offensifType, offensifName, offensifStrenght);
-    }
-
-    public Massue() {
-    }
-
-
-
-
-
-
-
-//    public equip( Guerrier guerrier ){
-//        guerrier.setOffensive();
-//
-//    }
-
-//    public equip( Sorcier sorcier ){
-//        System.out.println("Je ne me peux pas utiliser ce type d'arme");
-//    }
 }

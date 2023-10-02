@@ -2,14 +2,12 @@ package Ennemis.Dragons;
 
 import Images.ASCII_Representations;
 import Personnages.Personnage;
+import PlateuDeJeu.EquipementFactory;
 
 public class Aurorath extends Dragon {
 
-
-
-
     public Aurorath() {
-        super("Glace", "Aurorath la Glace-Éternelle", 20, 20, " Manipulation des tempêtes de neige", "Capacité de se camoufler dans la neige");
+        super("Glace", "Aurorath la Glace-Éternelle", 20, 20, EquipementFactory.createEquipDef(), EquipementFactory.createEquipOf());
         ASCII_Representations image = new ASCII_Representations();
         setImage(image.dragon2());
 

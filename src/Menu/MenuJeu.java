@@ -3,7 +3,7 @@ package Menu;
 import Personnages.Personnage;
 import Images.ASCII_Representations;
 import Ennemis.*;
-import Enum.EnnemisEnum.enumEnnemi;
+import Enum.EnnemisEnum.EnumEnnemi;
 
 import java.util.Scanner;
 
@@ -16,10 +16,11 @@ public class MenuJeu {
 
     private final Scanner scanner;
 
-
+    public Scanner getScanner() {
+        return scanner;
+    }
 
     public MenuJeu() {
-
         this.scanner = new Scanner(System.in);
 
     }
@@ -30,7 +31,7 @@ public class MenuJeu {
 
 
     public void displayWelcomeMessage() {
-        enumEnnemi ennemiEnum = enumEnnemi.DRAGON;
+        EnumEnnemi ennemiEnum = EnumEnnemi.DRAGON;
         Ennemi randomSorcier = ennemiEnum.getRandomEnnemi();
         ennemiEnum.displayrandomEnum(randomSorcier);
         playIntro();
@@ -62,6 +63,12 @@ public class MenuJeu {
     }
 
 
+    public void getFightMenu() {
+        System.out.println("1. Voulez vous vous battre?");
+        System.out.println("2. Voulez-vous fuir?");
+        System.out.println("3. Quitter les jeu?");
+    }
+
 
 
 
@@ -86,10 +93,30 @@ public class MenuJeu {
     }
 
 
-// Les menus approprement dit _________________________________________________________________________________
+    public void presentationEnnemmi(Ennemi ennemi){
+        System.out.println( "Vous faites face à " +ennemi.getName() +'\n' + '\n' + ennemi.getImage()  +'\n' + '\n' +"Weapon : "+ennemi.getWeapon().getName()+"force|"+ennemi.getWeapon().getStrength()
+                +'\n' + "Shield |"+ennemi.getShield().getName()+"force|"+ennemi.getShield().getStrength() +'\n' + '\n');
+    }
+    public void presentationPlayer(Personnage player){
+        System.out.println(player);
+    }
+    public void printresult(String result){
+        System.out.println(result);
+    }
 
 
+    public void etatCombattant (Personnage player ,Ennemi ennemi){
+        System.out.println("La vie du joueur est de : " + player.getHealth());
+        System.out.println("La vie de l'ennemi est de : " + ennemi.getHealth());
+    }
 
+    public void isEnnemiALive(){
+        System.out.println("ENNEMI DEAD");
+    }
 
+    public void isPlayerDead(){
+        System.out.println("GAMEOVER");
+
+    }
 
 }

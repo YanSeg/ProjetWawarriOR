@@ -5,15 +5,7 @@ import Images.ASCII_Representations;
 public class EpeeSombre extends Epee {
     private final String REPRESENTATION = ASCII_Representations.sword2();
 
-    @Override
-    public String toString() {
-        return "EpeeSombre{" +
-                "type='" + type + '\'' +
-                ", strenght=" + strenght +
-                ", name='" + name + '\'' +
-                ", image='" + image + '\'' +
-                '}';
-    }
+
 
     public EpeeSombre() {
         super("Ombre", "Lame Ténébreuse", 16);

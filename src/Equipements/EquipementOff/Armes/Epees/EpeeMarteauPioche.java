@@ -4,15 +4,6 @@ import Images.ASCII_Representations;
 
 public class EpeeMarteauPioche extends Epee{
     private final String REPRESENTATION = ASCII_Representations.sword4();
-    @Override
-    public String toString() {
-        return "EpeeMarteauPioche{" +
-                "type='" + type + '\'' +
-                ", strenght=" + strenght +
-                ", name='" + name + '\'' +
-                ", image='" + image + '\'' +
-                '}';
-    }
 
     public EpeeMarteauPioche() {
         super("Roche", "Marteau-Pioche Épée", 16);

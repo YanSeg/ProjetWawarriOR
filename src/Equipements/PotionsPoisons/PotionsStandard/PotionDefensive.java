@@ -9,10 +9,10 @@ public class PotionDefensive extends Potions {
 
 
     public PotionDefensive() {
-        super( 0,"Potion de défense",0,15,0);
+        super( "Potion de défense",15,15);
         ASCII_Representations image = new ASCII_Representations();
         setImage(image.potion1());
-        String description = "15 pts de défense";
+        String description = "15 pts de force et vie";
         setDescription(description);
 
     }

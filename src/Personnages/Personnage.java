@@ -1,15 +1,9 @@
 package Personnages;
 
-import Equipements.EquipementDef.EquipementDefensif;
-import Equipements.EquipementOff.EquipementOffensif;
 import Equipements.Equipements;
 import MiseEnPage.MiseEnPage;
-import PlateuDeJeu.Cases.Cases;
 
-import java.util.*;
 //import org.apache.commons.lang3.StringUtils;
-import java.util.regex.Pattern;
-import java.util.regex.Matcher;
 
 
 public abstract class Personnage {

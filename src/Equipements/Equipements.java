@@ -1,110 +1,54 @@
 package Equipements;
 
+import Equipements.EquipementDef.EquipementDefensif;
+import Equipements.EquipementOff.EquipementOffensif;
+import Menu.MenuJeu;
+import Personnages.Guerriers.Guerrier;
+import Personnages.Magiciens.Magicien;
 import Personnages.Personnage;
-import PlateuDeJeu.Cases.Cases;
-import PlateuDeJeu.BoardFactory;
+import PlateuDeJeu.Cases;
 
-public abstract class Equipements  implements Cases {
+import java.sql.SQLOutput;
 
-    private String type;
-    private int strength;
-    private String name;
-    private String image;
-    private int health;
-    private int defensive;
-    private int offensive;
-    private String description;
-//    package-protected String test = "test";
+import static PlateuDeJeu.Son.Son.playIntro;
 
-    protected Equipements equipement;
-
-
+public abstract class Equipements implements Cases {
 
 
     @Override
-    public void interact(Personnage player, BoardFactory plateauDuJeu) {
+    public String interact(Personnage player) {
 
-//
-//
-//
-//
-//
-//        if (plateauDuJeu.getCases() instanceof Potions) {
-//            System.out.println("WELL DONE DUDE");
-//            space();
-//            int a = this.getHealth();
-//            int b = player.getHealth();
-//            int h = a + b;
-//            player.setHealth(h);
-//            int c = this.getStrength();
-//            int d = player.getStrength();
-//            int j = c + d;
-//            player.setStrength(j);
-//            System.out.println(player);
-//            space();
-//        } else if( isUsable(player)) {
-//            if (plateauDuJeu.getCases() instanceof EquipementOffensif) {
-//                player.setEquipemenOf(this.equipement);
-//                System.out.println("VOUS AVEZ RECUP :" + equipement.getName());
-//                space();
-//                System.out.println(this.equipement);
-//            }
-//            if (plateauDuJeu.getCases() instanceof EquipementDefensif) {
-//                player.setEquipementDef(this.equipement);
-//                System.out.println("VOUS AVEZ RECUP :" + equipement.getName());
-//                space();
-//                System.out.println(this.equipement);
-//            }
-//
-//        } else {
-//            System.out.println("Rien à récupérer pour vous manant");
-//        }
-//
-//
+        System.out.println("CASE EQUIP");
+        System.out.println(player);
+        System.out.println(this);
+        System.out.println(image);
 
+        if (this instanceof EquipementOffensif) {
+            player.setEquipemenOf(this);
+        }
+        if (this instanceof EquipementDefensif) {
+        player.setEquipementDef(this);
+        }
 
-    }
+        System.out.println(player);
 
-    public String getType() {
-        return type;
-    }
-
-    public abstract boolean isUsable(Personnage player);
-
-
-    public Equipements(int strength, String name, int health, int defensive, int offensive) {
-        this.strength = strength;
-        this.name = name;
-        this.health = health;
-        this.defensive = defensive;
-        this.offensive = offensive;
+        return "IN_PROGRESS";
     }
 
 
-
-    public void setType(String type) {
-        this.type = type;
-    }
-
-    public int getStrength() {
-        return strength;
-    }
+    private String type;
+    private String name;
+    private String image;
+    private int strength;
+    private String description;
 
 
-    public Equipements(String name) {
-        this.name = name;
-    }
-
-    public void setStrength(int strength) {
-        this.strength = strength;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
+    @Override
+    public String toString() {
+        return name + '\n' +
+                image + '\n' +
+                "Force def ou of de l'équipement  :" + strength + '\n' +
+                description;
     }
 
     public String getImage() {
@@ -115,44 +59,6 @@ public abstract class Equipements  implements Cases {
         this.image = image;
     }
 
-    public int getHealth() {
-        return health;
-    }
-
-    @Override
-    public String toString() {
-        return "Equipements{" +
-                "type='" + type + '\'' +
-                ", strength=" + strength +
-                ", name='" + name + '\'' +
-                ", image='" + image + '\'' +
-                ", health=" + health +
-                ", defensive=" + defensive +
-                ", offensive=" + offensive +
-                ", description='" + description + '\'' +
-                '}';
-    }
-
-    public void setHealth(int health) {
-        this.health = health;
-    }
-
-    public int getDefensive() {
-        return defensive;
-    }
-
-    public void setDefensive(int defensive) {
-        this.defensive = defensive;
-    }
-
-    public int getOffensive() {
-        return offensive;
-    }
-
-    public void setOffensive(int offensive) {
-        this.offensive = offensive;
-    }
-
     public String getDescription() {
         return description;
     }
@@ -161,9 +67,33 @@ public abstract class Equipements  implements Cases {
         this.description = description;
     }
 
+    public Equipements(String type, String name, int strength) {
+        this.type = type;
+        this.name = name;
+        this.strength = strength;
+    }
 
+    public String getType() {
+        return type;
+    }
 
+    public void setType(String type) {
+        this.type = type;
+    }
 
-    public Equipements() {
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getStrength() {
+        return strength;
+    }
+
+    public void setStrength(int strength) {
+        this.strength = strength;
     }
 }

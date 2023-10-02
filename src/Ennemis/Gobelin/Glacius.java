@@ -2,12 +2,13 @@ package Ennemis.Gobelin;
 
 import Images.ASCII_Representations;
 import Personnages.Personnage;
+import PlateuDeJeu.EquipementFactory;
 
 public class Glacius extends Gobelin {
 
 
     public Glacius() {
-        super("Gobelin", "Le Troll Truculent", 3, 5, "Sceptre de glace", "Armure de givre");
+        super("Gobelin", "Le Troll Truculent", 3, 5, EquipementFactory.createEquipDef(), EquipementFactory.createEquipOf());
         ASCII_Representations image = new ASCII_Representations();
         setImage(image.monstergentil());
 

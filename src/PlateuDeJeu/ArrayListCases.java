@@ -2,13 +2,10 @@ package PlateuDeJeu;
 
 import Ennemis.Dragons.*;
 import Ennemis.Gobelin.*;
-import Ennemis.JeuFilm.Kurbi;
+//import Ennemis.JeuFilm.Kurbi;
 import Ennemis.Ennemi;
-import Ennemis.HommePoli.GodFather;
-import Ennemis.HommePoli.leV;
-import Ennemis.Jedi.LuckSkywalker;
-import Ennemis.JeuFilm.IronMan;
-import Ennemis.JeuFilm.LinkLeMagnifique;
+//import Ennemis.JeuFilm.IronMan;
+//import Ennemis.JeuFilm.LinkLeMagnifique;
 import Ennemis.Sorciers.*;
 //import Equipements.EquipementDef.Boucliers.Boucliers;
 //import Equipements.EquipementDef.Philtres.Philtres;
@@ -28,55 +25,6 @@ import java.util.Random;
 
 
 public class ArrayListCases {
-
-
-//  _______________________________________________________________ Get/SET à voir
-
-
-    public ArrayList<Ennemi> arrayDesEnnemis() {
-        ArrayList<Ennemi> listEnnemis = new ArrayList<Ennemi>();
-
-        IronMan ironman = new IronMan();
-        GouleGlouton goule = new GouleGlouton();
-        GodFather parrain = new GodFather();
-        Kurbi kurbi = new Kurbi();
-        LeCheveuduDiable chauv = new LeCheveuduDiable();
-        LeSexyMan sexyMan = new LeSexyMan();
-        LicheMaudite licheMaudite = new LicheMaudite();
-        LinkLeMagnifique link = new LinkLeMagnifique();
-        LuckSkywalker luckSkywalker = new LuckSkywalker();
-        leV leV = new leV();
-        SorciereChatouille sorciereChatouille = new SorciereChatouille();
-        SpectreDeNuit spectreDeNuit = new SpectreDeNuit();
-        Sylvitrouille sylvitrouille = new Sylvitrouille();
-        TrollTruculent trollTruculent = new TrollTruculent();
-        WendigoSanguinaire wendigoSanguinaire = new WendigoSanguinaire();
-        SorciereXena sorciereXena = new SorciereXena();
-
-        listEnnemis.add(ironman);
-        listEnnemis.add(goule);
-        listEnnemis.add(parrain);
-        listEnnemis.add(kurbi);
-        listEnnemis.add(chauv);
-        listEnnemis.add(sexyMan);
-        listEnnemis.add(licheMaudite);
-        listEnnemis.add(link);
-        listEnnemis.add(luckSkywalker);
-        listEnnemis.add(leV);
-        listEnnemis.add(sorciereChatouille);
-        listEnnemis.add(spectreDeNuit);
-        listEnnemis.add(sylvitrouille);
-        listEnnemis.add(trollTruculent);
-        listEnnemis.add(wendigoSanguinaire);
-        listEnnemis.add(sorciereXena);
-
-
-        Collections.shuffle(listEnnemis);
-        Random random = new Random();
-        int indexAleatoire = random.nextInt(listEnnemis.size());
-        listEnnemis.get(indexAleatoire);
-        return listEnnemis;
-    }
 
     public static Dragon getRandomDragon() {
         ArrayList<Dragon> listDragon = new ArrayList<Dragon>();
@@ -259,8 +207,6 @@ public class ArrayListCases {
         listEquipement.add(sortAbyssale);
         listEquipement.add(sortEclairOmbre);
         listEquipement.add(sortEclipse);
-        listEquipement.add(potionHarricotMagique);
-        listEquipement.add(potionDuSage);
 
         Collections.shuffle(listEquipement);
         Random random = new Random();
@@ -268,6 +214,7 @@ public class ArrayListCases {
         Equipements equipements = listEquipement.get(indexAleatoire);
         return equipements;
     }
+
 
 
 }

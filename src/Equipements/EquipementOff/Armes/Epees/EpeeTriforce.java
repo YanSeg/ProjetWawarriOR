@@ -6,15 +6,7 @@ public class EpeeTriforce extends Epee{
 
     private final String REPRESENTATION = ASCII_Representations.swordLink();
 
-    @Override
-    public String toString() {
-        return "EpeeTriforce{" +
-                "type='" + type + '\'' +
-                ", strenght=" + strenght +
-                ", name='" + name + '\'' +
-                ", image='" + image + '\'' +
-                '}';
-    }
+
 
     public EpeeTriforce() {
         super("Spéciale", "Épée de la Triforce", 30);

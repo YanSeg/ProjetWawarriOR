@@ -14,13 +14,4 @@ public class EpeeDesOmbres extends Epee{
         setDescription(description);
     }
 
-    @Override
-    public String toString() {
-        return "EpeeDesOmbres{" +
-                "type='" + type + '\'' +
-                ", strenght=" + strenght +
-                ", name='" + name + '\'' +
-                ", image='" + image + '\'' +
-                '}';
-    }
 }

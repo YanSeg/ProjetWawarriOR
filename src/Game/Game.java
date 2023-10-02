@@ -1,12 +1,10 @@
 package Game;
 
-import Ennemis.Ennemi;
 import Equipements.EquipementDef.Boucliers.Bouclier;
 import Equipements.EquipementDef.Phyltres.Phyltre;
 import Equipements.EquipementOff.Armes.Epees.Epee;
 import Equipements.EquipementOff.Armes.Epees.EpeeGranit;
 import Equipements.EquipementOff.Sorts.SortsTerre.SortBasique;
-import Images.ASCII_Representations;
 import Personnages.Personnage;
 import Personnages.Guerriers.Guerrier;
 import Personnages.Magiciens.Magicien;
@@ -19,8 +17,6 @@ import java.lang.*;
 import java.util.Scanner;
 import java.util.*;
 
-import Game.PersonnageHorsPlateauException;
-
 import static PlateuDeJeu.Son.Son.*;
 
 
@@ -31,10 +27,8 @@ public class Game {
     private MenuJeu menuJeu;
     private final Scanner scanner = new Scanner(System.in);
     private boolean canPlay = true;
-    private boolean quitterJeu = true;
-
+    private boolean playing = true;
     private String state = "IN_PROGRESS";
-
 
     public Game() {
         this.plateau = BoardFactory.createPlateauList();
@@ -109,34 +103,43 @@ public class Game {
         }
     }
 
-    public boolean isOver(Personnage player, BoardFactory plateau) {
-        return (this.positionPlayer < 63) && (player.getHealth() > 0);
-    }
-
     private int lancementDuddE() {
         int de = (int) (1 + 6 * Math.random());
         return de;
     }
 
-
-
     private void play() {
         while (positionPlayer < 63) {
-            try {
-                jouerUnTour();
-            } catch (PersonnageHorsPlateauException e) {
-            }
+            jouerUnTour();
         }
     }
+
     private boolean exit() {
-        return this.quitterJeu = false;
+        return this.playing = false;
     }
 
     private boolean canPlay() {
         return this.canPlay = false;
     }
+
+
+    private boolean keepPlaying(String state) {
+        return (state == "IN_PROGRESS");
+    }
+
+    private void movePlayer() {
+        int new_position = positionPlayer + lancementDuddE();
+        positionPlayer = new_position;
+    }
+
+    private void movebackPlayer() {
+        int new_position = positionPlayer - lancementDuddE();
+        positionPlayer = new_position;
+    }
+
+
     public void menuDuJeu() {
-        while (quitterJeu) {
+        while (playing) {
             while (canPlay) {
                 menuJeu.listemenu2();
                 int choiceMenu = menuJeu.getIntInput();
@@ -151,50 +154,29 @@ public class Game {
                     default -> menuJeu.affichageErreurMenu();
                 }
             }
-            while (gameState(state)) {
+            while (keepPlaying(state)) {
                 play();
             }
-            System.out.println("HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH");
-        }
 
+        }
         System.out.println("Au revoir");
     }
 
-    private boolean gameState(String state) {
-        boolean boobl = true;
-        if (state == "IN_PROGRESS" || state == "GAME_OVER") {
-            boobl = true;
-        }
-        if (state == "EXIT" || state == "BYE") {
-            boobl = false;
-        }
-        return boobl;
-    }
 
-    private void movePlayer() {
-        int new_position = positionPlayer + lancementDuddE();
-        positionPlayer = new_position;
-    }
-
-    private void movebackPlayer() {
-        int new_position = positionPlayer - lancementDuddE();
-        positionPlayer = new_position;
-    }
-
-
-    public void jouerUnTour() throws PersonnageHorsPlateauException {
-
+    public void jouerUnTour() {
         if (positionPlayer == 63) {
-            String REPRESENTATION = ASCII_Representations.men();
-            System.out.println(REPRESENTATION);
-            System.out.println("GAGNE");
-
-        } else if (0 <= positionPlayer && positionPlayer <63) {
+            restartAfterWinning();
+            menuDuJeu();
+        } else if (0 <= positionPlayer && positionPlayer < 63) {
             String state = plateau.get(positionPlayer).interact(player);
             switch (state) {
                 case "GAME_OVER" -> {
                     System.out.println("TES MORT");
+                    canPlay();
                     exit();
+                    menuJeu.ureDead();
+                    this.state = "IN_PROGRESS";
+                    menuDuJeu();
                 }
                 case "IN_PROGRESS" -> {
                     System.out.println("LA POSITION DU JOUEUR : " + positionPlayer);
@@ -214,17 +196,22 @@ public class Game {
                 }
                 case "EXIT" -> {
                     System.out.println("BYE");
-                    exit();
+                    canPlay();
                 }
                 default -> state = "IN_PROGRESS";
             }
-
-
-        } else{
-            throw new PersonnageHorsPlateauException();
+        } else {
+            restartAfterWinning();
         }
     }
 
+    private void restartAfterWinning() {
+        menuJeu.gagnE();
+        this.state = "IN_PROGRESS";
+        this.canPlay = true;
+        this.playing = true;
+        menuDuJeu();
+    }
 }
 
 

@@ -37,11 +37,9 @@ public class MenuJeu {
         playIntro();
 
     }
-
     public void affichageErreurMenu() {
         System.out.println("Merci de commencer par créer votre personnage");
     }
-
     public void affichageduPersonnage(Personnage player) {
         if (player != null) {
             space();
@@ -51,7 +49,6 @@ public class MenuJeu {
             affichageErreurMenu();
         }
     }
-
     public void listemenu2() {
         System.out.println("1. Créer votre personnage");
         System.out.println("2. Guerrier par defaut");
@@ -61,17 +58,11 @@ public class MenuJeu {
         System.out.println("6. Jouer");
         System.out.println("7. Quitter le menu du jeu");
     }
-
-
     public void getFightMenu() {
         System.out.println("1. Voulez vous vous battre?");
         System.out.println("2. Voulez-vous fuir?");
         System.out.println("3. Quitter les jeu?");
     }
-
-
-
-
     public int getIntInput() {
         try {
             int r = this.scanner.nextInt();
@@ -87,11 +78,9 @@ public class MenuJeu {
             return getIntInput();
         }
     }
-
     public void displayChangePersoName() {
         System.out.println("Choisissez un nouveau Nom");
     }
-
 
     public void presentationEnnemmi(Ennemi ennemi){
         System.out.println( "Vous faites face à " +ennemi.getName() +'\n' + '\n' + ennemi.getImage()  +'\n' + '\n' +"Weapon : "+ennemi.getWeapon().getName()+"force|"+ennemi.getWeapon().getStrength()
@@ -104,19 +93,25 @@ public class MenuJeu {
         System.out.println(result);
     }
 
-
     public void etatCombattant (Personnage player ,Ennemi ennemi){
         System.out.println("La vie du joueur est de : " + player.getHealth());
         System.out.println("La vie de l'ennemi est de : " + ennemi.getHealth());
     }
-
     public void isEnnemiALive(){
         System.out.println("ENNEMI DEAD");
     }
-
     public void isPlayerDead(){
         System.out.println("GAMEOVER");
 
+    }
+    public void gagnE(){
+        System.out.println(ASCII_Representations.findupiege());
+        System.out.println( '\n' +  "VOUS AVEZ GAGNE" + '\n');
+        System.out.println(ASCII_Representations.illuminati());
+    }
+
+    public void ureDead(){
+        System.out.println(ASCII_Representations.neo());
     }
 
 }

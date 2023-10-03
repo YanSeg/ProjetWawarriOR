@@ -63,6 +63,12 @@ public class MenuJeu {
         System.out.println("2. Voulez-vous fuir?");
         System.out.println("3. Quitter les jeu?");
     }
+
+    public void getEquipementMenu(){
+        System.out.println("1. Prendre l'équipement?");
+        System.out.println("2. Laisser l'équipement");
+    }
+
     public int getIntInput() {
         try {
             int r = this.scanner.nextInt();

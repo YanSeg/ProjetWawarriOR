@@ -1,7 +1,9 @@
 package Equipements;
 
+import Ennemis.Fight;
 import Equipements.EquipementDef.EquipementDefensif;
 import Equipements.EquipementOff.EquipementOffensif;
+import Images.ASCII_Representations;
 import Menu.MenuJeu;
 import Personnages.Guerriers.Guerrier;
 import Personnages.Magiciens.Magicien;
@@ -14,36 +16,46 @@ import static PlateuDeJeu.Son.Son.playIntro;
 
 public abstract class Equipements implements Cases {
 
-
-    @Override
-    public String interact(Personnage player) {
-
-        System.out.println("CASE EQUIP");
-        System.out.println(player);
-        System.out.println(this);
-        System.out.println(image);
-
-
-
-
-        if (this instanceof EquipementOffensif) {
-            player.setEquipemenOf(this);
-        }
-        if (this instanceof EquipementDefensif) {
-        player.setEquipementDef(this);
-        }
-
-        System.out.println(player);
-
-        return "IN_PROGRESS";
-    }
-
-
     private String type;
     private String name;
     private String image;
     private int strength;
     private String description;
+
+    @Override
+    public String interact(Personnage player) {
+
+        System.out.println(ASCII_Representations.messageEquipement());
+        System.out.println(player);
+        System.out.println(this);
+//        System.out.println(image);
+        System.out.println(player);
+        MenuJeu menuEquipement = new MenuJeu();
+        menuEquipement.getEquipementMenu();
+
+        int choice = menuEquipement.getIntInput();
+
+        String action = "IN_PROGRESS";
+
+        switch (choice) {
+            case 1:
+                if (this instanceof EquipementOffensif) {
+                    player.setEquipemenOf(this);
+                    System.out.println(player);
+                    action = "ENNEMI_DEAD";
+                } else if (this instanceof EquipementDefensif) {
+                    player.setEquipementDef(this);
+                    System.out.println(player);
+                    action = "ENNEMI_DEAD";
+                }
+                break;
+            case 2:
+                action = "IN_PROGRESS";
+                break;
+        }
+
+        return action;
+    }
 
 
     @Override

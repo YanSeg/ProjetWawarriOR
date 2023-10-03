@@ -176,6 +176,7 @@ public class Game {
             menuDuJeu();
         } else if (0 <= positionPlayer && positionPlayer < 63) {
             String state = plateau.get(positionPlayer).interact(player);
+
             switch (state) {
                 case "GAME_OVER" -> {
                     System.out.println("TES MORT");
@@ -200,6 +201,8 @@ public class Game {
                 }
                 case "ENNEMI_DEAD" -> {
                     plateau.set(positionPlayer, new CaseEmpty());
+                    this.state = "IN_PROGRESS";
+                    jouerUnTour();
                 }
                 case "EXIT" -> {
                     System.out.println("BYE");

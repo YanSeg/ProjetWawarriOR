@@ -23,6 +23,9 @@ public abstract class Equipements implements Cases {
         System.out.println(this);
         System.out.println(image);
 
+
+
+
         if (this instanceof EquipementOffensif) {
             player.setEquipemenOf(this);
         }

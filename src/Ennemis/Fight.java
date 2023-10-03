@@ -28,36 +28,26 @@ public class Fight {
         player.setHealth(playerNewlife);
     }
 
-    public String fightState() {
-
-        if (player.getHealth() <= 0) {
-            fightState.isPlayerDead();
-            return "GAME_OVER";
-        } else if (ennemi.getHealth() <= 0) {
-            fightState.isEnnemiALive();
-            return "ENNEMI_DEAD";
-        } else {
-            return "IN_PROGRESS";
-        }
-    }
-
-
     public String getResultRecursive() {
-
+        String fightResult ="";
         fightState.etatCombattant(player, ennemi);
-
         playerAttac();
         if (ennemi.getHealth() <= 0) {
             fightState.etatCombattant(player, ennemi);
-            return fightState();
-        }
-        ennemiAttac();
-        if (player.getHealth() <= 0) {
+
+            fightResult = "ENNEMI_DEAD";
+        } else if (player.getHealth() > 0 && ennemi.getHealth() > 0) {
+            ennemiAttac();
+            fightResult = "IN_PROGRESS";
+        } else if ((player.getHealth()) <= 0) {
+            fightState.isPlayerDead();
+            fightResult =  "GAME_OVER";
+        } else if (player.getHealth() > 0 && ennemi.getHealth() > 0) {
             fightState.etatCombattant(player, ennemi);
-            return fightState();
+            System.out.println("Le combat continue");
+            getResultRecursive();
         }
-        fightState.etatCombattant(player, ennemi);
-        return getResultRecursive();
+        return fightResult;
     }
 }
 

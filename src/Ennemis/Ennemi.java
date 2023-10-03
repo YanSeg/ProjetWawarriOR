@@ -16,6 +16,7 @@ public abstract class Ennemi implements Cases {
     @Override
     public String interact(Personnage player) {
         System.out.println(REPRESENTATION);
+        System.out.println(player);
         MenuJeu menufight = new MenuJeu();
         menufight.presentationEnnemmi(this);
         menufight.getFightMenu();

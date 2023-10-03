@@ -68,10 +68,10 @@ public class Game {
         player.setEquipemenOf(sort);
     }
 
-    private void creerMagicien() {
-        String persoType = "Magicien";
+    private void creerMagicien(String persoName) {
+//        String persoType = "Magicien";
         System.out.println("Quel sera votre Nom ?");
-        String persoName = scanner.nextLine();
+        persoName = scanner.nextLine();
         SortBasique sort = new SortBasique();
         Phyltre phyltre = new Phyltre("De Base", "Phyltre", 15);
         player = new Magicien(6, 15, "Magicien", persoName);
@@ -80,10 +80,10 @@ public class Game {
 
     }
 
-    private void creerGuerrier() {
-        String persoType = "Guerrier";
+    private void creerGuerrier(String persoName) {
+//        String persoType = "Guerrier";
         System.out.println("Quel sera votre Nom ?");
-        String persoName = scanner.nextLine();
+        persoName = scanner.nextLine();
         Bouclier bouclier = new Bouclier("De base", 15, "Bouclier");
         Epee epee = new EpeeGranit();
         player = new Guerrier(10, 10, "Guerrier", persoName);
@@ -93,12 +93,11 @@ public class Game {
 
     private void createPersonnage() {
         System.out.println("Tapez 1 : Guerrier | Tapez 2 : Magicien");
-        String persoType;
-        String persoName;
+        String persoName = " ";
         int choixTypePerso = menuJeu.getIntInput();
         switch (choixTypePerso) {
-            case 1 -> creerGuerrier();
-            case 2 -> creerMagicien();
+            case 1 -> creerGuerrier(persoName);
+            case 2 -> creerMagicien(persoName);
             default -> menuJeu.affichageErreurMenu();
         }
     }
@@ -149,7 +148,15 @@ public class Game {
                     case 3 -> genrateMagicienDefault();
                     case 4 -> changeNamePlayer(player);
                     case 5 -> menuJeu.affichageduPersonnage(player);
-                    case 6 -> canPlay();
+                    case 6 -> {
+                        if (player != null) {
+                            canPlay();
+                        } else {
+                            menuJeu.affichageErreurMenu();
+                        }
+
+
+                    }
                     case 7 -> exit();
                     default -> menuJeu.affichageErreurMenu();
                 }
